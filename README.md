@@ -53,3 +53,8 @@ modding, bringing new and exciting experiences to players.
 
 If you have any questions, feel free to reach out to us through the issues section on GitHub. We're here to help and
 appreciate your efforts to improve Veil!
+# Mystrix adaptation notes
+
+See the [Veil 2.1.0 distribution audit](docs/veil-2.1.0-audit.md) for retained systems,
+API migrations, selective ports and deferred tooling. The [volume effects guide](docs/volume-effects.md)
+documents opt-in height/box fog and reusable procedural-noise includes.

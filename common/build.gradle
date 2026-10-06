@@ -30,14 +30,33 @@ dependencies {
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testImplementation 'org.joml:joml:1.10.5'
+    testImplementation 'com.google.code.gson:gson:2.10.1'
+    testRuntimeOnly 'it.unimi.dsi:fastutil:8.5.15'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     testRuntimeOnly 'com.mojang:datafixerupper:8.0.16'
     testRuntimeOnly 'org.apache.logging.log4j:log4j-slf4j2-impl:2.23.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    // Shader validation libraries are test-only; never bundled with either loader.
+    testImplementation "org.lwjgl:lwjgl-shaderc:${lwjgl_version}"
+    testImplementation "org.lwjgl:lwjgl:${lwjgl_version}"
+    testImplementation "org.lwjgl:lwjgl-glfw:${lwjgl_version}"
+    testImplementation "org.lwjgl:lwjgl-opengl:${lwjgl_version}"
+    def testOs = System.getProperty('os.name').toLowerCase(Locale.ROOT)
+    def testArch = System.getProperty('os.arch').toLowerCase(Locale.ROOT)
+    def testNatives = testOs.contains('win') ? 'natives-windows' :
+            (testOs.contains('mac') ? 'natives-macos' : 'natives-linux')
+    if (testArch == 'aarch64' || testArch == 'arm64') testNatives += '-arm64'
+    testRuntimeOnly "org.lwjgl:lwjgl-shaderc:${lwjgl_version}:${testNatives}"
+    testRuntimeOnly "org.lwjgl:lwjgl:${lwjgl_version}:${testNatives}"
+    testRuntimeOnly "org.lwjgl:lwjgl-glfw:${lwjgl_version}:${testNatives}"
+    testRuntimeOnly "org.lwjgl:lwjgl-opengl:${lwjgl_version}:${testNatives}"
 }
 
 test {
     useJUnitPlatform()
+    // A headless CI result must not hide an explicitly requested GPU run.
+    inputs.property('verifyOpenGL', providers.environmentVariable('VEIL_VERIFY_OPENGL').orElse('0'))
 }
 
 configurations {

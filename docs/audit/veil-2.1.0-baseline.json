@@ -1,0 +1,1717 @@
+{
+  "schemaVersion": 1,
+  "reference": {
+    "file": "veil-2.1.0.zip",
+    "sha256": "f39a0cf306faf35eb4c884621224e7d8b25d1a770c8341dfe25df4c2a6987376",
+    "metadata": {
+      "schemaVersion": 1,
+      "id": "veil",
+      "version": "2.1.0",
+      "name": "Veil",
+      "description": "Veil is a sophisticated collection of tools and utilities designed to facilitate advanced rendering for Minecraft mod developers. Our goal is to enable more modern game-engine level content in Java Minecraft, pushing the boundaries of what is possible in modding.",
+      "icon": "icon.png",
+      "authors": [
+        "amo",
+        "Cappin",
+        "Ocelot"
+      ],
+      "contributors": [
+        "Farcr (Artist)"
+      ],
+      "contact": {
+        "homepage": "https://modrinth.com/project/veil",
+        "issues": "https://github.com/FoundryMC/Veil/issues",
+        "sources": "https://github.com/FoundryMC/Veil"
+      },
+      "license": "LGPLv3",
+      "environment": "*",
+      "entrypoints": {
+        "main": [
+          "foundry.veil.fabric.VeilFabric"
+        ],
+        "client": [
+          "foundry.veil.fabric.VeilFabricClient"
+        ]
+      },
+      "custom": {
+        "fabric-renderer-indigo:force_compatibility": true,
+        "modmenu": {
+          "links": {
+            "modmenu.discord": "https://discord.com/invite/2aqTX9QWKU",
+            "modmenu.modrinth": "https://modrinth.com/mod/veil",
+            "modmenu.wiki": "https://github.com/FoundryMC/Veil/wiki"
+          }
+        }
+      },
+      "mixins": [
+        "veil.debug.mixins.json",
+        "veil.dynamicbuffer.mixins.json",
+        "veil.fix.mixins.json",
+        "veil.framebuffer.mixins.json",
+        "veil.imgui.mixins.json",
+        "veil.necromancer.mixins.json",
+        "veil.performance.mixins.json",
+        "veil.perspective.mixins.json",
+        "veil.pipeline.mixins.json",
+        "veil.quasar.mixins.json",
+        "veil.registry.mixins.json",
+        "veil.rendertype.mixins.json",
+        "veil.resource.mixins.json",
+        "veil.shader.mixins.json",
+        "veil.scheduler.mixins.json",
+        "veil.fabric.mixins.json"
+      ],
+      "depends": {
+        "fabricloader": ">=0.16.4",
+        "fabric-api": ">=0.115.0+1.21.1",
+        "minecraft": "1.21.1",
+        "java": ">=21"
+      },
+      "breaks": {
+        "sodium": "<0.6.9"
+      },
+      "accessWidener": "veil.accesswidener",
+      "jars": [
+        {
+          "file": "META-INF/jars/glsl-processor-0.2.3.jar"
+        },
+        {
+          "file": "META-INF/jars/imgui-java-binding-1.88.0.jar"
+        },
+        {
+          "file": "META-INF/jars/imgui-java-lwjgl3-1.88.0.jar"
+        },
+        {
+          "file": "META-INF/jars/imgui-java-natives-linux-1.88.0.jar"
+        },
+        {
+          "file": "META-INF/jars/imgui-java-natives-macos-1.88.0.jar"
+        },
+        {
+          "file": "META-INF/jars/imgui-java-natives-windows-1.88.0.jar"
+        },
+        {
+          "file": "META-INF/jars/molang-compiler-3.1.1.19.jar"
+        }
+      ]
+    }
+  },
+  "current": {
+    "file": "veil-fabric-1.21.1-4.5.0+mystrix.1.jar",
+    "sha256": "678aa9447a751b1e6e4e10995ddd2fc957a0c6a31c4ea523b7ae636f5472b2b9",
+    "metadata": {
+      "schemaVersion": 1,
+      "id": "veil",
+      "version": "4.5.0+mystrix.1",
+      "name": "Veil",
+      "description": "Veil is a sophisticated collection of tools and utilities designed to facilitate advanced rendering for Minecraft mod developers. Our goal is to enable more modern game-engine level content in Java Minecraft, pushing the boundaries of what is possible in modding.",
+      "icon": "icon.png",
+      "authors": [
+        "amo",
+        "Cappin",
+        "Ocelot"
+      ],
+      "contributors": [
+        "Farcr (Artist)"
+      ],
+      "contact": {
+        "homepage": "https://modrinth.com/project/veil",
+        "issues": "https://github.com/FoundryMC/Veil/issues",
+        "sources": "https://github.com/FoundryMC/Veil"
+      },
+      "license": "LGPLv3",
+      "environment": "*",
+      "entrypoints": {
+        "main": [
+          "foundry.veil.fabric.VeilFabric"
+        ],
+        "client": [
+          "foundry.veil.fabric.VeilFabricClient"
+        ]
+      },
+      "custom": {
+        "fabric-renderer-indigo:force_compatibility": true,
+        "modmenu": {
+          "links": {
+            "modmenu.discord": "https://discord.com/invite/2aqTX9QWKU",
+            "modmenu.modrinth": "https://modrinth.com/mod/veil",
+            "modmenu.wiki": "https://github.com/FoundryMC/Veil/wiki"
+          }
+        }
+      },
+      "mixins": [
+        "veil.command.mixins.json",
+        "veil.debug.mixins.json",
+        "veil.dynamicbuffer.mixins.json",
+        "veil.fix.mixins.json",
+        "veil.framebuffer.mixins.json",
+        "veil.network.mixins.json",
+        "veil.necromancer.mixins.json",
+        "veil.performance.mixins.json",
+        "veil.perspective.mixins.json",
+        "veil.pipeline.mixins.json",
+        "veil.quasar.mixins.json",
+        "veil.registry.mixins.json",
+        "veil.rendertype.mixins.json",
+        "veil.resource.mixins.json",
+        "veil.scheduler.mixins.json",
+        "veil.screenshake.mixins.json",
+        "veil.shader.mixins.json",
+        "veil.shader_recompile.mixins.json",
+        "veil.fabric.mixins.json"
+      ],
+      "depends": {
+        "fabricloader": ">=0.18.4",
+        "fabric-registry-sync-v0": ">=0.116.8+1.21.1",
+        "fabric-lifecycle-events-v1": ">=0.116.8+1.21.1",
+        "fabric-resource-loader-v0": ">=0.116.8+1.21.1",
+        "fabric-networking-api-v1": ">=0.116.8+1.21.1",
+        "fabric-command-api-v2": ">=0.116.8+1.21.1",
+        "fabric-key-binding-api-v1": ">=0.116.8+1.21.1",
+        "fabric-rendering-v1": ">=0.116.8+1.21.1",
+        "fabric-renderer-api-v1": ">=0.116.8+1.21.1",
+        "minecraft": "~1.21.1",
+        "java": ">=21"
+      },
+      "suggests": {
+        "imguimc": ">=2.0.0"
+      },
+      "breaks": {
+        "sodium": "<0.8.12-alpha.2+mc1.21.1",
+        "embeddium": "*",
+        "celeritas": "*",
+        "imguimc": [
+          "<2.0.0",
+          ">=3.0.0"
+        ]
+      },
+      "accessWidener": "veil.accesswidener",
+      "jars": [
+        {
+          "file": "META-INF/jars/glsl-processor-0.2.3.jar"
+        },
+        {
+          "file": "META-INF/jars/molang-compiler-3.1.1.19.jar"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Binary signatures use intermediary Fabric mappings in both artifacts; absence does not imply missing functionality.",
+    "Public/protected members are compared only in retained API classes, including nested classes. No bytecode equivalence or performance claim.",
+    "Reference is a Fabric distribution; it provides no evidence of old NeoForge behavior. Nested third-party jars are excluded.",
+    "Current jar may contain working-branch additions. Read the narrative audit for baseline decisions."
+  ],
+  "counts": {
+    "oldClasses": 853,
+    "currentClasses": 971,
+    "missingClasses": 53,
+    "changedApiClasses": 101,
+    "oldResources": 210,
+    "currentResources": 91
+  },
+  "missingClasses": [
+    "foundry/veil/VeilMixinPlugin.class",
+    "foundry/veil/api/client/editor/ImGuiFontManager$FontData.class",
+    "foundry/veil/api/client/editor/ImGuiFontManager$FontPack.class",
+    "foundry/veil/api/client/editor/ImGuiFontManager$FontPackBuilder.class",
+    "foundry/veil/api/client/editor/ImGuiFontManager.class",
+    "foundry/veil/api/client/editor/ImGuiFontMetadataSectionSerializer$FontMetadata.class",
+    "foundry/veil/api/client/editor/ImGuiFontMetadataSectionSerializer.class",
+    "foundry/veil/api/client/imgui/VeilImGuiUtil$ImGuiCharSink.class",
+    "foundry/veil/api/client/imgui/VeilLanguageDefinitions.class",
+    "foundry/veil/api/client/render/framebuffer/AdvancedFboMutableTextureAttachment.class",
+    "foundry/veil/api/client/render/shader/ShaderManager$ReloadState.class",
+    "foundry/veil/api/client/render/shader/program/MutableUniformAccess.class",
+    "foundry/veil/api/event/LayeredRenderTypePreEvent.class",
+    "foundry/veil/fabric/event/FabricLayeredRenderTypePreEvent.class",
+    "foundry/veil/fabric/mixin/client/KeyboardHandlerMixin.class",
+    "foundry/veil/fabric/mixin/client/MouseHandlerMixin.class",
+    "foundry/veil/fabric/mixin/compat/sodium/DefaultMaterialsMixin.class",
+    "foundry/veil/impl/VeilBuiltinPacks$Context.class",
+    "foundry/veil/impl/VeilBuiltinPacks.class",
+    "foundry/veil/impl/client/imgui/ImGuiStateStack$State.class",
+    "foundry/veil/impl/client/imgui/ImGuiStateStack.class",
+    "foundry/veil/impl/client/imgui/InactiveVeilImGuiImpl.class",
+    "foundry/veil/impl/client/imgui/VeilImGui.class",
+    "foundry/veil/impl/client/imgui/VeilImGuiImpl.class",
+    "foundry/veil/impl/client/imgui/VeilImGuiImplGlfw$1.class",
+    "foundry/veil/impl/client/imgui/VeilImGuiImplGlfw$2.class",
+    "foundry/veil/impl/client/imgui/VeilImGuiImplGlfw$VeilData.class",
+    "foundry/veil/impl/client/imgui/VeilImGuiImplGlfw.class",
+    "foundry/veil/impl/client/render/dynamicbuffer/VerticalNormalVertexConsumer.class",
+    "foundry/veil/impl/client/render/shader/modifier/InputShaderModification.class",
+    "foundry/veil/impl/client/render/shader/modifier/ReplaceShaderModification.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModification$Function.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModification.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModificationParser$1.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModificationParser$Context.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModificationParser$FunctionInject.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModificationParser$TokenReader.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModificationParser.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModificationSyntaxException.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModifierLexer$Token.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModifierLexer$TokenType.class",
+    "foundry/veil/impl/client/render/shader/modifier/ShaderModifierLexer.class",
+    "foundry/veil/impl/client/render/shader/modifier/SimpleShaderModification.class",
+    "foundry/veil/impl/client/render/shader/modifier/VeilJobParameters.class",
+    "foundry/veil/impl/client/render/shader/modifier/VertexShaderModification$Attribute.class",
+    "foundry/veil/impl/client/render/shader/modifier/VertexShaderModification.class",
+    "foundry/veil/mixin/dynamicbuffer/accessor/DynamicBufferProgramAccessor.class",
+    "foundry/veil/mixin/dynamicbuffer/client/DynamicBufferAmbientOcclusionFaceMixin.class",
+    "foundry/veil/mixin/dynamicbuffer/client/DynamicBufferGameRendererMixin.class",
+    "foundry/veil/mixin/dynamicbuffer/client/DynamicBufferShaderInstanceMixin.class",
+    "foundry/veil/mixin/imgui/client/KeyboardHandlerMixin.class",
+    "foundry/veil/mixin/imgui/client/MouseHandlerMixin.class",
+    "foundry/veil/mixin/pipeline/accessor/PipelineAutoStorageIndexBufferAccessor.class"
+  ],
+  "addedClasses": [
+    "foundry/veil/VeilMixinPluginImpl.class",
+    "foundry/veil/api/client/editor/EditorManager$EditorRegistry.class",
+    "foundry/veil/api/client/imgui/CodeEditor$ErrorConsumer.class",
+    "foundry/veil/api/client/property/ImmutableProperty.class",
+    "foundry/veil/api/client/property/InapplicableProperty.class",
+    "foundry/veil/api/client/property/InvertibleProperty.class",
+    "foundry/veil/api/client/property/ModelProperty.class",
+    "foundry/veil/api/client/property/Property.class",
+    "foundry/veil/api/client/property/model/Mat4ModelProperty.class",
+    "foundry/veil/api/client/property/model/RotationModelProperty.class",
+    "foundry/veil/api/client/property/model/Vec3ModelProperty.class",
+    "foundry/veil/api/client/property/properties/BoolProperty.class",
+    "foundry/veil/api/client/property/properties/FloatProperty$1.class",
+    "foundry/veil/api/client/property/properties/FloatProperty.class",
+    "foundry/veil/api/client/property/properties/IntProperty$1.class",
+    "foundry/veil/api/client/property/properties/IntProperty.class",
+    "foundry/veil/api/client/property/properties/Mat3Property$1.class",
+    "foundry/veil/api/client/property/properties/Mat3Property.class",
+    "foundry/veil/api/client/property/properties/Mat4Property$1.class",
+    "foundry/veil/api/client/property/properties/Mat4Property.class",
+    "foundry/veil/api/client/property/properties/RandomFloatProperty.class",
+    "foundry/veil/api/client/property/properties/Sampler2DProperty.class",
+    "foundry/veil/api/client/property/properties/TimeProperty.class",
+    "foundry/veil/api/client/property/properties/Vec2Property$1.class",
+    "foundry/veil/api/client/property/properties/Vec2Property.class",
+    "foundry/veil/api/client/property/properties/Vec3Property$1.class",
+    "foundry/veil/api/client/property/properties/Vec3Property.class",
+    "foundry/veil/api/client/property/properties/Vec4Property$1.class",
+    "foundry/veil/api/client/property/properties/Vec4Property.class",
+    "foundry/veil/api/client/registry/PropertyModifierRegistry$PropertyModifierType.class",
+    "foundry/veil/api/client/registry/PropertyModifierRegistry.class",
+    "foundry/veil/api/client/registry/PropertyRegistry$PropertyType.class",
+    "foundry/veil/api/client/registry/PropertyRegistry.class",
+    "foundry/veil/api/client/render/GpuVendor.class",
+    "foundry/veil/api/client/render/dynamicbuffer/DynamicBuffersChange.class",
+    "foundry/veil/api/client/render/light/DDALightData.class",
+    "foundry/veil/api/client/render/light/LightGuideProvider.class",
+    "foundry/veil/api/client/render/light/data/SpotLightData.class",
+    "foundry/veil/api/client/render/light/renderer/DDALightRenderer.class",
+    "foundry/veil/api/client/render/light/renderer/InscatteringLightRenderer.class",
+    "foundry/veil/api/client/render/rendertype/layer/DepthClampLayer.class",
+    "foundry/veil/api/client/render/rendertype/layer/MultisampleLayer.class",
+    "foundry/veil/api/client/render/rendertype/layer/SeamlessCubemapLayer.class",
+    "foundry/veil/api/client/render/shader/ShaderManager$ProgramSource.class",
+    "foundry/veil/api/client/render/shader/processor/ShaderInjectProcessor.class",
+    "foundry/veil/api/client/util/Easing$32.class",
+    "foundry/veil/api/client/util/Easing$33.class",
+    "foundry/veil/api/client/util/Easing$34.class",
+    "foundry/veil/api/client/util/Easing$35.class",
+    "foundry/veil/api/event/VeilDynamicBuffersChangedEvent.class",
+    "foundry/veil/api/event/VeilRegisterGlobalControllersEvent$Registry.class",
+    "foundry/veil/api/event/VeilRegisterGlobalControllersEvent.class",
+    "foundry/veil/api/event/VeilRegisterInspectorsEvent$Registry.class",
+    "foundry/veil/api/event/VeilRegisterInspectorsEvent.class",
+    "foundry/veil/api/flare/EffectHost.class",
+    "foundry/veil/api/flare/FlareEffectManager.class",
+    "foundry/veil/api/flare/data/FloatCurve$Builder.class",
+    "foundry/veil/api/flare/data/FloatCurve$KeyFrame.class",
+    "foundry/veil/api/flare/data/FloatCurve.class",
+    "foundry/veil/api/flare/data/effect/FlareEffectLayer.class",
+    "foundry/veil/api/flare/data/effect/FlareEffectTemplate.class",
+    "foundry/veil/api/flare/data/effect/FlareMaterial.class",
+    "foundry/veil/api/flare/data/effect/FlareModel.class",
+    "foundry/veil/api/flare/data/effect/FlareModule.class",
+    "foundry/veil/api/flare/data/effect/FlareSubModule.class",
+    "foundry/veil/api/flare/data/model/FlareBakedQuad.class",
+    "foundry/veil/api/flare/data/model/FlareShell.class",
+    "foundry/veil/api/flare/data/model/ShellElement.class",
+    "foundry/veil/api/flare/data/model/ShellElementFace.class",
+    "foundry/veil/api/flare/data/model/ShellElementRotation.class",
+    "foundry/veil/api/flare/data/model/ShellFaceUV.class",
+    "foundry/veil/api/flare/data/model/SimpleBakedShell$Builder.class",
+    "foundry/veil/api/flare/data/model/SimpleBakedShell.class",
+    "foundry/veil/api/flare/model/BakedShell.class",
+    "foundry/veil/api/flare/model/ShellBakery$1.class",
+    "foundry/veil/api/flare/model/ShellBakery.class",
+    "foundry/veil/api/flare/model/UnbakedShell.class",
+    "foundry/veil/api/flare/modifier/Controller.class",
+    "foundry/veil/api/flare/modifier/ControllerManager.class",
+    "foundry/veil/api/flare/modifier/GlobalController.class",
+    "foundry/veil/api/flare/modifier/HostBoundController.class",
+    "foundry/veil/api/flare/modifier/PropertyModifier$PropertyModifierMode.class",
+    "foundry/veil/api/flare/modifier/PropertyModifier.class",
+    "foundry/veil/api/flare/modifier/RandomnessController.class",
+    "foundry/veil/api/flare/modifier/modifiers/FloatPropertyModifier.class",
+    "foundry/veil/api/flare/modifier/modifiers/Vec2PropertyModifier.class",
+    "foundry/veil/api/flare/modifier/modifiers/Vec3PropertyModifier.class",
+    "foundry/veil/api/flare/modifier/modifiers/Vec4PropertyModifier.class",
+    "foundry/veil/api/quasar/data/ParticleModuleTypeRegistry$1.class",
+    "foundry/veil/api/quasar/data/ParticleModuleTypeRegistry$2.class",
+    "foundry/veil/api/quasar/data/module/ModuleType$DeprecationStatus.class",
+    "foundry/veil/api/quasar/data/module/update/TickRotationParticleModuleData.class",
+    "foundry/veil/api/resource/editor/EffectInspector.class",
+    "foundry/veil/api/resource/editor/ShellInspector.class",
+    "foundry/veil/api/resource/type/FlareResource.class",
+    "foundry/veil/api/resource/type/ShellResource.class",
+    "foundry/veil/api/screenshake/ScreenShakeManager.class",
+    "foundry/veil/api/screenshake/type/GlobalScreenShake.class",
+    "foundry/veil/api/screenshake/type/LocalScreenShake.class",
+    "foundry/veil/api/screenshake/type/ScreenShakeType.class",
+    "foundry/veil/ext/AbstractTextureExtension.class",
+    "foundry/veil/ext/AutoStorageIndexBufferExtension.class",
+    "foundry/veil/ext/VeilClientSuggestionProvider.class",
+    "foundry/veil/ext/iris/IrisRenderingPipelineExtension.class",
+    "foundry/veil/fabric/compat/flashback/VeilFabricFlashbackCompat.class",
+    "foundry/veil/fabric/event/FabricVeilDynamicBuffersChangedEvent.class",
+    "foundry/veil/fabric/event/FabricVeilRegisterGlobalControllersEvent.class",
+    "foundry/veil/fabric/event/FabricVeilRegisterInspectorsEvent.class",
+    "foundry/veil/fabric/mixin/client/RenderBuffersMixin.class",
+    "foundry/veil/fabric/mixin/compat/imguimc/KeyboardHandlerMixin.class",
+    "foundry/veil/fabric/mixin/compat/imguimc/MouseHandlerMixin.class",
+    "foundry/veil/fabric/mixin/compat/iris/IrisRenderingPipelineMixin.class",
+    "foundry/veil/fabric/mixin/compat/iris/ShaderWrapperMixin.class",
+    "foundry/veil/fabric/mixin/compat/sodium/ShaderParserMixin.class",
+    "foundry/veil/fabric/mixinhelper/PerspectiveChunkCollector.class",
+    "foundry/veil/fabric/platform/FabricVeilPlatform$1.class",
+    "foundry/veil/impl/VeilMixinPlugin.class",
+    "foundry/veil/impl/client/editor/ParticleEditorInspector$MutableParticleEmitter$ParticleSettingsBuilder.class",
+    "foundry/veil/impl/client/editor/ParticleEditorInspector$MutableParticleEmitter.class",
+    "foundry/veil/impl/client/editor/ParticleEditorInspector.class",
+    "foundry/veil/impl/client/imgui/VeilImGuiCompat.class",
+    "foundry/veil/impl/client/render/framebuffer/AdvancedFboMutableTextureAttachment.class",
+    "foundry/veil/impl/client/render/light/SpotLightRenderer.class",
+    "foundry/veil/impl/client/render/light/VoxelShadowGrid.class",
+    "foundry/veil/impl/client/render/perspective/FlashbackAccess.class",
+    "foundry/veil/impl/client/render/rendertype/WhiteTextureStateShard.class",
+    "foundry/veil/impl/client/render/shader/injection/InjectionBodyParser$Result.class",
+    "foundry/veil/impl/client/render/shader/injection/InjectionBodyParser.class",
+    "foundry/veil/impl/client/render/shader/injection/ShaderInjectionAdapter.class",
+    "foundry/veil/impl/client/render/shader/injection/ShaderInjectionLoader$LoadedPatch.class",
+    "foundry/veil/impl/client/render/shader/injection/ShaderInjectionLoader$LoadedPatches.class",
+    "foundry/veil/impl/client/render/shader/injection/ShaderInjectionLoader.class",
+    "foundry/veil/impl/client/render/shader/injection/ShaderInjectionManager$Preparations.class",
+    "foundry/veil/impl/client/render/shader/injection/ShaderInjectionManager.class",
+    "foundry/veil/impl/client/render/shader/injection/ShaderInjectionValidator.class",
+    "foundry/veil/impl/client/render/shader/injection/SimpleShaderInjection.class",
+    "foundry/veil/impl/client/render/shader/injection/util/Diagnostic.class",
+    "foundry/veil/impl/client/render/shader/injection/util/Severity.class",
+    "foundry/veil/impl/client/render/shader/injection/util/ShaderInjection.class",
+    "foundry/veil/impl/client/render/shader/injection/util/ShaderInjectionDefinition$Deserializer.class",
+    "foundry/veil/impl/client/render/shader/injection/util/ShaderInjectionDefinition.class",
+    "foundry/veil/impl/client/render/shader/injection/util/ShaderInjectionFunction.class",
+    "foundry/veil/impl/client/render/shader/injection/util/ValidationResult.class",
+    "foundry/veil/impl/client/render/shader/uniform/WrapperUniformAccess.class",
+    "foundry/veil/impl/command/VeilClientSuggestions.class",
+    "foundry/veil/impl/command/VeilCommand.class",
+    "foundry/veil/impl/flare/FlareManager$Reloader.class",
+    "foundry/veil/impl/flare/FlareManager.class",
+    "foundry/veil/impl/flare/ShellManager.class",
+    "foundry/veil/impl/network/ClientboundAddPostProcessingPacket.class",
+    "foundry/veil/impl/network/ClientboundClearPostProcessingPacket.class",
+    "foundry/veil/impl/network/ClientboundRemovePostProcessingPacket.class",
+    "foundry/veil/impl/network/VeilClientServerFlags.class",
+    "foundry/veil/impl/network/VeilPacketSender.class",
+    "foundry/veil/impl/resource/action/ShellInspectAction.class",
+    "foundry/veil/impl/resource/action/TemplateInspectAction.class",
+    "foundry/veil/impl/resource/loader/FlareResourcesLoader.class",
+    "foundry/veil/impl/resource/loader/ShellResourceLoader.class",
+    "foundry/veil/mixin/command/client/ClientCommandSourceMixin.class",
+    "foundry/veil/mixin/debug/client/DebugActiveProfilerMixin.class",
+    "foundry/veil/mixin/network/NetworkMinecraftServerMixin.class",
+    "foundry/veil/mixin/network/NetworkServerLevelMixin.class",
+    "foundry/veil/mixin/network/NetworkServerPlayerMixin.class",
+    "foundry/veil/mixin/pipeline/client/PipelineAbstractTextureMixin.class",
+    "foundry/veil/mixin/pipeline/client/PipelineAutoStorageIndexBufferMixin.class",
+    "foundry/veil/mixin/resource/client/ResourceTextureAtlasHolderMixin.class",
+    "foundry/veil/mixin/screenshake/client/ScreenShakeGameRendererMixin.class",
+    "foundry/veil/mixin/screenshake/client/ScreenShakeLevelRendererMixin.class",
+    "foundry/veil/mixin/shader_recompile/accessor/ShaderRecompileProgramAccessor.class",
+    "foundry/veil/mixin/shader_recompile/client/ShaderRecompileGameRendererMixin.class",
+    "foundry/veil/mixin/shader_recompile/client/ShaderRecompileShaderInstanceMixin.class"
+  ],
+  "changedApi": [
+    {
+      "name": "foundry/veil/api/client/color/Color.class",
+      "removed": [
+        "field RGB_CODEC_FLOATS Lcom/mojang/serialization/Codec;"
+      ],
+      "added": [
+        "method <init> (Lorg/joml/Vector3fc;)V",
+        "method <init> (Lorg/joml/Vector4fc;)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/editor/EditorManager.class",
+      "removed": [
+        "method disable ()V",
+        "method getFont (Lnet/minecraft/class_2960;ZZ)Limgui/ImFont;",
+        "method getFont (ZZ)Limgui/ImFont;",
+        "method rebuildFonts ()V"
+      ],
+      "added": []
+    },
+    {
+      "name": "foundry/veil/api/client/imgui/CodeEditor$SaveCallback.class",
+      "removed": [
+        "method save (Ljava/lang/String;Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;)V"
+      ],
+      "added": [
+        "method save (Ljava/lang/String;Lfoundry/veil/api/client/imgui/CodeEditor$ErrorConsumer;)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/necromancer/Bone.class",
+      "removed": [],
+      "added": [
+        "method getIndex ()I",
+        "method setIndex (I)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/necromancer/animation/keyframe/Interpolation.class",
+      "removed": [],
+      "added": [
+        "field EASE_IN Lfoundry/veil/api/client/necromancer/animation/keyframe/Interpolation;",
+        "field EASE_IN_OUT Lfoundry/veil/api/client/necromancer/animation/keyframe/Interpolation;",
+        "field EASE_OUT Lfoundry/veil/api/client/necromancer/animation/keyframe/Interpolation;",
+        "field STEP Lfoundry/veil/api/client/necromancer/animation/keyframe/Interpolation;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/necromancer/animation/keyframe/KeyframedAnimation$Builder.class",
+      "removed": [],
+      "added": [
+        "method additive (Z)Lfoundry/veil/api/client/necromancer/animation/keyframe/KeyframedAnimation$Builder;",
+        "method looped (Z)Lfoundry/veil/api/client/necromancer/animation/keyframe/KeyframedAnimation$Builder;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/necromancer/render/Skin$Builder.class",
+      "removed": [
+        "method <init> (FF)V",
+        "method addMirroredQuadIndices (I)Lfoundry/veil/api/client/necromancer/render/Skin$Builder;"
+      ],
+      "added": []
+    },
+    {
+      "name": "foundry/veil/api/client/registry/LightTypeRegistry.class",
+      "removed": [],
+      "added": [
+        "field SPOT Ljava/util/function/Supplier;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/registry/RenderTypeLayerRegistry.class",
+      "removed": [],
+      "added": [
+        "field DEPTH_CLAMP Lfoundry/veil/platform/registry/RegistryObject;",
+        "field MULTISAMPLE Lfoundry/veil/platform/registry/RegistryObject;",
+        "field SEAMLESS_CUBEMAP Lfoundry/veil/platform/registry/RegistryObject;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/registry/VeilResourceEditorRegistry.class",
+      "removed": [],
+      "added": [
+        "field EFFECT Lfoundry/veil/platform/registry/RegistryObject;",
+        "field SHELL Lfoundry/veil/platform/registry/RegistryObject;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/MatrixStack.class",
+      "removed": [],
+      "added": [
+        "method applyScale (Lorg/joml/Vector3dc;)V",
+        "method applyScale (Lorg/joml/Vector3fc;)V",
+        "method translate (Lorg/joml/Vector3dc;)V",
+        "method translate (Lorg/joml/Vector3fc;)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/VeilRenderBridge.class",
+      "removed": [
+        "method ditherState ()Lnet/minecraft/class_4668;",
+        "method lineSmoothState ()Lnet/minecraft/class_4668;"
+      ],
+      "added": [
+        "method toShaderProgram (Lnet/minecraft/class_5944;)Lfoundry/veil/api/client/render/shader/program/ShaderProgram;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/VeilRenderSystem.class",
+      "removed": [
+        "method bindTextures (ILjava/nio/IntBuffer;)V",
+        "method bindTextures (I[I)V",
+        "method drawLights (Lnet/minecraft/class_3695;Lfoundry/veil/api/client/render/CullFrustum;)Z",
+        "method rebuildFonts ()V",
+        "method updateActiveBuffers ()V"
+      ],
+      "added": [
+        "method bindTextures (ILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V",
+        "method bindTextures (I[I[I)V",
+        "method drawLights (Lnet/minecraft/class_3695;Lfoundry/veil/api/client/render/CullFrustum;Z)Z",
+        "method gpuVendor ()Lfoundry/veil/api/client/render/GpuVendor;",
+        "method tessellationSupported ()Z"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/VeilRenderer.class",
+      "removed": [],
+      "added": [
+        "method getActiveBuffers ()I",
+        "method getEffectManager ()Lfoundry/veil/api/flare/FlareEffectManager;",
+        "method getScreenShakeManager ()Lfoundry/veil/api/screenshake/ScreenShakeManager;",
+        "method getShaderInjectionManager ()Lfoundry/veil/impl/client/render/shader/injection/ShaderInjectionManager;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/dynamicbuffer/DynamicBufferType.class",
+      "removed": [
+        "field BUFFERS [Lfoundry/veil/api/client/render/dynamicbuffer/DynamicBufferType;",
+        "field DEPTH Lfoundry/veil/api/client/render/dynamicbuffer/DynamicBufferType;"
+      ],
+      "added": [
+        "method getMacroName ()Ljava/lang/String;",
+        "method getOutputDeclaration (I)Ljava/lang/String;",
+        "method getTypeGlsl ()Ljava/lang/String;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/ext/VeilMultiBind$1.class",
+      "removed": [
+        "method bindTextures (ILjava/nio/IntBuffer;)V",
+        "method bindTextures (I[I)V"
+      ],
+      "added": [
+        "method bindTextures (ILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V",
+        "method bindTextures (I[I[I)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/ext/VeilMultiBind$2.class",
+      "removed": [
+        "method bindTextures (ILjava/nio/IntBuffer;)V",
+        "method bindTextures (I[I)V"
+      ],
+      "added": [
+        "method bindTextures (ILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V",
+        "method bindTextures (I[I[I)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/ext/VeilMultiBind.class",
+      "removed": [
+        "method bindTextures (ILjava/nio/IntBuffer;)V",
+        "method bindTextures (I[I)V"
+      ],
+      "added": [
+        "method bindTextures (ILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V",
+        "method bindTextures (I[I[I)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/framebuffer/VeilFramebuffers.class",
+      "removed": [],
+      "added": [
+        "field LIGHT_INSCATTERING Lnet/minecraft/class_2960;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/light/data/AreaLightData.class",
+      "removed": [
+        "method setOrientation (Lorg/joml/Quaternionf;)Lfoundry/veil/api/client/render/light/data/AreaLightData;",
+        "method setPosition (DDD)Lfoundry/veil/api/client/render/light/data/AreaLightData;",
+        "method setPosition (FFF)Lfoundry/veil/api/client/render/light/data/AreaLightData;"
+      ],
+      "added": [
+        "field inscattering F",
+        "field occlusionEnabled Z",
+        "method getInscatteringStrength ()F",
+        "method getOrientationMutable ()Lorg/joml/Quaternionf;",
+        "method getPositionMutable ()Lorg/joml/Vector3d;",
+        "method getSizeMutable ()Lorg/joml/Vector2f;",
+        "method isOcclusionEnabled ()Z",
+        "method renderLightGuide (Lfoundry/veil/api/client/render/MatrixStack;Lnet/minecraft/class_4588;)V",
+        "method setInscatteringStrength (F)Lfoundry/veil/api/client/render/light/data/AreaLightData;",
+        "method setOcclusionEnabled (Z)Lfoundry/veil/api/client/render/light/data/AreaLightData;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/light/data/DirectionalLightData.class",
+      "removed": [],
+      "added": [
+        "field occlusionEnabled Z",
+        "method getDirectionMutable ()Lorg/joml/Vector3f;",
+        "method isOcclusionEnabled ()Z",
+        "method setOcclusionEnabled (Z)Lfoundry/veil/api/client/render/light/data/DirectionalLightData;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/light/data/LightData.class",
+      "removed": [],
+      "added": [
+        "method getColorMutable ()Lfoundry/veil/api/client/color/Color;",
+        "method getRevision ()J",
+        "method markDirty ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/light/data/PointLightData.class",
+      "removed": [],
+      "added": [
+        "field inscattering F",
+        "field occlusionEnabled Z",
+        "method getInscatteringStrength ()F",
+        "method getPositionMutable ()Lorg/joml/Vector3d;",
+        "method isOcclusionEnabled ()Z",
+        "method renderLightGuide (Lfoundry/veil/api/client/render/MatrixStack;Lnet/minecraft/class_4588;)V",
+        "method setInscatteringStrength (F)Lfoundry/veil/api/client/render/light/data/PointLightData;",
+        "method setOcclusionEnabled (Z)Lfoundry/veil/api/client/render/light/data/PointLightData;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/light/renderer/InstancedLightRenderer.class",
+      "removed": [],
+      "added": [
+        "method getInscatteringRenderType (Ljava/util/List;)Lnet/minecraft/class_1921;",
+        "method renderLightInscattering (Lfoundry/veil/api/client/render/light/renderer/LightRenderer;)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/light/renderer/LightRenderer.class",
+      "removed": [
+        "method disableAmbientOcclusion ()V",
+        "method enableAmbientOcclusion ()V",
+        "method isAmbientOcclusionEnabled ()Z",
+        "method render (Lfoundry/veil/api/client/render/CullFrustum;Lfoundry/veil/api/client/render/framebuffer/AdvancedFbo;)Z"
+      ],
+      "added": [
+        "method getRenderers ()Ljava/util/Map;",
+        "method render (Lfoundry/veil/api/client/render/CullFrustum;Lfoundry/veil/api/client/render/framebuffer/AdvancedFbo;Lfoundry/veil/api/client/render/framebuffer/AdvancedFbo;Z)Z"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/post/PostPipeline$Context.class",
+      "removed": [
+        "method setSampler (Ljava/lang/CharSequence;II)V"
+      ],
+      "added": [
+        "method setTexture (Ljava/lang/CharSequence;III)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/post/PostPipeline.class",
+      "removed": [
+        "method getOrCreateUniform (Ljava/lang/CharSequence;)Lfoundry/veil/api/client/render/shader/uniform/ShaderUniformAccess;"
+      ],
+      "added": []
+    },
+    {
+      "name": "foundry/veil/api/client/render/post/PostProcessingManager.class",
+      "removed": [
+        "method clonePipeline (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)V",
+        "method registerPipeline (Lnet/minecraft/class_2960;Lfoundry/veil/api/client/render/post/stage/CompositePostPipeline;)V"
+      ],
+      "added": []
+    },
+    {
+      "name": "foundry/veil/api/client/render/post/stage/BlitPostStage.class",
+      "removed": [
+        "method getOrCreateUniform (Ljava/lang/CharSequence;)Lfoundry/veil/api/client/render/shader/uniform/ShaderUniformAccess;"
+      ],
+      "added": []
+    },
+    {
+      "name": "foundry/veil/api/client/render/post/stage/CompositePostPipeline.class",
+      "removed": [
+        "method <init> (Lfoundry/veil/api/client/render/post/stage/CompositePostPipeline;)V",
+        "method getOrCreateUniform (Ljava/lang/CharSequence;)Lfoundry/veil/api/client/render/shader/uniform/ShaderUniformAccess;"
+      ],
+      "added": []
+    },
+    {
+      "name": "foundry/veil/api/client/render/rendertype/VeilRenderType$LayeredRenderType.class",
+      "removed": [
+        "method getLayers ()Ljava/util/List;"
+      ],
+      "added": [
+        "method getLayers ()[Lnet/minecraft/class_1921;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/rendertype/VeilRenderType.class",
+      "removed": [],
+      "added": [
+        "field WHITE_TEXTURE Lnet/minecraft/class_4668$class_5939;",
+        "method quasarTrail (Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_1921;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/rendertype/VeilRenderTypeAccessor.class",
+      "removed": [],
+      "added": [
+        "method veilShaderId ()Lnet/minecraft/class_2960;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/ShaderFeature.class",
+      "removed": [
+        "method modifyShader (Lio/github/ocelot/glslprocessor/api/node/GlslTree;)V"
+      ],
+      "added": [
+        "field FLOAT64 Lfoundry/veil/api/client/render/shader/ShaderFeature;",
+        "field INT64 Lfoundry/veil/api/client/render/shader/ShaderFeature;",
+        "field TESSELLATION Lfoundry/veil/api/client/render/shader/ShaderFeature;",
+        "field VERTEX_ATTRIBUTE64 Lfoundry/veil/api/client/render/shader/ShaderFeature;",
+        "method modifyShader (ILio/github/ocelot/glslprocessor/api/node/GlslTree;)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/ShaderManager$PreProcessorContext.class",
+      "removed": [],
+      "added": [
+        "method addDefinitionDependency (Ljava/lang/String;)V",
+        "method definitionDependencies ()Ljava/util/Set;",
+        "method glCapabilities ()Lorg/lwjgl/opengl/GLCapabilities;",
+        "method isDynamic ()Z"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/ShaderModificationManager$Preparations.class",
+      "removed": [
+        "method <init> (Ljava/util/Map;Ljava/util/Map;)V",
+        "method names ()Ljava/util/Map;",
+        "method shaders ()Ljava/util/Map;"
+      ],
+      "added": [
+        "method <init> ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/ShaderModificationManager.class",
+      "removed": [
+        "field MODIFIER_LISTER Lnet/minecraft/class_7654;",
+        "method getModifierId (Lfoundry/veil/impl/client/render/shader/modifier/ShaderModification;)Lnet/minecraft/class_2960;",
+        "method getModifiers (Lnet/minecraft/class_2960;)Ljava/util/List;"
+      ],
+      "added": []
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/processor/ShaderImportProcessor.class",
+      "removed": [],
+      "added": [
+        "method sanitizeLocation (Ljava/lang/String;)Ljava/lang/String;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/processor/ShaderPreProcessor$Context.class",
+      "removed": [],
+      "added": [
+        "method glCapabilities ()Lorg/lwjgl/opengl/GLCapabilities;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/processor/ShaderPreProcessor$VeilContext.class",
+      "removed": [],
+      "added": [
+        "method addDefinitionDependency (Ljava/lang/String;)V",
+        "method isDynamic ()Z"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/program/ShaderProgram.class",
+      "removed": [
+        "method getOrCreateUniform (Ljava/lang/CharSequence;)Lfoundry/veil/api/client/render/shader/uniform/ShaderUniform;"
+      ],
+      "added": [
+        "method getActiveDynamicBuffers ()I",
+        "method getComputeShader ()Lfoundry/veil/api/client/render/shader/compiler/CompiledShader;",
+        "method getFragmentShader ()Lfoundry/veil/api/client/render/shader/compiler/CompiledShader;",
+        "method getGeometryShader ()Lfoundry/veil/api/client/render/shader/compiler/CompiledShader;",
+        "method getTessellationControlShader ()Lfoundry/veil/api/client/render/shader/compiler/CompiledShader;",
+        "method getTessellationEvaluationShader ()Lfoundry/veil/api/client/render/shader/compiler/CompiledShader;",
+        "method getVertexShader ()Lfoundry/veil/api/client/render/shader/compiler/CompiledShader;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/program/TextureUniformAccess.class",
+      "removed": [
+        "method removeSampler (Ljava/lang/CharSequence;)V",
+        "method setSampler (Ljava/lang/CharSequence;I)V",
+        "method setSampler (Ljava/lang/CharSequence;II)V"
+      ],
+      "added": [
+        "method removeTexture (Ljava/lang/CharSequence;)V",
+        "method setTexture (Ljava/lang/CharSequence;II)V",
+        "method setTexture (Ljava/lang/CharSequence;III)V",
+        "method setTexture (Ljava/lang/CharSequence;Lnet/minecraft/class_1044;)V",
+        "method setTexture (Ljava/lang/CharSequence;Lnet/minecraft/class_1044;I)V",
+        "method setTexture (Ljava/lang/CharSequence;Lnet/minecraft/class_2960;)V",
+        "method setTexture (Ljava/lang/CharSequence;Lnet/minecraft/class_2960;I)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/program/UniformAccess.class",
+      "removed": [
+        "method getOrCreateUniform (Ljava/lang/CharSequence;)Lfoundry/veil/api/client/render/shader/uniform/ShaderUniformAccess;"
+      ],
+      "added": [
+        "method setStorageBlock (Ljava/lang/CharSequence;I)V",
+        "method setUniformBlock (Ljava/lang/CharSequence;I)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/texture/FramebufferSource.class",
+      "removed": [],
+      "added": [
+        "method getTarget (Lfoundry/veil/api/client/render/shader/texture/ShaderTextureSource$Context;)I"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/texture/LocationSource.class",
+      "removed": [],
+      "added": [
+        "method getTarget (Lfoundry/veil/api/client/render/shader/texture/ShaderTextureSource$Context;)I"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/texture/ShaderTextureSource$Context.class",
+      "removed": [],
+      "added": [
+        "method getTextureTarget (Lnet/minecraft/class_2960;)I"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/texture/ShaderTextureSource.class",
+      "removed": [],
+      "added": [
+        "method getTarget (Lfoundry/veil/api/client/render/shader/texture/ShaderTextureSource$Context;)I"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/uniform/ShaderUniform.class",
+      "removed": [
+        "method isValid ()Z"
+      ],
+      "added": []
+    },
+    {
+      "name": "foundry/veil/api/client/render/shader/uniform/ShaderUniformAccess.class",
+      "removed": [],
+      "added": [
+        "method wrapped (Ljava/util/function/Supplier;)Lfoundry/veil/api/client/render/shader/uniform/ShaderUniformAccess;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/texture/ArrayTexture.class",
+      "removed": [],
+      "added": [
+        "method getTextureTarget ()I"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/texture/CubemapTexture.class",
+      "removed": [],
+      "added": [
+        "method getTextureTarget ()I"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/render/vertex/VertexArray.class",
+      "removed": [],
+      "added": [
+        "field INSTANCE_BUFFER I",
+        "field indexBuffer Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/client/util/Easing.class",
+      "removed": [],
+      "added": [
+        "field CODEC Lfoundry/veil/api/util/EnumCodec;",
+        "field EASE_OUT_IN_CUBIC Lfoundry/veil/api/client/util/Easing;",
+        "field EASE_OUT_IN_QUAD Lfoundry/veil/api/client/util/Easing;",
+        "field EASE_OUT_IN_QUART Lfoundry/veil/api/client/util/Easing;",
+        "field EASE_OUT_IN_QUINT Lfoundry/veil/api/client/util/Easing;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/compat/FlashbackCompat.class",
+      "removed": [
+        "field IS_LOADED Z"
+      ],
+      "added": [
+        "field INSTANCE Lfoundry/veil/api/compat/FlashbackCompat;",
+        "method backup (Lorg/joml/Matrix4f;Lorg/joml/Quaternionf;)V",
+        "method restore (Lorg/joml/Matrix4f;Lorg/joml/Quaternionf;)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/network/VeilPacketManager.class",
+      "removed": [],
+      "added": [
+        "method registerClientbound (Lnet/minecraft/class_8710$class_9154;Lnet/minecraft/class_9139;Lfoundry/veil/api/network/VeilPacketManager$PacketHandler;Z)V",
+        "method registerServerbound (Lnet/minecraft/class_8710$class_9154;Lnet/minecraft/class_9139;Lfoundry/veil/api/network/VeilPacketManager$PacketHandler;Z)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/EmitterShapeSettings.class",
+      "removed": [],
+      "added": [
+        "method getPos (Lnet/minecraft/class_5819;Lorg/joml/Vector3dc;Lorg/joml/Quaternionfc;)Lorg/joml/Vector3d;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/ParticleModuleTypeRegistry.class",
+      "removed": [
+        "field INIT_COLOR Lfoundry/veil/api/quasar/data/module/ModuleType;",
+        "field INIT_MODULES_KEY Lnet/minecraft/class_5321;",
+        "field RENDER_MODULES_KEY Lnet/minecraft/class_5321;",
+        "field UPDATE_MODULES_KEY Lnet/minecraft/class_5321;"
+      ],
+      "added": [
+        "field CODEC Lcom/mojang/serialization/Codec;",
+        "field REGISTRY Lnet/minecraft/class_2378;",
+        "field REGISTRY_KEY Lnet/minecraft/class_5321;",
+        "field TICK_ROTATION Lfoundry/veil/api/quasar/data/module/ModuleType;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/ParticleSettings.class",
+      "removed": [
+        "method <init> (FFFIFLorg/joml/Vector3fc;ZZZZZ)V"
+      ],
+      "added": [
+        "method <init> (FFFFIFLorg/joml/Vector3fc;ZLorg/joml/Vector3fc;Lorg/joml/Vector3fc;ZLorg/joml/Vector3fc;ZZZ)V",
+        "method initialDirectionVariation ()Lorg/joml/Vector3fc;",
+        "method initialRotation ()Lorg/joml/Vector3fc;",
+        "method initialRotation (Lnet/minecraft/class_5819;)Lorg/joml/Vector3fc;",
+        "method initialRotationVariation ()Lorg/joml/Vector3fc;",
+        "method particleSpeedVariation ()F"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/QuasarParticleData.class",
+      "removed": [
+        "method <init> (ZZFLjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lfoundry/veil/api/quasar/particle/SpriteData;ZLfoundry/veil/api/quasar/particle/RenderStyle;)V",
+        "method collisionModules ()Ljava/util/List;",
+        "method forceModules ()Ljava/util/List;",
+        "method initModules ()Ljava/util/List;",
+        "method renderModules ()Ljava/util/List;",
+        "method updateModules ()Ljava/util/List;"
+      ],
+      "added": [
+        "method <init> (ZZFLjava/util/List;Lfoundry/veil/api/quasar/particle/SpriteData;ZLfoundry/veil/api/quasar/particle/RenderStyle;)V",
+        "method modules ()Ljava/util/List;",
+        "method setAdditive (Z)V",
+        "method setFaceVelocity (Z)V",
+        "method setRenderStyle (Lfoundry/veil/api/quasar/particle/RenderStyle;)V",
+        "method setShouldCollide (Z)V",
+        "method setSpriteData (Lfoundry/veil/api/quasar/particle/SpriteData;)V",
+        "method setVelocityStretchFactor (F)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/QuasarParticles.class",
+      "removed": [
+        "field INIT_MODULES Lnet/minecraft/class_5321;",
+        "field RENDER_MODULES Lnet/minecraft/class_5321;",
+        "field UPDATE_MODULES Lnet/minecraft/class_5321;"
+      ],
+      "added": [
+        "field MODULES Lnet/minecraft/class_5321;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/ModuleType.class",
+      "removed": [],
+      "added": [
+        "method defaultValue ()Ljava/util/function/Supplier;",
+        "method deprecationStatus ()Lfoundry/veil/api/quasar/data/module/ModuleType$DeprecationStatus;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/ParticleModuleData.class",
+      "removed": [],
+      "added": [
+        "field CODEC Lcom/mojang/serialization/Codec;",
+        "field DIRECT_CODEC Lcom/mojang/serialization/Codec;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/collision/CollisionSubEmitterData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/force/DragForceData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/force/GravityForceData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/force/PointAttractorForceData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/force/PointForceData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/force/VectorFieldForceData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/force/VortexForceData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/force/WindForceData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/init/BlockParticleModuleData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/init/InitSubEmitterModuleData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/init/InitialVelocityModuleData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/init/LightModuleData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/init/LightmapParticleModuleData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/render/ColorParticleModuleData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/render/TrailParticleModuleData.class",
+      "removed": [],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/update/TickSizeParticleModuleData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/data/module/update/TickSubEmitterModuleData.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/emitters/module/render/TrailSettings.class",
+      "removed": [
+        "method renderImGuiSettings ()V"
+      ],
+      "added": [
+        "method <init> ()V",
+        "method <init> (IILorg/joml/Vector4fc;Lfoundry/veil/api/quasar/emitters/module/render/TrailSettings$TrailWidthModifier;Lnet/minecraft/class_2960;Lfoundry/veil/api/quasar/emitters/module/render/TrailSettings$TrailPointModifier;Lfoundry/veil/api/quasar/fx/Trail$TilingMode;ZZZ)V",
+        "method isAdditive ()Z",
+        "method renderImGuiAttributes ()V",
+        "method setAdditive (Z)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/emitters/module/update/VectorField.class",
+      "removed": [
+        "method equals (Ljava/lang/Object;)Z",
+        "method hashCode ()I",
+        "method toString ()Ljava/lang/String;"
+      ],
+      "added": [
+        "method renderImGuiAttributes ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/fx/Trail.class",
+      "removed": [
+        "method <init> ([Lnet/minecraft/class_243;ILjava/util/function/Function;)V",
+        "method pushPoint (Lnet/minecraft/class_243;)V",
+        "method render (Lfoundry/veil/api/client/render/MatrixStack;Lnet/minecraft/class_4588;I)V"
+      ],
+      "added": [
+        "method <init> (Ljava/util/Collection;ILjava/util/function/Function;)V",
+        "method isAdditive ()Z",
+        "method render (Lfoundry/veil/api/client/render/MatrixStack;Lnet/minecraft/class_4588;IFLnet/minecraft/class_243;Lnet/minecraft/class_243;)V",
+        "method setAdditive (Z)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/particle/ParticleEmitter.class",
+      "removed": [],
+      "added": [
+        "field particleData Lfoundry/veil/api/quasar/data/QuasarParticleData;",
+        "field particleManager Lfoundry/veil/api/quasar/particle/ParticleSystemManager;",
+        "field removeTask Ljava/util/concurrent/CompletableFuture;",
+        "field spawnTask Ljava/util/concurrent/CompletableFuture;",
+        "method <init> (Lfoundry/veil/api/quasar/particle/ParticleSystemManager;Lnet/minecraft/class_638;Lfoundry/veil/api/quasar/data/ParticleEmitterData;)V",
+        "method addModule (Lfoundry/veil/api/quasar/data/module/ParticleModuleData;)V",
+        "method createModuleSet (Lfoundry/veil/api/quasar/data/QuasarParticleData;)Ljava/util/List;",
+        "method getModules ()Ljava/util/List;",
+        "method getRotation ()Lorg/joml/Quaternionf;",
+        "method removeModule (Lfoundry/veil/api/quasar/data/module/ParticleModuleData;)V",
+        "method setRotation (FFF)V",
+        "method setRotation (Lorg/joml/Quaternionfc;)V",
+        "method spawn ()V",
+        "method tick ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/particle/QuasarParticle.class",
+      "removed": [],
+      "added": [
+        "method setRotation (FFF)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/particle/RenderData.class",
+      "removed": [
+        "method renderTrails (Lfoundry/veil/api/client/render/MatrixStack;Lnet/minecraft/class_4597;Lnet/minecraft/class_243;I)V"
+      ],
+      "added": [
+        "method renderTrails (Lfoundry/veil/api/client/render/MatrixStack;Lnet/minecraft/class_4597;Lnet/minecraft/class_243;IF)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/particle/RenderStyle$Billboard.class",
+      "removed": [
+        "method render (Lfoundry/veil/api/client/render/MatrixStack;Lfoundry/veil/api/quasar/particle/QuasarParticle;Lfoundry/veil/api/quasar/particle/RenderData;Lorg/joml/Vector3fc;Lnet/minecraft/class_4588;DF)V"
+      ],
+      "added": [
+        "method createMesh ()Lnet/minecraft/class_9801;",
+        "method putBufferData (Lfoundry/veil/api/quasar/particle/QuasarParticle;Lnet/minecraft/class_4184;Ljava/nio/ByteBuffer;)V",
+        "method setupBufferState (Lfoundry/veil/api/client/render/vertex/VertexArrayBuilder;)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/particle/RenderStyle$Cube.class",
+      "removed": [
+        "method render (Lfoundry/veil/api/client/render/MatrixStack;Lfoundry/veil/api/quasar/particle/QuasarParticle;Lfoundry/veil/api/quasar/particle/RenderData;Lorg/joml/Vector3fc;Lnet/minecraft/class_4588;DF)V"
+      ],
+      "added": [
+        "method createMesh ()Lnet/minecraft/class_9801;",
+        "method putBufferData (Lfoundry/veil/api/quasar/particle/QuasarParticle;Lnet/minecraft/class_4184;Ljava/nio/ByteBuffer;)V",
+        "method setupBufferState (Lfoundry/veil/api/client/render/vertex/VertexArrayBuilder;)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/particle/RenderStyle.class",
+      "removed": [
+        "method render (Lfoundry/veil/api/client/render/MatrixStack;Lfoundry/veil/api/quasar/particle/QuasarParticle;Lfoundry/veil/api/quasar/particle/RenderData;Lorg/joml/Vector3fc;Lnet/minecraft/class_4588;DF)V"
+      ],
+      "added": [
+        "field MIN_PARTICLES I",
+        "field bufferSize I",
+        "field instanceVBO I",
+        "field maxParticles I",
+        "field vertexArray Lfoundry/veil/api/client/render/vertex/VertexArray;",
+        "method <init> (I)V",
+        "method createMesh ()Lnet/minecraft/class_9801;",
+        "method free ()V",
+        "method init ()V",
+        "method putBufferData (Lfoundry/veil/api/quasar/particle/QuasarParticle;Lnet/minecraft/class_4184;Ljava/nio/ByteBuffer;)V",
+        "method render (Ljava/util/List;Lnet/minecraft/class_4184;)V",
+        "method setupBufferState (Lfoundry/veil/api/client/render/vertex/VertexArrayBuilder;)V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/quasar/registry/RenderStyleRegistry.class",
+      "removed": [],
+      "added": [
+        "method freeRenderStyles ()V",
+        "method initRenderStyles ()V"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/BlockModelResource.class",
+      "removed": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguageDefinition;"
+      ],
+      "added": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguage;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/FramebufferResource.class",
+      "removed": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguageDefinition;"
+      ],
+      "added": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguage;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/LanguageResource.class",
+      "removed": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguageDefinition;"
+      ],
+      "added": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguage;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/McMetaResource.class",
+      "removed": [
+        "method <init> (Lfoundry/veil/api/resource/VeilResourceInfo;Lnet/minecraft/class_7368;)V"
+      ],
+      "added": [
+        "method <init> (Lfoundry/veil/api/resource/VeilResourceInfo;Lnet/minecraft/class_2960;Lnet/minecraft/class_7368;)V",
+        "method basePath ()Lnet/minecraft/class_2960;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/PostPipelineResource.class",
+      "removed": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguageDefinition;"
+      ],
+      "added": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguage;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/RenderTypeResource.class",
+      "removed": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguageDefinition;"
+      ],
+      "added": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguage;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/TextResource$Type.class",
+      "removed": [],
+      "added": [
+        "method getLanguageDefinition ()Limgui/extension/texteditor/TextEditorLanguage;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/TextResource.class",
+      "removed": [
+        "method <init> (Lfoundry/veil/api/resource/VeilResourceInfo;Lfoundry/veil/api/resource/type/TextResource$Type;)V",
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguageDefinition;"
+      ],
+      "added": [
+        "method <init> (Lfoundry/veil/api/resource/VeilResourceInfo;Lfoundry/veil/api/resource/type/TextResource$Type;Limgui/extension/texteditor/TextEditorLanguage;)V",
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguage;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/VeilShaderDefinitionResource.class",
+      "removed": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguageDefinition;"
+      ],
+      "added": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguage;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/VeilShaderResource.class",
+      "removed": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguageDefinition;"
+      ],
+      "added": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguage;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/resource/type/VeilTextResource.class",
+      "removed": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguageDefinition;"
+      ],
+      "added": [
+        "method languageDefinition ()Limgui/extension/texteditor/TextEditorLanguage;"
+      ]
+    },
+    {
+      "name": "foundry/veil/api/util/CodecUtil.class",
+      "removed": [],
+      "added": [
+        "field BUILTIN_TYPE_CODEC Lfoundry/veil/api/util/EnumCodec;",
+        "field MATRIX3DC_CODEC Lcom/mojang/serialization/Codec;",
+        "field MATRIX3D_CODEC Lcom/mojang/serialization/Codec;",
+        "field MATRIX3FC_CODEC Lcom/mojang/serialization/Codec;",
+        "field MATRIX3F_CODEC Lcom/mojang/serialization/Codec;",
+        "field MATRIX4DC_CODEC Lcom/mojang/serialization/Codec;",
+        "field MATRIX4D_CODEC Lcom/mojang/serialization/Codec;",
+        "field MATRIX4FC_CODEC Lcom/mojang/serialization/Codec;",
+        "field MATRIX4F_CODEC Lcom/mojang/serialization/Codec;",
+        "field VECTOR2DC_CODEC Lcom/mojang/serialization/Codec;",
+        "field VECTOR2D_CODEC Lcom/mojang/serialization/Codec;",
+        "field VECTOR2FC_CODEC Lcom/mojang/serialization/Codec;",
+        "field VECTOR3DC_CODEC Lcom/mojang/serialization/Codec;",
+        "field VECTOR3FC_CODEC Lcom/mojang/serialization/Codec;",
+        "field VECTOR4DC_CODEC Lcom/mojang/serialization/Codec;",
+        "field VECTOR4D_CODEC Lcom/mojang/serialization/Codec;",
+        "field VECTOR4FC_CODEC Lcom/mojang/serialization/Codec;",
+        "method entrySetToPairList (Ljava/util/Set;)Ljava/util/List;",
+        "method pairListToMap (Ljava/util/List;)Ljava/util/Map;"
+      ]
+    }
+  ],
+  "missingResources": [
+    "assets/veil/imgui_font/jetbrains_mono-bold.ttf",
+    "assets/veil/imgui_font/jetbrains_mono-bold.ttf.mcmeta",
+    "assets/veil/imgui_font/jetbrains_mono-bold_italic.ttf",
+    "assets/veil/imgui_font/jetbrains_mono-bold_italic.ttf.mcmeta",
+    "assets/veil/imgui_font/jetbrains_mono-italic.ttf",
+    "assets/veil/imgui_font/jetbrains_mono-italic.ttf.mcmeta",
+    "assets/veil/imgui_font/jetbrains_mono-regular.ttf",
+    "assets/veil/imgui_font/jetbrains_mono-regular.ttf.mcmeta",
+    "assets/veil/models/test.obj",
+    "assets/veil/shaders_legacy/core/base.vsh",
+    "assets/veil/shaders_legacy/core/transparent_texture.fsh",
+    "assets/veil/shaders_legacy/core/transparent_texture.json",
+    "assets/veil/shaders_legacy/include/common_math.glsl",
+    "assets/veil/shaders_legacy/include/luma.glsl",
+    "assets/veil/shaders_legacy/include/noise.glsl",
+    "assets/veil/shaders_legacy/program/postprocessing_base.vsh",
+    "resourcepacks/black_hole/assets/venuslibs/pinwheel/framebuffers/black_hole.fsh",
+    "resourcepacks/black_hole/assets/venuslibs/pinwheel/framebuffers/black_hole.json",
+    "resourcepacks/black_hole/assets/venuslibs/pinwheel/shaders/program/black_hole.json",
+    "resourcepacks/black_hole/pack.mcmeta",
+    "resourcepacks/fog/assets/veil/pinwheel/post/cube_fog.json",
+    "resourcepacks/fog/assets/veil/pinwheel/post/fog.json",
+    "resourcepacks/fog/assets/veil/pinwheel/post/height_fog.json",
+    "resourcepacks/fog/assets/veil/pinwheel/post/skybox.json",
+    "resourcepacks/fog/assets/veil/pinwheel/post/space_test.json",
+    "resourcepacks/fog/assets/veil/pinwheel/post/wall_fog.json",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/include/cube_fog.fsh",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/include/cube_fog.json",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/include/general_utils.glsl",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/cube_fog.fsh",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/cube_fog.json",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/cube_fog_clone.json",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/fog.fsh",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/fog.json",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/height_fog.fsh",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/height_fog.json",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/skybox.fsh",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/skybox.json",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/space_test.fsh",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/space_test.json",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/wall_fog.fsh",
+    "resourcepacks/fog/assets/veil/pinwheel/shaders/program/wall_fog.json",
+    "resourcepacks/fog/assets/veil/textures/special/cubemaps_skybox.png",
+    "resourcepacks/fog/assets/veil/textures/special/cubemaps_skybox.png.mcmeta",
+    "resourcepacks/fog/pack.mcmeta",
+    "resourcepacks/test_particles/assets/veil/quasar/emitters/basic_smoke.json",
+    "resourcepacks/test_particles/assets/veil/quasar/emitters/cannon.json",
+    "resourcepacks/test_particles/assets/veil/quasar/emitters/double_smoke_rings.json",
+    "resourcepacks/test_particles/assets/veil/quasar/emitters/enderman_teleport.json",
+    "resourcepacks/test_particles/assets/veil/quasar/emitters/rockets.json",
+    "resourcepacks/test_particles/assets/veil/quasar/emitters/smoke_big.json",
+    "resourcepacks/test_particles/assets/veil/quasar/emitters/swiftshot_shrapnel.json",
+    "resourcepacks/test_particles/assets/veil/quasar/emitters/wind.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/basic_smoke.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/cannon.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/rocket.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/smoke_big.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/smoke_bigger.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/swiftshot.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/swiftshot_shrapnel.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/test_particle.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/basic_smoke.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/cannon.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/large_ring.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/rocket.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/small_ring.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/swiftshot_shape.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/swiftshot_shrapnel.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/test_shape.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/block.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/block_vel.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/cannon_velocity.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/ember_light.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/enderman_light.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/firefly_light.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/rocket.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/rocket_light.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/smoke_big_init.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/smoke_random_init_rotation.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/smoke_small_init.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/smoke_vel.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/init/swiftshot_velocity.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/basic_smoke.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/cannon_data.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/rocket.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/smoke_big.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/smoke_big_static.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/swiftshot_data.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/swiftshot_shrapnel_data.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/test_data.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/render/color/firefly_color.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/render/color/rocket.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/render/color/rocket_smoke_color_over_lifetime.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/render/color/smoke_color_over_lifetime.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/render/color/swiftshot_color.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/render/trail/rocket.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/render/trail/rocket_add.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/render/trail/rocket_hot.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/render/trail/swiftshot_trail.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/render/trail/test_trail.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/basic_smoke_tick_sub.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/collision/rocket_explode.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/collision/spark_bounce.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/drag/rocket_drag.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/drag/shrapnel_drag.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/drag/smoke_big.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/drag/test_drag.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/gravity/rocket.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/gravity/shrapnel_gravity.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/gravity/test_gravity.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/point_attractor/rocket_point_attractor.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/point_attractor/swiftshot.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/point_force/basic_smoke_point.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/point_force/smoke_point.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/point_force/test_point.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/vector_field/rocket_field.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/vector_field/test_vector_field.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/vortex/rocket_vortex.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/vortex/swiftshot_vortex.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/vortex/test_vortex.json",
+    "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/wind/test_wind.json",
+    "resourcepacks/test_particles/assets/veil/textures/particle/smoke.png",
+    "resourcepacks/test_particles/assets/veil/textures/particle/smoke.png.mcmeta",
+    "resourcepacks/test_particles/pack.mcmeta",
+    "resourcepacks/test_shaders/assets/veil/pinwheel/framebuffers/test.json",
+    "resourcepacks/test_shaders/assets/veil/pinwheel/post/first_person.json",
+    "resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/minecraft/shaders/core/rendertype_cutout.txt",
+    "resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/minecraft/shaders/core/rendertype_solid.vsh.txt",
+    "resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/sodium/shaders/blocks/block_layer_opaque.vsh.txt",
+    "resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/veil/pinwheel/shaders/include/deferred_utils.glsl.txt",
+    "resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/veil/pinwheel/shaders/program/blit_screen.vsh.txt",
+    "resourcepacks/test_shaders/assets/veil/pinwheel/shaders/program/test.fsh",
+    "resourcepacks/test_shaders/assets/veil/pinwheel/shaders/program/test.json",
+    "resourcepacks/test_shaders/assets/veil/pinwheel/shaders/program/test.vsh",
+    "resourcepacks/test_shaders/pack.mcmeta"
+  ],
+  "changedResources": [
+    "assets/veil/imgui_font/remixicon-regular.ttf.mcmeta",
+    "assets/veil/lang/en_us.json",
+    "assets/veil/pinwheel/post/core/bloom.json",
+    "assets/veil/pinwheel/post/core/composite.json",
+    "assets/veil/pinwheel/rendertypes/light/area.json",
+    "assets/veil/pinwheel/shaders/include/space_helper.glsl",
+    "assets/veil/pinwheel/shaders/program/core/bloom.fsh",
+    "assets/veil/pinwheel/shaders/program/core/composite.fsh",
+    "assets/veil/pinwheel/shaders/program/core/composite.json",
+    "assets/veil/pinwheel/shaders/program/light/area.fsh",
+    "assets/veil/pinwheel/shaders/program/light/area.vsh",
+    "assets/veil/pinwheel/shaders/program/light/directional.fsh",
+    "assets/veil/pinwheel/shaders/program/light/directional.json",
+    "assets/veil/pinwheel/shaders/program/light/indirect_sphere.comp",
+    "assets/veil/pinwheel/shaders/program/light/point.fsh",
+    "assets/veil/pinwheel/shaders/program/light/point.vsh",
+    "assets/veil/pinwheel/shaders/program/necromancer/skinned_mesh.fsh",
+    "assets/veil/pinwheel/shaders/program/necromancer/skinned_mesh.json",
+    "assets/veil/pinwheel/shaders/program/necromancer/skinned_mesh.vsh",
+    "assets/veil/pinwheel/shaders/program/quasar/particle.vsh"
+  ],
+  "identicalResources": [
+    "assets/minecraft/shaders/core/worldborder.fsh",
+    "assets/minecraft/shaders/core/worldborder.json",
+    "assets/minecraft/shaders/core/worldborder.vsh",
+    "assets/veil/imgui_font/remixicon-regular.ttf",
+    "assets/veil/lang/de_de.json",
+    "assets/veil/lang/nl_nl.json",
+    "assets/veil/lang/uk_ua.json",
+    "assets/veil/pinwheel/framebuffers/light.json",
+    "assets/veil/pinwheel/framebuffers/post.json",
+    "assets/veil/pinwheel/post/core/first_person.json",
+    "assets/veil/pinwheel/rendertypes/light/directional.json",
+    "assets/veil/pinwheel/rendertypes/light/point.json",
+    "assets/veil/pinwheel/shaders/include/blend.glsl",
+    "assets/veil/pinwheel/shaders/include/camera.glsl",
+    "assets/veil/pinwheel/shaders/include/color.glsl",
+    "assets/veil/pinwheel/shaders/include/color_utilities.glsl",
+    "assets/veil/pinwheel/shaders/include/common.glsl",
+    "assets/veil/pinwheel/shaders/include/deferred_utils.glsl",
+    "assets/veil/pinwheel/shaders/include/fog.glsl",
+    "assets/veil/pinwheel/shaders/include/gui.glsl",
+    "assets/veil/pinwheel/shaders/include/light.glsl",
+    "assets/veil/pinwheel/shaders/program/blit_depth.fsh",
+    "assets/veil/pinwheel/shaders/program/blit_depth.json",
+    "assets/veil/pinwheel/shaders/program/blit_screen.fsh",
+    "assets/veil/pinwheel/shaders/program/blit_screen.json",
+    "assets/veil/pinwheel/shaders/program/blit_screen.vsh",
+    "assets/veil/pinwheel/shaders/program/core/blit_screen_effect.fsh",
+    "assets/veil/pinwheel/shaders/program/core/blit_screen_effect.json",
+    "assets/veil/pinwheel/shaders/program/core/blit_screen_effect.vsh",
+    "assets/veil/pinwheel/shaders/program/core/bloom.json",
+    "assets/veil/pinwheel/shaders/program/core/blur.fsh",
+    "assets/veil/pinwheel/shaders/program/core/blur.json",
+    "assets/veil/pinwheel/shaders/program/core/unblur.fsh",
+    "assets/veil/pinwheel/shaders/program/core/unblur.json",
+    "assets/veil/pinwheel/shaders/program/debug/array.fsh",
+    "assets/veil/pinwheel/shaders/program/debug/array.json",
+    "assets/veil/pinwheel/shaders/program/debug/cubemap.fsh",
+    "assets/veil/pinwheel/shaders/program/debug/cubemap.json",
+    "assets/veil/pinwheel/shaders/program/light/area.json",
+    "assets/veil/pinwheel/shaders/program/light/indirect_sphere.json",
+    "assets/veil/pinwheel/shaders/program/light/point.json",
+    "assets/veil/pinwheel/shaders/program/quasar/particle.fsh",
+    "assets/veil/pinwheel/shaders/program/quasar/particle.json",
+    "assets/veil/pinwheel/shaders/program/quasar/particle_additive.fsh",
+    "assets/veil/pinwheel/shaders/program/quasar/particle_additive.json",
+    "assets/veil/pinwheel/shaders/program/quasar/particle_additive.vsh",
+    "assets/veil/textures/gui/item_shadow.png",
+    "assets/veil/textures/gui/logo.png",
+    "assets/veil/textures/gui/troll.png",
+    "assets/veil/textures/gui/white.png",
+    "assets/veil/textures/shader/blue_noise.png",
+    "assets/veil/textures/shader/blue_noise.png.mcmeta",
+    "assets/veil/textures/special/blank.png",
+    "assets/veil/textures/special/flamestexture.png",
+    "assets/veil/textures/special/image.png"
+  ],
+  "addedResources": [
+    "assets/veil/pinwheel/framebuffers/light_inscattering.json",
+    "assets/veil/pinwheel/rendertypes/debug/shell.json",
+    "assets/veil/pinwheel/rendertypes/light/inscattering/area.json",
+    "assets/veil/pinwheel/rendertypes/light/inscattering/point.json",
+    "assets/veil/pinwheel/rendertypes/light/inscattering/spot.json",
+    "assets/veil/pinwheel/rendertypes/light/spot.json",
+    "assets/veil/pinwheel/shaders/include/hlsl_utilities.glsl",
+    "assets/veil/pinwheel/shaders/include/inscattering.glsl",
+    "assets/veil/pinwheel/shaders/include/voxel_shadow.glsl",
+    "assets/veil/pinwheel/shaders/program/debug/shell.fsh",
+    "assets/veil/pinwheel/shaders/program/debug/shell.json",
+    "assets/veil/pinwheel/shaders/program/debug/shell.vsh",
+    "assets/veil/pinwheel/shaders/program/light/inscattering/area.json",
+    "assets/veil/pinwheel/shaders/program/light/inscattering/point.json",
+    "assets/veil/pinwheel/shaders/program/light/inscattering/spot.json",
+    "assets/veil/pinwheel/shaders/program/light/spot.json"
+  ]
+}

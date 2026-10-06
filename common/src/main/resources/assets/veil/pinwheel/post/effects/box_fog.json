@@ -1,0 +1,9 @@
+{
+  "stages": [
+    {
+      "type": "veil:blit",
+      "shader": "veil:effects/box_fog",
+      "in": "minecraft:main"
+    }
+  ]
+}

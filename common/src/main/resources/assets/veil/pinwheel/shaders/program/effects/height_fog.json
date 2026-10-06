@@ -1,0 +1,4 @@
+{
+  "vertex": "veil:blit_screen",
+  "fragment": "veil:effects/height_fog"
+}
