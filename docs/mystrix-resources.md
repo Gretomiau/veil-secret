@@ -45,7 +45,8 @@ newer implementation.
 ## Optional packs
 
 Both Fabric and NeoForge expose all four packs in Minecraft's resource-pack
-selection screen, labelled **Mystrix** and disabled by default. Packs supply
+selection screen, labelled **Mystrix**. On Fabric all four packs are enabled by
+default and remain user-disableable; NeoForge keeps manual selection. Packs supply
 examples; selecting a fog/black-hole pack makes its pipelines available but does
 not activate those fullscreen effects automatically.
 

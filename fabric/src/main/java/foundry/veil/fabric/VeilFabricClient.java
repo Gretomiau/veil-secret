@@ -51,7 +51,7 @@ public class VeilFabricClient implements ClientModInitializer {
             for (String id : foundry.veil.impl.VeilBuiltinPacks.IDS) {
                 ResourceManagerHelper.registerBuiltinResourcePack(Veil.veilPath(id), container,
                         Component.literal(foundry.veil.impl.VeilBuiltinPacks.title(id)),
-                        net.fabricmc.fabric.api.resource.ResourcePackActivationType.NORMAL);
+                        net.fabricmc.fabric.api.resource.ResourcePackActivationType.DEFAULT_ENABLED);
             }
         });
         ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> client.execute(() -> {
