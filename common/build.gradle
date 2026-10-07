@@ -55,6 +55,8 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    // Alias tests exercise Minecraft's real pack merging without booting a client.
+    classpath += sourceSets.main.compileClasspath
     // A headless CI result must not hide an explicitly requested GPU run.
     inputs.property('verifyOpenGL', providers.environmentVariable('VEIL_VERIFY_OPENGL').orElse('0'))
 }
@@ -69,6 +71,8 @@ configurations {
         canBeConsumed = true
     }
 }
+
+sourceSets.test.compileClasspath += sourceSets.main.compileClasspath
 
 artifacts {
     commonJava sourceSets.main.java.sourceDirectories.singleFile

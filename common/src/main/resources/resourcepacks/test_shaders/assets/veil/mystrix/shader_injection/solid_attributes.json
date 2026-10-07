@@ -1,0 +1,5 @@
+{
+  "target": "minecraft:shaders/core/rendertype_solid.vsh",
+  "priority": 1000,
+  "redirect": "veil:solid_attributes.glsl"
+}

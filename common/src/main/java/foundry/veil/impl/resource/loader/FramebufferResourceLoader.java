@@ -18,7 +18,7 @@ public class FramebufferResourceLoader implements VeilResourceLoader {
     @Override
     public boolean canLoad(PackType packType, ResourceLocation location, @Nullable Path filePath, @Nullable Path modResourcePath) {
         String path = location.getPath();
-        return path.startsWith("pinwheel/framebuffers") && path.endsWith(".json");
+        return path.startsWith("mystrix/framebuffers") && path.endsWith(".json");
     }
 
     @Override

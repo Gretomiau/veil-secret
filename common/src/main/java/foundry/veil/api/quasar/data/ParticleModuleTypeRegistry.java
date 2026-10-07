@@ -6,6 +6,7 @@ import foundry.veil.Veil;
 import foundry.veil.api.quasar.data.module.ModuleType;
 import foundry.veil.api.quasar.data.module.ParticleModuleData;
 import foundry.veil.api.quasar.data.module.collision.CollisionSubEmitterData;
+import foundry.veil.api.quasar.data.module.collision.BounceModuleData;
 import foundry.veil.api.quasar.data.module.collision.DieOnCollisionModuleData;
 import foundry.veil.api.quasar.data.module.force.*;
 import foundry.veil.api.quasar.data.module.init.*;
@@ -146,7 +147,7 @@ public class ParticleModuleTypeRegistry {
     // UPDATE - COLLISION
     public static final ModuleType<DieOnCollisionModuleData> DIE_ON_COLLISION = registerModule("die_on_collision", DieOnCollisionModuleData.CODEC, DieOnCollisionModuleData::new);
     public static final ModuleType<CollisionSubEmitterData> SUB_EMITTER_COLLISION = registerModule("sub_emitter_collision", CollisionSubEmitterData.CODEC, () -> new CollisionSubEmitterData(ResourceLocation.withDefaultNamespace("")));
-    //    ModuleType<BounceParticleModule> BOUNCE = registerUpdateModule("bounce", BounceParticleModule.CODEC);
+    public static final ModuleType<BounceModuleData> BOUNCE = registerModule("bounce", BounceModuleData.CODEC, () -> new BounceModuleData(0.6F));
     // UPDATE - FORCES
     public static final ModuleType<GravityForceData> GRAVITY = registerModule("gravity", GravityForceData.CODEC, () -> new GravityForceData(1F));
     public static final ModuleType<VortexForceData> VORTEX = registerModule("vortex", VortexForceData.CODEC, () -> new VortexForceData(new Vector3d(0, 1, 0), new Vector3d(0), true, 10, 1.0f));

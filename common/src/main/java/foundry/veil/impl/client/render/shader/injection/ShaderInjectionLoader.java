@@ -16,14 +16,14 @@ import java.util.*;
 
 /**
  * Loads and indexes shader injection definitions
- * from {@code pinwheel/shader_injection/*.json} resources.
+ * from {@code mystrix/shader_injection/*.json} resources.
  *
  * @author Vowxky
  */
 @ApiStatus.Internal
 public final class ShaderInjectionLoader {
 
-    public static final FileToIdConverter INJECTION_LISTER = new FileToIdConverter("pinwheel/shader_injection", ".json");
+    public static final FileToIdConverter INJECTION_LISTER = new FileToIdConverter("mystrix/shader_injection", ".json");
     private static final Gson GSON = ShaderInjectionDefinition.createGson();
 
     public static LoadedPatches load(ResourceManager resourceManager) {
@@ -49,7 +49,7 @@ public final class ShaderInjectionLoader {
 
         for (LoadedPatch patch : patches) {
             for (ResourceLocation target : patch.definition().targets()) {
-                byTarget.computeIfAbsent(target, k -> new ArrayList<>()).add(patch);
+                byTarget.computeIfAbsent(foundry.veil.impl.resource.MystrixPackResources.canonical(target), k -> new ArrayList<>()).add(patch);
             }
         }
         byTarget.values().forEach(g -> g.sort(Comparator.comparingInt(p -> p.definition().priority())));

@@ -12,10 +12,10 @@
     "accessor.ResourceModelManagerAccessor",
     "accessor.ResourceTextureAtlasAccessor",
     "client.ResourceTextureAtlasHolderMixin",
-    "client.ResourceTextureAtlasMixin"
+    "client.ResourceTextureAtlasMixin",
+    "client.ResourceMystrixAliasesMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   }
 }
-  

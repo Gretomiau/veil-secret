@@ -15,7 +15,7 @@ import static org.lwjgl.util.shaderc.Shaderc.*;
 
 /** No window, GPU, Minecraft client, or OpenGL context required. */
 public class EffectsShaderTest {
-    private static final String ROOT = "/assets/veil/pinwheel/";
+    private static final String ROOT = "/assets/veil/mystrix/";
 
     static String resource(String path) throws IOException {
         try (var input = EffectsShaderTest.class.getResourceAsStream(ROOT + path)) {
@@ -46,9 +46,9 @@ public class EffectsShaderTest {
         return result.toString();
     }
 
-    private static void compile(String source, String name, int stage) throws Exception {
+    static void compile(String source, String name, int stage) throws Exception {
         // Exercise the same GLSL grammar and source writer as Veil's compiler.
-        String processed = GlslParser.preprocessParse("#version 330 core\n" + source, new HashMap<>()).toSourceString();
+        String processed = GlslParser.preprocessParse("#version 330 core\n" + source.replaceAll("(?m)^#version[^\\r\\n]*\\R?", ""), new HashMap<>()).toSourceString();
         long compiler = shaderc_compiler_initialize();
         long options = shaderc_compile_options_initialize();
         assertNotEquals(0L, compiler);

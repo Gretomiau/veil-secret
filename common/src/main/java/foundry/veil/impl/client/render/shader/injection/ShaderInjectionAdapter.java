@@ -32,7 +32,7 @@ public final class ShaderInjectionAdapter {
     private static final int DEFAULT_PARAM_COUNT = -1;
     private static final Pattern INCLUDE_PATTERN = Pattern.compile("^\\s*#include\\s+[\"<]?([^>\"]+)[>\"]?\\s*$");
     private static final Pattern DEFINE_PATTERN = Pattern.compile("^\\s*#define\\s+(\\w+)\\s*(.*?)\\s*$");
-    private static final FileToIdConverter INCLUDE_LISTER = new FileToIdConverter("pinwheel/shaders/include", ".glsl");
+    private static final FileToIdConverter INCLUDE_LISTER = new FileToIdConverter("mystrix/shaders/include", ".glsl");
     private static final Set<String> DEBUG_LOGGED = new HashSet<>();
 
     public static List<ShaderInjection> toModifications(ShaderInjectionDefinition definition, ResourceProvider provider) throws IOException {
@@ -69,7 +69,7 @@ public final class ShaderInjectionAdapter {
     }
 
     private static String loadGlsl(ResourceLocation path, ResourceProvider provider) throws IOException {
-        ResourceLocation fullPath = ResourceLocation.fromNamespaceAndPath(path.getNamespace(), "pinwheel/shader_injection/" + path.getPath());
+        ResourceLocation fullPath = ResourceLocation.fromNamespaceAndPath(path.getNamespace(), "mystrix/shader_injection/" + path.getPath());
         return resolveIncludes(fullPath, provider, new HashSet<>());
     }
 

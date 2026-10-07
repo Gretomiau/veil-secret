@@ -58,3 +58,7 @@ appreciate your efforts to improve Veil!
 See the [Veil 2.1.0 distribution audit](docs/veil-2.1.0-audit.md) for retained systems,
 API migrations, selective ports and deferred tooling. The [volume effects guide](docs/volume-effects.md)
 documents opt-in height/box fog and reusable procedural-noise includes.
+
+See [Mystrix resources and optional packs](docs/mystrix-resources.md) for the
+`mystrix/` directory migration, legacy pack compatibility, all four adapted
+example packs, and the complete asset migration manifest.

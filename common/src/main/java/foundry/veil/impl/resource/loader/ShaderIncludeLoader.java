@@ -22,7 +22,7 @@ public class ShaderIncludeLoader implements VeilResourceLoader {
         }
 
         String path = location.getPath();
-        return path.startsWith("pinwheel/shaders/include") && path.endsWith(".glsl");
+        return path.startsWith("mystrix/shaders/include") && path.endsWith(".glsl");
     }
 
     @Override

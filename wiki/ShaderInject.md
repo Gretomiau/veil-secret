@@ -1,9 +1,9 @@
-Veil provides a **JSON-based shader injection system** that allows modifying vanilla and pinwheel shaders without
+Veil provides a **JSON-based shader injection system** that allows modifying vanilla and mystrix shaders without
 replacing the entire file. Injections are written as plain GLSL with a `void tail()` or `void head()` marker function.
 
 # Defining Injections
 
-Injection definitions are located in `assets/modid/pinwheel/shader_injection/*.json`.
+Injection definitions are located in `assets/modid/mystrix/shader_injection/*.json`.
 Each definition references one or more GLSL files that contain the actual shader code.
 
 # JSON Format
@@ -62,7 +62,7 @@ Each definition references one or more GLSL files that contain the actual shader
 
 ### Replace
 
-`replace` completely swaps the target shader with another Veil shader program defined in `pinwheel/shaders/program/`. Unlike `redirect`, which injects code into the existing shader, `replace` discards the original entirely and substitutes a different `ShaderProgram`.
+`replace` completely swaps the target shader with another Veil shader program defined in `mystrix/shaders/program/`. Unlike `redirect`, which injects code into the existing shader, `replace` discards the original entirely and substitutes a different `ShaderProgram`.
 
 - The target must be a vanilla Minecraft shader (e.g. `minecraft:shaders/core/rendertype_solid`) **without** file extension.
 - The replacement must be a valid Veil shader program ID.
@@ -79,7 +79,7 @@ Each definition references one or more GLSL files that contain the actual shader
 
 #### head_example
 
-**JSON** (`assets/modid/pinwheel/shader_injection/head_example.json`):
+**JSON** (`assets/modid/mystrix/shader_injection/head_example.json`):
 ```json
 {
   "target": "minecraft:shaders/core/rendertype_translucent.fsh",
@@ -87,7 +87,7 @@ Each definition references one or more GLSL files that contain the actual shader
 }
 ```
 
-**GLSL** (`assets/modid/pinwheel/shader_injection/head_example.glsl`):
+**GLSL** (`assets/modid/mystrix/shader_injection/head_example.glsl`):
 ```glsl
 // Affects translucent blocks: water, stained glass, ice, slime blocks, honey blocks.
 // Desaturates to grayscale.
@@ -99,7 +99,7 @@ void tail() {
 
 #### tail_example
 
-**JSON** (`assets/modid/pinwheel/shader_injection/tail_example.json`):
+**JSON** (`assets/modid/mystrix/shader_injection/tail_example.json`):
 ```json
 {
   "target": "minecraft:shaders/core/rendertype_cutout_mipped.fsh",
@@ -107,7 +107,7 @@ void tail() {
 }
 ```
 
-**GLSL** (`assets/modid/pinwheel/shader_injection/tail_example.glsl`):
+**GLSL** (`assets/modid/mystrix/shader_injection/tail_example.glsl`):
 ```glsl
 // Affects mipmapped cutout blocks: leaves, powered rails, decorated pots.
 // Inverts the red and green channels for a psychedelic look.
@@ -119,7 +119,7 @@ void tail() {
 
 #### multi_target
 
-**JSON** (`assets/modid/pinwheel/shader_injection/multi_target.json`):
+**JSON** (`assets/modid/mystrix/shader_injection/multi_target.json`):
 ```json
 {
   "target": [
@@ -131,7 +131,7 @@ void tail() {
 }
 ```
 
-**GLSL** (`assets/modid/pinwheel/shader_injection/multi_target.glsl`):
+**GLSL** (`assets/modid/mystrix/shader_injection/multi_target.glsl`):
 ```glsl
 // Affects all entity rendering: mobs, players, item entities, armor stands.
 // Applies a red overlay to everything.
@@ -142,9 +142,9 @@ void tail() {
 
 #### replace_example
 
-Requires a `color` shader program in `assets/modid/pinwheel/shaders/program/`.
+Requires a `color` shader program in `assets/modid/mystrix/shaders/program/`.
 
-**Program JSON** (`assets/modid/pinwheel/shaders/program/color.json`):
+**Program JSON** (`assets/modid/mystrix/shaders/program/color.json`):
 ```json
 {
   "vertex": "modid:color",
@@ -152,7 +152,7 @@ Requires a `color` shader program in `assets/modid/pinwheel/shaders/program/`.
 }
 ```
 
-**Vertex** (`assets/modid/pinwheel/shaders/program/color.vsh`):
+**Vertex** (`assets/modid/mystrix/shaders/program/color.vsh`):
 ```glsl
 layout(location = 0) in vec3 Position;
 layout(location = 1) in vec2 UV0;
@@ -176,7 +176,7 @@ void main() {
 }
 ```
 
-**Fragment** (`assets/modid/pinwheel/shaders/program/color.fsh`):
+**Fragment** (`assets/modid/mystrix/shaders/program/color.fsh`):
 ```glsl
 uniform sampler2D Sampler0;
 
@@ -190,7 +190,7 @@ void main() {
 }
 ```
 
-**Injection JSON** (`assets/modid/pinwheel/shader_injection/replace_example.json`):
+**Injection JSON** (`assets/modid/mystrix/shader_injection/replace_example.json`):
 ```json
 {
   "target": "minecraft:shaders/core/rendertype_solid",

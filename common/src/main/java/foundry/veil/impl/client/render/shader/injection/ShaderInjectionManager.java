@@ -48,7 +48,7 @@ public class ShaderInjectionManager extends SimplePreparableReloadListener<Shade
      * Fetches all registered modifications for the specified shader.
      */
     public List<ShaderInjection> getModifiers(ResourceLocation shaderId) {
-        return this.shaders.getOrDefault(shaderId, Collections.emptyList());
+        return this.shaders.getOrDefault(foundry.veil.impl.resource.MystrixPackResources.canonical(shaderId), Collections.emptyList());
     }
 
     /**
@@ -64,6 +64,7 @@ public class ShaderInjectionManager extends SimplePreparableReloadListener<Shade
      */
     @Nullable
     public ResourceLocation getReplacement(ResourceLocation target) {
+        target = foundry.veil.impl.resource.MystrixPackResources.canonical(target);
         ResourceLocation stripped = stripShaderExtension(target);
         return this.replacements.get(stripped != null ? stripped : target);
     }

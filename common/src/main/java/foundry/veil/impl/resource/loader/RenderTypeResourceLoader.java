@@ -22,7 +22,7 @@ public class RenderTypeResourceLoader implements VeilResourceLoader {
         }
 
         String path = location.getPath();
-        if (path.startsWith("pinwheel/rendertypes")) {
+        if (path.startsWith("mystrix/rendertypes")) {
             return path.endsWith(".json");
         }
         return false;

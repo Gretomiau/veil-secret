@@ -1,0 +1,23 @@
+{
+  "render_style": "CUBE",
+  "face_velocity": true,
+  "velocity_stretch_factor": 4.0,
+  "should_collide": true,
+  "modules": [
+    "veil:init/rocket",
+    "veil:init/rocket_light",
+    {
+      "module": "die_on_collision"
+    },
+    "veil:update/collision/rocket_explode",
+    "veil:update/force/gravity/rocket",
+    "veil:update/force/point_attractor/rocket_point_attractor",
+    "veil:update/force/vortex/rocket_vortex",
+    "veil:update/force/drag/rocket_drag",
+    "veil:update/force/vector_field/rocket_field",
+    "veil:render/trail/rocket",
+    "veil:render/trail/rocket_add",
+    "veil:render/trail/rocket_hot",
+    "veil:render/color/rocket"
+  ]
+}

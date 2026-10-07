@@ -1,0 +1,14 @@
+{
+  "render_style": "BILLBOARD",
+  "face_velocity": true,
+  "velocity_stretch_factor": 1.0,
+  "should_collide": false,
+  "modules": [
+    "veil:init/block_vel",
+    "veil:init/ember_light",
+    "veil:update/collision/spark_bounce",
+    "veil:update/force/vector_field/test_vector_field",
+    "veil:update/force/drag/test_drag",
+    "veil:update/force/gravity/test_gravity"
+  ]
+}

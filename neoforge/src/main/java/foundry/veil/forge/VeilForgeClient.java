@@ -29,6 +29,16 @@ public class VeilForgeClient {
         modEventBus.addListener(VeilForgeClient::registerKeys);
         modEventBus.addListener(VeilForgeClient::registerListeners);
         modEventBus.addListener(VeilForgeClient::registerShaders);
+        modEventBus.addListener(VeilForgeClient::registerPacks);
+    }
+
+    private static void registerPacks(net.neoforged.neoforge.event.AddPackFindersEvent event) {
+        for (String id : foundry.veil.impl.VeilBuiltinPacks.IDS) {
+            event.addPackFinders(Veil.veilPath("resourcepacks/" + id), net.minecraft.server.packs.PackType.CLIENT_RESOURCES,
+                    net.minecraft.network.chat.Component.literal(foundry.veil.impl.VeilBuiltinPacks.title(id)),
+                    net.minecraft.server.packs.repository.PackSource.BUILT_IN, false,
+                    net.minecraft.server.packs.repository.Pack.Position.TOP);
+        }
     }
 
     private static void registerListeners(RegisterClientReloadListenersEvent event) {

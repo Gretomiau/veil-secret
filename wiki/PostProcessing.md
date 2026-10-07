@@ -163,7 +163,7 @@ framebuffer between pipelines, use the `framebuffers` folder to define global fr
 have the same format as [global framebuffers](Framebuffer).
 
 ## Fog Example
-`assets/example/pinwheel/post/example.json`
+`assets/example/mystrix/post/example.json`
 ```json5
 {  
   "stages": [  
@@ -175,14 +175,14 @@ have the same format as [global framebuffers](Framebuffer).
   ]  
 }
 ```
-`assets/example/pinwheel/shaders/program/test_shader.json`
+`assets/example/mystrix/shaders/program/test_shader.json`
 ```json5
 {  
   "vertex": "veil:blit_screen", // This should almost always be veil:blit_screen
   "fragment": "example:test_shader"  
 }
 ```
-`assets/example/pinwheel/shaders/program/test_shader.fsh`
+`assets/example/mystrix/shaders/program/test_shader.fsh`
 ```glsl
 #include veil:fog  
 #include veil:space_helper  

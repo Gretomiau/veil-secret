@@ -1,0 +1,7 @@
+{
+  "vertex": "veil:blit_screen",
+  "fragment": "venuslibs:black_hole",
+  "textures": {
+    "NoiseSampler": "veil:textures/shader/blue_noise.png"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "depth": true,
+  "width": "q.screen_width",
+  "height": "q.screen_height",
+  "color_buffers": [
+    {
+      "name": "AlbedoSampler",
+      "format": "RGBA8"
+    },
+    {
+      "name": "NormalSampler",
+      "format": "RGB16F"
+    },
+    {
+      "name": "MaterialSampler",
+      "format": "R16F"
+    },
+    {
+      "name": "EmissiveSampler",
+      "format": "RGBA8"
+    },
+    {
+      "name": "VanillaLightSampler",
+      "format": "RG8"
+    }
+  ]
+}

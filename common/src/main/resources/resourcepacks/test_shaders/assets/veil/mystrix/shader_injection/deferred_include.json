@@ -1,0 +1,5 @@
+{
+  "target": "veil:mystrix/shaders/program/blit_screen.vsh",
+  "priority": 1000,
+  "redirect": "veil:deferred_include.glsl"
+}

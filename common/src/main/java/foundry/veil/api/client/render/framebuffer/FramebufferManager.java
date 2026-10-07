@@ -32,7 +32,7 @@ import static org.lwjgl.opengl.GL30C.GL_FRAMEBUFFER;
 /**
  * <p>Manages all framebuffers and custom definitions specified in files.
  * All framebuffers except for the main one can be customized from the
- * <code>modid:pinwheel/framebuffers</code> folder in the assets.</p>
+ * <code>modid:mystrix/framebuffers</code> folder in the assets.</p>
  *
  * @author Ocelot
  */
@@ -53,7 +53,7 @@ public class FramebufferManager extends CodecReloadListener<FramebufferDefinitio
             return DataResult.error(() -> "Not a valid resource location: " + name + ". " + e.getMessage());
         }
     }, location -> "temp".equals(location.getNamespace()) ? location.getPath() : location.toString()).stable();
-    public static final FileToIdConverter FRAMEBUFFER_LISTER = FileToIdConverter.json("pinwheel/framebuffers");
+    public static final FileToIdConverter FRAMEBUFFER_LISTER = FileToIdConverter.json("mystrix/framebuffers");
 
     private final Map<ResourceLocation, FramebufferDefinition> framebufferDefinitions;
     private final Map<ResourceLocation, AdvancedFbo> framebuffers;

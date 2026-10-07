@@ -3,10 +3,10 @@ shaders more data-driven.
 
 # Defining Shaders
 
-Shader programs are located in `assets/modid/pinwheel/shaders/program`. These are used as actual shader programs that
+Shader programs are located in `assets/modid/mystrix/shaders/program`. These are used as actual shader programs that
 can be used during runtime.
 
-Shader includes are located in `assets/modid/pinwheel/shaders/include`. These are glsl source files, but they cannot be
+Shader includes are located in `assets/modid/mystrix/shaders/include`. These are glsl source files, but they cannot be
 used as programs. Instead, they can be referenced in shader programs to share code between multiple shader programs.
 
 # Programs
@@ -119,7 +119,7 @@ void main() {
 
 ### Double Include Example
 
-`assets/veil/pinwheel/shaders/include/foo.glsl`
+`assets/veil/mystrix/shaders/include/foo.glsl`
 
 ```glsl
 vec3 foo(vec4 color) {
@@ -127,7 +127,7 @@ vec3 foo(vec4 color) {
 }
 ```
 
-`assets/veil/pinwheel/shaders/include/bar.glsl`
+`assets/veil/mystrix/shaders/include/bar.glsl`
 
 ```glsl
 #include veil:foo
@@ -298,7 +298,7 @@ recompile when changed. They should be set to constants defined in Java code.
 
 ### Example
 
-`assets/veil/pinwheel/shaders/program/example.json`
+`assets/veil/mystrix/shaders/program/example.json`
 
 ```json5
 {
@@ -403,7 +403,7 @@ See the [framebuffer documentation](Framebuffer) for more information.
 
 ### Example
 
-`assets/veil/pinwheel/shaders/program/example.json`
+`assets/veil/mystrix/shaders/program/example.json`
 
 ```json
 {
@@ -415,7 +415,7 @@ See the [framebuffer documentation](Framebuffer) for more information.
 }
 ```
 
-`assets/veil/pinwheel/shaders/program/example.fsh`
+`assets/veil/mystrix/shaders/program/example.fsh`
 
 ```glsl
 uniform sampler2D CustomTexture;
@@ -514,7 +514,7 @@ Requiring a feature will also enable all required GLSL extensions to use the fea
 
 ### Example
 
-`assets/veil/pinwheel/shaders/program/example.json`
+`assets/veil/mystrix/shaders/program/example.json`
 
 ```json5
 {
@@ -526,7 +526,7 @@ Requiring a feature will also enable all required GLSL extensions to use the fea
 }
 ```
 
-`assets/veil/pinwheel/shaders/program/example.vsh`
+`assets/veil/mystrix/shaders/program/example.vsh`
 
 ```glsl
 layout(location = 0) in vec3 Position;
@@ -543,7 +543,7 @@ void main() {
 }
 ```
 
-`assets/veil/pinwheel/shaders/program/example.fsh`
+`assets/veil/mystrix/shaders/program/example.fsh`
 
 ```glsl
 in vec2 texCoord0;

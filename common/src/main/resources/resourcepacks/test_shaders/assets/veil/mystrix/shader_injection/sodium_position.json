@@ -1,0 +1,5 @@
+{
+  "target": "sodium:shaders/blocks/block_layer_opaque.vsh",
+  "priority": 1000,
+  "redirect": "veil:sodium_position.glsl"
+}

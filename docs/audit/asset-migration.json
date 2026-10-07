@@ -1,0 +1,1497 @@
+{
+  "reference": "veil-2.1.0.zip",
+  "entries": [
+    {
+      "source": "assets/minecraft/shaders/core/worldborder.fsh",
+      "target": "assets/minecraft/shaders/core/worldborder.fsh",
+      "status": "retained-current",
+      "source_sha256": "07a6a1508ff305cdaf34f03b1e186ac4dfc12fff8fe9f97677e2eeffb36cef22",
+      "target_sha256": "07a6a1508ff305cdaf34f03b1e186ac4dfc12fff8fe9f97677e2eeffb36cef22"
+    },
+    {
+      "source": "assets/minecraft/shaders/core/worldborder.json",
+      "target": "assets/minecraft/shaders/core/worldborder.json",
+      "status": "retained-current",
+      "source_sha256": "7c78921e8310d5f8ccb503200ebfb40e69111a5c4a60595cc8c69800494fb7bc",
+      "target_sha256": "7c78921e8310d5f8ccb503200ebfb40e69111a5c4a60595cc8c69800494fb7bc"
+    },
+    {
+      "source": "assets/minecraft/shaders/core/worldborder.vsh",
+      "target": "assets/minecraft/shaders/core/worldborder.vsh",
+      "status": "retained-current",
+      "source_sha256": "9a029736938d0e93ae8178acd911ac04dba796f0c27ae29d0bb110ece0af745d",
+      "target_sha256": "9a029736938d0e93ae8178acd911ac04dba796f0c27ae29d0bb110ece0af745d"
+    },
+    {
+      "source": "assets/veil/imgui_font/jetbrains_mono-bold.ttf",
+      "target": "assets/veil/imgui_font/jetbrains_mono-bold.ttf",
+      "status": "imported",
+      "source_sha256": "5590990c82e097397517f275f430af4546e1c45cff408bde4255dad142479dcb",
+      "target_sha256": "5590990c82e097397517f275f430af4546e1c45cff408bde4255dad142479dcb"
+    },
+    {
+      "source": "assets/veil/imgui_font/jetbrains_mono-bold.ttf.mcmeta",
+      "target": "assets/veil/imgui_font/jetbrains_mono-bold.ttf.mcmeta",
+      "status": "adapted",
+      "source_sha256": "c16b73e38b08f681235fc6abc04d38a44031ae216cd2ff64ad09d7ac5e0a8338",
+      "target_sha256": "1b64bb86cd42ebbeb1bfc4f67b6721f7d7792c7efd999ce711a2a9478dd19e8d"
+    },
+    {
+      "source": "assets/veil/imgui_font/jetbrains_mono-bold_italic.ttf",
+      "target": "assets/veil/imgui_font/jetbrains_mono-bold_italic.ttf",
+      "status": "imported",
+      "source_sha256": "4039d5ce0ed225bf9c8b2c8c6436290ae2f356b7e90d70fa666227238324aa3b",
+      "target_sha256": "4039d5ce0ed225bf9c8b2c8c6436290ae2f356b7e90d70fa666227238324aa3b"
+    },
+    {
+      "source": "assets/veil/imgui_font/jetbrains_mono-bold_italic.ttf.mcmeta",
+      "target": "assets/veil/imgui_font/jetbrains_mono-bold_italic.ttf.mcmeta",
+      "status": "adapted",
+      "source_sha256": "c16b73e38b08f681235fc6abc04d38a44031ae216cd2ff64ad09d7ac5e0a8338",
+      "target_sha256": "1b64bb86cd42ebbeb1bfc4f67b6721f7d7792c7efd999ce711a2a9478dd19e8d"
+    },
+    {
+      "source": "assets/veil/imgui_font/jetbrains_mono-italic.ttf",
+      "target": "assets/veil/imgui_font/jetbrains_mono-italic.ttf",
+      "status": "imported",
+      "source_sha256": "9d0a1f7a708e6af183f1193b7e81d40da294f5c67682c085d8401c60aac8ded4",
+      "target_sha256": "9d0a1f7a708e6af183f1193b7e81d40da294f5c67682c085d8401c60aac8ded4"
+    },
+    {
+      "source": "assets/veil/imgui_font/jetbrains_mono-italic.ttf.mcmeta",
+      "target": "assets/veil/imgui_font/jetbrains_mono-italic.ttf.mcmeta",
+      "status": "adapted",
+      "source_sha256": "c16b73e38b08f681235fc6abc04d38a44031ae216cd2ff64ad09d7ac5e0a8338",
+      "target_sha256": "1b64bb86cd42ebbeb1bfc4f67b6721f7d7792c7efd999ce711a2a9478dd19e8d"
+    },
+    {
+      "source": "assets/veil/imgui_font/jetbrains_mono-regular.ttf",
+      "target": "assets/veil/imgui_font/jetbrains_mono-regular.ttf",
+      "status": "imported",
+      "source_sha256": "a0bf60ef0f83c5ed4d7a75d45838548b1f6873372dfac88f71804491898d138f",
+      "target_sha256": "a0bf60ef0f83c5ed4d7a75d45838548b1f6873372dfac88f71804491898d138f"
+    },
+    {
+      "source": "assets/veil/imgui_font/jetbrains_mono-regular.ttf.mcmeta",
+      "target": "assets/veil/imgui_font/jetbrains_mono-regular.ttf.mcmeta",
+      "status": "adapted",
+      "source_sha256": "c16b73e38b08f681235fc6abc04d38a44031ae216cd2ff64ad09d7ac5e0a8338",
+      "target_sha256": "1b64bb86cd42ebbeb1bfc4f67b6721f7d7792c7efd999ce711a2a9478dd19e8d"
+    },
+    {
+      "source": "assets/veil/imgui_font/remixicon-regular.ttf",
+      "target": "assets/veil/imgui_font/remixicon-regular.ttf",
+      "status": "retained-current",
+      "source_sha256": "4a918720efb377a846b498e1b98764b9d64cfe8e5030dfccf7dacfd8ef0d1b63",
+      "target_sha256": "4a918720efb377a846b498e1b98764b9d64cfe8e5030dfccf7dacfd8ef0d1b63"
+    },
+    {
+      "source": "assets/veil/imgui_font/remixicon-regular.ttf.mcmeta",
+      "target": "assets/veil/imgui_font/remixicon-regular.ttf.mcmeta",
+      "status": "retained-current",
+      "source_sha256": "feb82a02f91f4232b4e04c6dc832f57113c8cc80b378eea9db5ab114254d343d",
+      "target_sha256": "43cb7dd558434a500b66e9794cd036b0bd1bf75e7dd10b19f3948a9379148a70"
+    },
+    {
+      "source": "assets/veil/lang/de_de.json",
+      "target": "assets/veil/lang/de_de.json",
+      "status": "retained-current",
+      "source_sha256": "694af29bd768239f15ef7c214bf278bdbb76db69044bf02b20b5f030f35af936",
+      "target_sha256": "694af29bd768239f15ef7c214bf278bdbb76db69044bf02b20b5f030f35af936"
+    },
+    {
+      "source": "assets/veil/lang/en_us.json",
+      "target": "assets/veil/lang/en_us.json",
+      "status": "retained-current",
+      "source_sha256": "22b6458c5ba4c0c7f18f50fda7ad202dfcafd51e0f71dd79016493215ac069dd",
+      "target_sha256": "3a9db48b2688c5b9505ca1bc4d15e7edaa96944e0afffa97056c0bc3457cc4d5"
+    },
+    {
+      "source": "assets/veil/lang/nl_nl.json",
+      "target": "assets/veil/lang/nl_nl.json",
+      "status": "retained-current",
+      "source_sha256": "4e6f73cc4f7adb8889391ea8b6aab27afbaa2fe448a52f828da22358f2a3c1d7",
+      "target_sha256": "4e6f73cc4f7adb8889391ea8b6aab27afbaa2fe448a52f828da22358f2a3c1d7"
+    },
+    {
+      "source": "assets/veil/lang/uk_ua.json",
+      "target": "assets/veil/lang/uk_ua.json",
+      "status": "retained-current",
+      "source_sha256": "31e3dbe1d502c7740a8795d2a3b1ef44df44e462ea27be6331072a7e4e4a00b1",
+      "target_sha256": "31e3dbe1d502c7740a8795d2a3b1ef44df44e462ea27be6331072a7e4e4a00b1"
+    },
+    {
+      "source": "assets/veil/models/test.obj",
+      "target": "assets/veil/models/test.obj",
+      "status": "imported",
+      "source_sha256": "70f2b6be0889d637b94f060296da9c556f92159ae1e653bf232d96026326022d",
+      "target_sha256": "c964fa386dd82efa0b0817ea27a4a2b612218b4339424d89a3afdd2fd2d8ff61"
+    },
+    {
+      "source": "assets/veil/pinwheel/framebuffers/light.json",
+      "target": "assets/veil/mystrix/framebuffers/light.json",
+      "status": "retained-current",
+      "source_sha256": "e3d12b8497c7d31c86e940d0d62b8f1168a702c3c78364a4dc4647e6e245eb4e",
+      "target_sha256": "e3d12b8497c7d31c86e940d0d62b8f1168a702c3c78364a4dc4647e6e245eb4e"
+    },
+    {
+      "source": "assets/veil/pinwheel/framebuffers/post.json",
+      "target": "assets/veil/mystrix/framebuffers/post.json",
+      "status": "retained-current",
+      "source_sha256": "b939a6edcd5821101d04f5e7d38fe483926da4707b196ac1e6e9831ee4605a41",
+      "target_sha256": "b939a6edcd5821101d04f5e7d38fe483926da4707b196ac1e6e9831ee4605a41"
+    },
+    {
+      "source": "assets/veil/pinwheel/post/core/bloom.json",
+      "target": "assets/veil/mystrix/post/core/bloom.json",
+      "status": "retained-current",
+      "source_sha256": "9d5f9ab4af5825b63960bc2a3c95a2f6177620ee04cf67aec878bbcb1f66eef7",
+      "target_sha256": "23e22c87187bf05264b76f3db69994c6e8bf8736a0879539beaa191998621c21"
+    },
+    {
+      "source": "assets/veil/pinwheel/post/core/composite.json",
+      "target": "assets/veil/mystrix/post/core/composite.json",
+      "status": "retained-current",
+      "source_sha256": "32d339af544ac48d02efc614f7b2322ea4187280493d37e09c5e3a4cab6b5c8c",
+      "target_sha256": "9c3880ee9844615712f99c2dbe260023af60439290fcbd33ad2a31ab3ab95fa3"
+    },
+    {
+      "source": "assets/veil/pinwheel/post/core/first_person.json",
+      "target": "assets/veil/mystrix/post/core/first_person.json",
+      "status": "retained-current",
+      "source_sha256": "fe7698a6f11eca61a3385b5ff8d63b1d381ce94e7e27d0d7c6e6802e750acf73",
+      "target_sha256": "fe7698a6f11eca61a3385b5ff8d63b1d381ce94e7e27d0d7c6e6802e750acf73"
+    },
+    {
+      "source": "assets/veil/pinwheel/rendertypes/light/area.json",
+      "target": "assets/veil/mystrix/rendertypes/light/area.json",
+      "status": "retained-current",
+      "source_sha256": "f128c66fdb018999c3195294954868fa76ac987bde82bb6bce7772fed6a1b403",
+      "target_sha256": "36b459a9545e9d7da88ebfddf0f85a76914f88cd29cbf3b36e49dc422cbc3c02"
+    },
+    {
+      "source": "assets/veil/pinwheel/rendertypes/light/directional.json",
+      "target": "assets/veil/mystrix/rendertypes/light/directional.json",
+      "status": "retained-current",
+      "source_sha256": "b36c635912334825ce134d760965f69840405406ca9ceab2c3913ef186ceed03",
+      "target_sha256": "b36c635912334825ce134d760965f69840405406ca9ceab2c3913ef186ceed03"
+    },
+    {
+      "source": "assets/veil/pinwheel/rendertypes/light/point.json",
+      "target": "assets/veil/mystrix/rendertypes/light/point.json",
+      "status": "retained-current",
+      "source_sha256": "46b4b11e3fbc7ca5ea6cd222ea42f5cb7fc30837555e96d66db2f27642b0fc3f",
+      "target_sha256": "46b4b11e3fbc7ca5ea6cd222ea42f5cb7fc30837555e96d66db2f27642b0fc3f"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/include/blend.glsl",
+      "target": "assets/veil/mystrix/shaders/include/blend.glsl",
+      "status": "retained-current",
+      "source_sha256": "f24853b583f8ed8428ea0bbc87490fd4c18a40af80fdb58e706f8b84e183297b",
+      "target_sha256": "f24853b583f8ed8428ea0bbc87490fd4c18a40af80fdb58e706f8b84e183297b"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/include/camera.glsl",
+      "target": "assets/veil/mystrix/shaders/include/camera.glsl",
+      "status": "retained-current",
+      "source_sha256": "2b60fae4069ed9298074fc574286eb155c43bff9656f1b7a9b246f9244cf8857",
+      "target_sha256": "2b60fae4069ed9298074fc574286eb155c43bff9656f1b7a9b246f9244cf8857"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/include/color.glsl",
+      "target": "assets/veil/mystrix/shaders/include/color.glsl",
+      "status": "retained-current",
+      "source_sha256": "d3e86373668336474d21dda901a193bb9cbbe53c83ea2b6230310e10e13e6ea9",
+      "target_sha256": "d3e86373668336474d21dda901a193bb9cbbe53c83ea2b6230310e10e13e6ea9"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/include/color_utilities.glsl",
+      "target": "assets/veil/mystrix/shaders/include/color_utilities.glsl",
+      "status": "retained-current",
+      "source_sha256": "bf3805170321ac372c17edb5b5e37294eab6a9f330f6311b3c824783a23497ce",
+      "target_sha256": "bf3805170321ac372c17edb5b5e37294eab6a9f330f6311b3c824783a23497ce"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/include/common.glsl",
+      "target": "assets/veil/mystrix/shaders/include/common.glsl",
+      "status": "retained-current",
+      "source_sha256": "0df950f9a8488ad0f43d5270ee7bd125523d6240f92db2c7b894ac852e28ffb5",
+      "target_sha256": "0df950f9a8488ad0f43d5270ee7bd125523d6240f92db2c7b894ac852e28ffb5"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/include/deferred_utils.glsl",
+      "target": "assets/veil/mystrix/shaders/include/deferred_utils.glsl",
+      "status": "retained-current",
+      "source_sha256": "ad89d17a545b256c2b5e45445bf609e911dac5b73582b9d557aaa3a49368fb84",
+      "target_sha256": "ad89d17a545b256c2b5e45445bf609e911dac5b73582b9d557aaa3a49368fb84"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/include/fog.glsl",
+      "target": "assets/veil/mystrix/shaders/include/fog.glsl",
+      "status": "retained-current",
+      "source_sha256": "c01f8d07915bad3a3fd0c71714c3e239c232fc242734ef8dc06b073c038fad96",
+      "target_sha256": "c01f8d07915bad3a3fd0c71714c3e239c232fc242734ef8dc06b073c038fad96"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/include/gui.glsl",
+      "target": "assets/veil/mystrix/shaders/include/gui.glsl",
+      "status": "retained-current",
+      "source_sha256": "152bbea78f171f531c5c14add9d6300e002cac6ef872d28a79156f758bd57732",
+      "target_sha256": "152bbea78f171f531c5c14add9d6300e002cac6ef872d28a79156f758bd57732"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/include/light.glsl",
+      "target": "assets/veil/mystrix/shaders/include/light.glsl",
+      "status": "retained-current",
+      "source_sha256": "5ed452da9ec80007e934c91d77704653c2061fbd539337b77c7c1bbc5f889b23",
+      "target_sha256": "5ed452da9ec80007e934c91d77704653c2061fbd539337b77c7c1bbc5f889b23"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/include/space_helper.glsl",
+      "target": "assets/veil/mystrix/shaders/include/space_helper.glsl",
+      "status": "retained-current",
+      "source_sha256": "cb11878baceb4690c17144debb8b2f0d2a8957b54a1cf6777445dd16c0c0494d",
+      "target_sha256": "1e41a751003f5b4fbd39b2d27f83f345ca8298154b3d58f22a9668f4070a7195"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/blit_depth.fsh",
+      "target": "assets/veil/mystrix/shaders/program/blit_depth.fsh",
+      "status": "retained-current",
+      "source_sha256": "a74e2d1150a3e5ced37eff0f4bf789dd2d35e2b1d534cac8d28b25838874a0a0",
+      "target_sha256": "a74e2d1150a3e5ced37eff0f4bf789dd2d35e2b1d534cac8d28b25838874a0a0"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/blit_depth.json",
+      "target": "assets/veil/mystrix/shaders/program/blit_depth.json",
+      "status": "retained-current",
+      "source_sha256": "c7e3931f376a263b345573363bd5f19e020dddafdb8fd0dada3898705e1a32e0",
+      "target_sha256": "c7e3931f376a263b345573363bd5f19e020dddafdb8fd0dada3898705e1a32e0"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/blit_screen.fsh",
+      "target": "assets/veil/mystrix/shaders/program/blit_screen.fsh",
+      "status": "retained-current",
+      "source_sha256": "91eb40e64c9522e648ceba8fa6aac399f68a5522787540306f9df3b826eda8bc",
+      "target_sha256": "91eb40e64c9522e648ceba8fa6aac399f68a5522787540306f9df3b826eda8bc"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/blit_screen.json",
+      "target": "assets/veil/mystrix/shaders/program/blit_screen.json",
+      "status": "retained-current",
+      "source_sha256": "1fdb526c81a4adb9d6e3ddeb39a44fbef4a8dcab15c2861c919e14987b0aba07",
+      "target_sha256": "1fdb526c81a4adb9d6e3ddeb39a44fbef4a8dcab15c2861c919e14987b0aba07"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/blit_screen.vsh",
+      "target": "assets/veil/mystrix/shaders/program/blit_screen.vsh",
+      "status": "retained-current",
+      "source_sha256": "11725c1b877ebd2e54a17dbd686cb96e9568e33d6ef0ac1d302ee8f2349dc302",
+      "target_sha256": "11725c1b877ebd2e54a17dbd686cb96e9568e33d6ef0ac1d302ee8f2349dc302"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/blit_screen_effect.fsh",
+      "target": "assets/veil/mystrix/shaders/program/core/blit_screen_effect.fsh",
+      "status": "retained-current",
+      "source_sha256": "95cdb3e7c4b1464fe5e271d39f4bd5dd432d4ec07ff0a31387fcda232064cf08",
+      "target_sha256": "95cdb3e7c4b1464fe5e271d39f4bd5dd432d4ec07ff0a31387fcda232064cf08"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/blit_screen_effect.json",
+      "target": "assets/veil/mystrix/shaders/program/core/blit_screen_effect.json",
+      "status": "retained-current",
+      "source_sha256": "1b408582b41e6f3f71f02f0136b2d00a28c6681547d522fbb5a977f80f999f9e",
+      "target_sha256": "1b408582b41e6f3f71f02f0136b2d00a28c6681547d522fbb5a977f80f999f9e"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/blit_screen_effect.vsh",
+      "target": "assets/veil/mystrix/shaders/program/core/blit_screen_effect.vsh",
+      "status": "retained-current",
+      "source_sha256": "61405c50c2a90469249ce3b18ec24772dc7d8788d207bb95e1ae74acf71fbbfa",
+      "target_sha256": "61405c50c2a90469249ce3b18ec24772dc7d8788d207bb95e1ae74acf71fbbfa"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/bloom.fsh",
+      "target": "assets/veil/mystrix/shaders/program/core/bloom.fsh",
+      "status": "retained-current",
+      "source_sha256": "7a4d8269db16c30a23e304499d182e6a4144e7bd888c10999b90d1934a5e973e",
+      "target_sha256": "7c7f4a6eef32914461b53bde94a7b35b39c94e988494124279cf318c20753e3c"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/bloom.json",
+      "target": "assets/veil/mystrix/shaders/program/core/bloom.json",
+      "status": "retained-current",
+      "source_sha256": "5d6ce265d7bee71a74f8ef29288b359401307c16a208ab794a943b950cf2a650",
+      "target_sha256": "5d6ce265d7bee71a74f8ef29288b359401307c16a208ab794a943b950cf2a650"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/blur.fsh",
+      "target": "assets/veil/mystrix/shaders/program/core/blur.fsh",
+      "status": "retained-current",
+      "source_sha256": "f44d3ca5973817923195ac67279a9d1cce4188a7d382f62e472c5cb06baaeef1",
+      "target_sha256": "f44d3ca5973817923195ac67279a9d1cce4188a7d382f62e472c5cb06baaeef1"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/blur.json",
+      "target": "assets/veil/mystrix/shaders/program/core/blur.json",
+      "status": "retained-current",
+      "source_sha256": "dd4da58c553dc33f39399650edd4e088d1ed898cd5e485285a7cf2059b3ccb68",
+      "target_sha256": "dd4da58c553dc33f39399650edd4e088d1ed898cd5e485285a7cf2059b3ccb68"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/composite.fsh",
+      "target": "assets/veil/mystrix/shaders/program/core/composite.fsh",
+      "status": "retained-current",
+      "source_sha256": "d5fbe1d60f42cb24575b3d4d9dc328187bc38c2b950561b590f79e947f21fb60",
+      "target_sha256": "6c6f19d73cc0e8940649a73b1f27199cf7bcb24d2176553ed68182867f0ef5ac"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/composite.json",
+      "target": "assets/veil/mystrix/shaders/program/core/composite.json",
+      "status": "retained-current",
+      "source_sha256": "31af5c59e1be76be273d9ebd420af5ccc55978f71d4219f5ae4f646f0a7a796d",
+      "target_sha256": "3cc84ff8fba66f814411f7151767e0be2f900cb728189df8a3f7e22b70b8948d"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/unblur.fsh",
+      "target": "assets/veil/mystrix/shaders/program/core/unblur.fsh",
+      "status": "retained-current",
+      "source_sha256": "79bc6210fcb1be5ba85a836659a1d925a00725d7153576b9e2a4e36da5a7ebb0",
+      "target_sha256": "79bc6210fcb1be5ba85a836659a1d925a00725d7153576b9e2a4e36da5a7ebb0"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/core/unblur.json",
+      "target": "assets/veil/mystrix/shaders/program/core/unblur.json",
+      "status": "retained-current",
+      "source_sha256": "f4fe33f06f79b223c001f66b96f76f7235df07fe6a627e2abb6e11ebdd52a48d",
+      "target_sha256": "f4fe33f06f79b223c001f66b96f76f7235df07fe6a627e2abb6e11ebdd52a48d"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/debug/array.fsh",
+      "target": "assets/veil/mystrix/shaders/program/debug/array.fsh",
+      "status": "retained-current",
+      "source_sha256": "c03d1b40611b9c6b84944c3c45ab12445ea2950fa9e890f753f979c2000aa367",
+      "target_sha256": "c03d1b40611b9c6b84944c3c45ab12445ea2950fa9e890f753f979c2000aa367"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/debug/array.json",
+      "target": "assets/veil/mystrix/shaders/program/debug/array.json",
+      "status": "retained-current",
+      "source_sha256": "77ed37c512aaedb037ba856477a507e0debba3c88683b72f4caed3afbcbd487d",
+      "target_sha256": "77ed37c512aaedb037ba856477a507e0debba3c88683b72f4caed3afbcbd487d"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/debug/cubemap.fsh",
+      "target": "assets/veil/mystrix/shaders/program/debug/cubemap.fsh",
+      "status": "retained-current",
+      "source_sha256": "2c95da939cfae9357695d08000162762f919407915dd8b317c694cbbe8e8e92e",
+      "target_sha256": "2c95da939cfae9357695d08000162762f919407915dd8b317c694cbbe8e8e92e"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/debug/cubemap.json",
+      "target": "assets/veil/mystrix/shaders/program/debug/cubemap.json",
+      "status": "retained-current",
+      "source_sha256": "8e47e1ad7ad33721625325e16d70705c04779561c1781028c496306604cc593c",
+      "target_sha256": "8e47e1ad7ad33721625325e16d70705c04779561c1781028c496306604cc593c"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/light/area.fsh",
+      "target": "assets/veil/mystrix/shaders/program/light/area.fsh",
+      "status": "retained-current",
+      "source_sha256": "1c3dfd6f17cca85fbcb6b0582c4321381e2b545ef36e0bf6c2dfc0c433ce0e6f",
+      "target_sha256": "e9577126ea74e34a4483e7abff1028efc7115cf19dda52b28e2a6b8d14df67cd"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/light/area.json",
+      "target": "assets/veil/mystrix/shaders/program/light/area.json",
+      "status": "retained-current",
+      "source_sha256": "14504ab97c77a899f5f0e106326091ada907b86e745373eb5b7d2a836e2c7f4b",
+      "target_sha256": "14504ab97c77a899f5f0e106326091ada907b86e745373eb5b7d2a836e2c7f4b"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/light/area.vsh",
+      "target": "assets/veil/mystrix/shaders/program/light/area.vsh",
+      "status": "retained-current",
+      "source_sha256": "bc1f91aed5e9a01ca9fd849a8ed59c45cd4a1af1aee0d8f478bf09c397300427",
+      "target_sha256": "1c94214b56886850459b84834f397e6e32f6796f39e0f30b082ad760a36427c3"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/light/directional.fsh",
+      "target": "assets/veil/mystrix/shaders/program/light/directional.fsh",
+      "status": "retained-current",
+      "source_sha256": "384f95be2cca74d582244dda9e18f73b4e561b4581d228580eef34fbcb323706",
+      "target_sha256": "e59938ca62a3809ed09199eb0355c0ca05e789884b87bfa99c4aae0a9e011980"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/light/directional.json",
+      "target": "assets/veil/mystrix/shaders/program/light/directional.json",
+      "status": "retained-current",
+      "source_sha256": "88e16c74e02b0333cb58f339dbdaaeb8e8edf502d380feb64c03f9e502b5a543",
+      "target_sha256": "7967da137a182a59f12519345903918ae3d84cca01de971216931dbb7d6827ae"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/light/indirect_sphere.comp",
+      "target": "assets/veil/mystrix/shaders/program/light/indirect_sphere.comp",
+      "status": "retained-current",
+      "source_sha256": "9c32e68db242209bc5872d27ea9865ec74e9d61fc61378ca8c1947fa966de757",
+      "target_sha256": "0d1c38eeb73f7fc55922de91b961c59d277bca85def819ccb92eb05af798e13b"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/light/indirect_sphere.json",
+      "target": "assets/veil/mystrix/shaders/program/light/indirect_sphere.json",
+      "status": "retained-current",
+      "source_sha256": "e80819d46d470b9be13b6fe39ef6e169e25c8cb93e21b5822da61f51a6d70133",
+      "target_sha256": "e80819d46d470b9be13b6fe39ef6e169e25c8cb93e21b5822da61f51a6d70133"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/light/point.fsh",
+      "target": "assets/veil/mystrix/shaders/program/light/point.fsh",
+      "status": "retained-current",
+      "source_sha256": "a4ecb9977ae78a3ab97c214650bfd3dc2b416050f6ae63c3053f828a9cec7da8",
+      "target_sha256": "9a219a4ac810e5f7bcc58ed6c81667661df4197a3906d62987ab3daa7fa5be3d"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/light/point.json",
+      "target": "assets/veil/mystrix/shaders/program/light/point.json",
+      "status": "retained-current",
+      "source_sha256": "b820a8eaa8295c9d7a7cb80992937c615a521b4a03a6ce2610cce1eb80b95d3a",
+      "target_sha256": "b820a8eaa8295c9d7a7cb80992937c615a521b4a03a6ce2610cce1eb80b95d3a"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/light/point.vsh",
+      "target": "assets/veil/mystrix/shaders/program/light/point.vsh",
+      "status": "retained-current",
+      "source_sha256": "7697ee4cc279189d3c5d94a09fd1de206132b24ed0ccba6f8856e34ec7af3ffb",
+      "target_sha256": "d48ac400d32ee139f31e2a4379c73b63091c1ccf43306d7777ff122135f2f69d"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/necromancer/skinned_mesh.fsh",
+      "target": "assets/veil/mystrix/shaders/program/necromancer/skinned_mesh.fsh",
+      "status": "retained-current",
+      "source_sha256": "a8db5f9caaf00e7e51bf2a997f89417d54b498c0d1bf167da46a420e9bcd447b",
+      "target_sha256": "3bf6c5eb682f9b79f8104d0442dbee3a56437352c82a6c88a15e9d3d8f39c023"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/necromancer/skinned_mesh.json",
+      "target": "assets/veil/mystrix/shaders/program/necromancer/skinned_mesh.json",
+      "status": "retained-current",
+      "source_sha256": "afeb909d87b86588da70a788525f3cfd6868325c00823df4efcd389dcad24da9",
+      "target_sha256": "1cb24fc36b958874b19f73a632eef4bd6048627e26cc7a6739d90b71e16ed8cc"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/necromancer/skinned_mesh.vsh",
+      "target": "assets/veil/mystrix/shaders/program/necromancer/skinned_mesh.vsh",
+      "status": "retained-current",
+      "source_sha256": "a388a4500bfc1607c6703b14263882a936599c58ed513eea70c1015a77a6637d",
+      "target_sha256": "5c3981f2974ba79a1e49c5c2d5271c4bd180ff5b0e00c0577e41e533a92f1731"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/quasar/particle.fsh",
+      "target": "assets/veil/mystrix/shaders/program/quasar/particle.fsh",
+      "status": "retained-current",
+      "source_sha256": "1e9ed1be8c855899f5c7458c54bb6e5d1b3e62b2f61cc647ba982d3eaeb197ab",
+      "target_sha256": "1e9ed1be8c855899f5c7458c54bb6e5d1b3e62b2f61cc647ba982d3eaeb197ab"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/quasar/particle.json",
+      "target": "assets/veil/mystrix/shaders/program/quasar/particle.json",
+      "status": "retained-current",
+      "source_sha256": "fafdc440cdf4df4e8e8d30705edcfa29c414eb2de920c54397eac7e9a2579e99",
+      "target_sha256": "fafdc440cdf4df4e8e8d30705edcfa29c414eb2de920c54397eac7e9a2579e99"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/quasar/particle.vsh",
+      "target": "assets/veil/mystrix/shaders/program/quasar/particle.vsh",
+      "status": "retained-current",
+      "source_sha256": "78f161c17d85ef89138e587829ef5fc584f56073ef238a42b047ac6255b526b9",
+      "target_sha256": "dfa42258385ae5ce98bbcd301960f5e0a2609edc24dcdfdc8279bd96d3cda116"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/quasar/particle_additive.fsh",
+      "target": "assets/veil/mystrix/shaders/program/quasar/particle_additive.fsh",
+      "status": "retained-current",
+      "source_sha256": "1c740b117074c35f28db322b12da2c4d188326c3c25a51d3c142428995bb4e67",
+      "target_sha256": "1c740b117074c35f28db322b12da2c4d188326c3c25a51d3c142428995bb4e67"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/quasar/particle_additive.json",
+      "target": "assets/veil/mystrix/shaders/program/quasar/particle_additive.json",
+      "status": "retained-current",
+      "source_sha256": "4fd4f6d93c006819fa2c771cfa6020fc848b852f9d7b59b5b99bd379f952e719",
+      "target_sha256": "4fd4f6d93c006819fa2c771cfa6020fc848b852f9d7b59b5b99bd379f952e719"
+    },
+    {
+      "source": "assets/veil/pinwheel/shaders/program/quasar/particle_additive.vsh",
+      "target": "assets/veil/mystrix/shaders/program/quasar/particle_additive.vsh",
+      "status": "retained-current",
+      "source_sha256": "e2667196df71c9121f8fb2b6977468b97996231af896113ed2c0ef3d1ba4bd16",
+      "target_sha256": "e2667196df71c9121f8fb2b6977468b97996231af896113ed2c0ef3d1ba4bd16"
+    },
+    {
+      "source": "assets/veil/shaders_legacy/core/base.vsh",
+      "target": "assets/veil/shaders_legacy/core/base.vsh",
+      "status": "imported",
+      "source_sha256": "419b8906a583fd4172cd744bc043414a22089d77eda4738513488a366ed7c0ad",
+      "target_sha256": "419b8906a583fd4172cd744bc043414a22089d77eda4738513488a366ed7c0ad"
+    },
+    {
+      "source": "assets/veil/shaders_legacy/core/transparent_texture.fsh",
+      "target": "assets/veil/shaders_legacy/core/transparent_texture.fsh",
+      "status": "imported",
+      "source_sha256": "c9b509fb28322c720b0b7813ddf4462a38166aa3aa7971a4ebd8931f6307961e",
+      "target_sha256": "c9b509fb28322c720b0b7813ddf4462a38166aa3aa7971a4ebd8931f6307961e"
+    },
+    {
+      "source": "assets/veil/shaders_legacy/core/transparent_texture.json",
+      "target": "assets/veil/shaders_legacy/core/transparent_texture.json",
+      "status": "imported",
+      "source_sha256": "f3fdcd2bd125db3ab08660d729c24329fc6e2d8843007618c7ac26e2b27a16bd",
+      "target_sha256": "f3fdcd2bd125db3ab08660d729c24329fc6e2d8843007618c7ac26e2b27a16bd"
+    },
+    {
+      "source": "assets/veil/shaders_legacy/include/common_math.glsl",
+      "target": "assets/veil/shaders_legacy/include/common_math.glsl",
+      "status": "imported",
+      "source_sha256": "5fdeed846e00f1c101928a4852a0da31b4d2bd64b8a90dcbdd1adac87999e932",
+      "target_sha256": "5fdeed846e00f1c101928a4852a0da31b4d2bd64b8a90dcbdd1adac87999e932"
+    },
+    {
+      "source": "assets/veil/shaders_legacy/include/luma.glsl",
+      "target": "assets/veil/shaders_legacy/include/luma.glsl",
+      "status": "imported",
+      "source_sha256": "0b174b85323455d1492dcf99232764073b46983234a8a05949214ae1860fa919",
+      "target_sha256": "0b174b85323455d1492dcf99232764073b46983234a8a05949214ae1860fa919"
+    },
+    {
+      "source": "assets/veil/shaders_legacy/include/noise.glsl",
+      "target": "assets/veil/shaders_legacy/include/noise.glsl",
+      "status": "imported",
+      "source_sha256": "23e684783495fc3f51894ac6da7baec0691c8438c0ceabf85553432388ed9d93",
+      "target_sha256": "23e684783495fc3f51894ac6da7baec0691c8438c0ceabf85553432388ed9d93"
+    },
+    {
+      "source": "assets/veil/shaders_legacy/program/postprocessing_base.vsh",
+      "target": "assets/veil/shaders_legacy/program/postprocessing_base.vsh",
+      "status": "imported",
+      "source_sha256": "0a306391e38f96941ac7bee075b500515300fb4c9d501cd3cb1389a5532d1bca",
+      "target_sha256": "0a306391e38f96941ac7bee075b500515300fb4c9d501cd3cb1389a5532d1bca"
+    },
+    {
+      "source": "assets/veil/textures/gui/item_shadow.png",
+      "target": "assets/veil/textures/gui/item_shadow.png",
+      "status": "retained-current",
+      "source_sha256": "b893ef05ab9bce592ca4be11df4ce3e9307d80eef13b5e643da173f8c50b5bb5",
+      "target_sha256": "b893ef05ab9bce592ca4be11df4ce3e9307d80eef13b5e643da173f8c50b5bb5"
+    },
+    {
+      "source": "assets/veil/textures/gui/logo.png",
+      "target": "assets/veil/textures/gui/logo.png",
+      "status": "retained-current",
+      "source_sha256": "71c885b091a1d5433148180cfd7083654b70b6ec6ab642b7ce054b0016a5ca84",
+      "target_sha256": "71c885b091a1d5433148180cfd7083654b70b6ec6ab642b7ce054b0016a5ca84"
+    },
+    {
+      "source": "assets/veil/textures/gui/troll.png",
+      "target": "assets/veil/textures/gui/troll.png",
+      "status": "retained-current",
+      "source_sha256": "8ccb7e29e7c91f3cf4d1123358409f187e53de8dc82b2aa782d839fd3a7d85bc",
+      "target_sha256": "8ccb7e29e7c91f3cf4d1123358409f187e53de8dc82b2aa782d839fd3a7d85bc"
+    },
+    {
+      "source": "assets/veil/textures/gui/white.png",
+      "target": "assets/veil/textures/gui/white.png",
+      "status": "retained-current",
+      "source_sha256": "f931c4ef86a1c32cabaf208020ec0251a90310a878e4c4fb5e7feb6993e17a37",
+      "target_sha256": "f931c4ef86a1c32cabaf208020ec0251a90310a878e4c4fb5e7feb6993e17a37"
+    },
+    {
+      "source": "assets/veil/textures/shader/blue_noise.png",
+      "target": "assets/veil/textures/shader/blue_noise.png",
+      "status": "retained-current",
+      "source_sha256": "e1972b11f3015fba23908ed15ecc58d445ddd0b5f2ee2fad9494a0ad09d2c531",
+      "target_sha256": "e1972b11f3015fba23908ed15ecc58d445ddd0b5f2ee2fad9494a0ad09d2c531"
+    },
+    {
+      "source": "assets/veil/textures/shader/blue_noise.png.mcmeta",
+      "target": "assets/veil/textures/shader/blue_noise.png.mcmeta",
+      "status": "retained-current",
+      "source_sha256": "14972e242987e4be84336806bc1f08e61480110a1668718688def1be06787f1b",
+      "target_sha256": "14972e242987e4be84336806bc1f08e61480110a1668718688def1be06787f1b"
+    },
+    {
+      "source": "assets/veil/textures/special/blank.png",
+      "target": "assets/veil/textures/special/blank.png",
+      "status": "retained-current",
+      "source_sha256": "9463a2b6ea0f40b2a4c5a6d83bd26187fcc74c0057fd2d2e4bd6e5b2fe621563",
+      "target_sha256": "9463a2b6ea0f40b2a4c5a6d83bd26187fcc74c0057fd2d2e4bd6e5b2fe621563"
+    },
+    {
+      "source": "assets/veil/textures/special/flamestexture.png",
+      "target": "assets/veil/textures/special/flamestexture.png",
+      "status": "retained-current",
+      "source_sha256": "783462587cc06a143256cc137884369e902c5a11b4f0ff39534feaff8a5d2fb5",
+      "target_sha256": "783462587cc06a143256cc137884369e902c5a11b4f0ff39534feaff8a5d2fb5"
+    },
+    {
+      "source": "assets/veil/textures/special/image.png",
+      "target": "assets/veil/textures/special/image.png",
+      "status": "retained-current",
+      "source_sha256": "7cc47a259f821aab63c0e8cfd97af7fbfab398be90beda602fe15707ee719dd4",
+      "target_sha256": "7cc47a259f821aab63c0e8cfd97af7fbfab398be90beda602fe15707ee719dd4"
+    },
+    {
+      "source": "resourcepacks/black_hole/assets/venuslibs/pinwheel/framebuffers/black_hole.fsh",
+      "target": "resourcepacks/black_hole/assets/venuslibs/mystrix/shaders/program/black_hole.fsh",
+      "status": "adapted",
+      "source_sha256": "e49e5df480a3e83661001e77fdb3c4ef05732f6ae9c53b9823040830734a574f",
+      "target_sha256": "a9dab53b80fbf724926d9b16a35e8acb67f44e9aa6430aef9ccbf9e74f04c6ee"
+    },
+    {
+      "source": "resourcepacks/black_hole/assets/venuslibs/pinwheel/framebuffers/black_hole.json",
+      "target": "resourcepacks/black_hole/assets/venuslibs/mystrix/framebuffers/black_hole.json",
+      "status": "imported",
+      "source_sha256": "2c5f1f93ba299a7a7fb93f90342c2deb861c5a816abaa5351cab1aed30d98e80",
+      "target_sha256": "56e94c540c772c4846304c9bf1333b6ac2eb1d5e5a6f0e0923d3030779f9b258"
+    },
+    {
+      "source": "resourcepacks/black_hole/assets/venuslibs/pinwheel/shaders/program/black_hole.json",
+      "target": "resourcepacks/black_hole/assets/venuslibs/mystrix/shaders/program/black_hole.json",
+      "status": "imported",
+      "source_sha256": "c6f6cafdaf448d7abf0e372e319bc883675f7abfe9e7763a0a7af9b1c1da54a8",
+      "target_sha256": "adb30d74dc47ae733ca215562b67cc070a4109ec4f6ac36f0d0a440c3845920f"
+    },
+    {
+      "source": "resourcepacks/black_hole/pack.mcmeta",
+      "target": "resourcepacks/black_hole/pack.mcmeta",
+      "status": "adapted",
+      "source_sha256": "8e9a6b3160aebb5f041dd089618eb5aa05f512f63d50abef4cef034a848cb2cc",
+      "target_sha256": "405c98097b95292ac025408cfca0ed6ba585b0d64b50acd725552cd25e05c8a2"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/post/cube_fog.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/post/cube_fog.json",
+      "status": "imported",
+      "source_sha256": "2cd0e50518a75961df7462fd8a0520814a50d1ed77d151d56e939f1b37857a6e",
+      "target_sha256": "c1d7753c1430a9f6f1a65ccbb1ce77efdc46ba9985478bff97086cd5726a24fa"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/post/fog.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/post/fog.json",
+      "status": "imported",
+      "source_sha256": "b2cdcb39afbef56b39c94e5281c4dbece5088cf9cf0f22656e14f66486ae2b78",
+      "target_sha256": "b2cdcb39afbef56b39c94e5281c4dbece5088cf9cf0f22656e14f66486ae2b78"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/post/height_fog.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/post/height_fog.json",
+      "status": "imported",
+      "source_sha256": "8a58ce88735bf30582274addb294c2f3ca59f87761c28bcda92a5275a762b9c9",
+      "target_sha256": "8a58ce88735bf30582274addb294c2f3ca59f87761c28bcda92a5275a762b9c9"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/post/skybox.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/post/skybox.json",
+      "status": "imported",
+      "source_sha256": "9987849a3e7a69ae0243f27ada5b1efc77ec0700a0c015ad7a34d387f5e90f82",
+      "target_sha256": "9987849a3e7a69ae0243f27ada5b1efc77ec0700a0c015ad7a34d387f5e90f82"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/post/space_test.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/post/space_test.json",
+      "status": "imported",
+      "source_sha256": "5f1b777e0bf8cf0305c4eb4b3fe8bc5787b352ff12c3f91e8546bf9de3178e4d",
+      "target_sha256": "5f1b777e0bf8cf0305c4eb4b3fe8bc5787b352ff12c3f91e8546bf9de3178e4d"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/post/wall_fog.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/post/wall_fog.json",
+      "status": "imported",
+      "source_sha256": "cdae209123ee27ed74c03b47146477697a345ac5b89e50f5bbe37248465433d4",
+      "target_sha256": "a7180002693a7775b409e95652069fd1b442500242b7a205848f5ab0187b612e"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/include/cube_fog.fsh",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/include/cube_fog.fsh",
+      "status": "adapted",
+      "source_sha256": "2ec50d63dbf2302611d1188f47f2df58cc601c247df960010b5614647e8f8057",
+      "target_sha256": "c41f0e0b43fa2b8f1c3fd38330de8d2045ec11277767bcf0d29de2538675e68a"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/include/cube_fog.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/include/cube_fog.json",
+      "status": "imported",
+      "source_sha256": "6deb29e2ac8da8fb0fc8b296ef081c45bb8314bc2fe9f2048dcb0f7ec4dddd9d",
+      "target_sha256": "6deb29e2ac8da8fb0fc8b296ef081c45bb8314bc2fe9f2048dcb0f7ec4dddd9d"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/include/general_utils.glsl",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/include/general_utils.glsl",
+      "status": "imported",
+      "source_sha256": "4da8f197f617567df01dbce5c0d72ba20677e1d6e7432725ac2780c61be6ea40",
+      "target_sha256": "959ba0a734f6b8651260527420dd7fb123500164d27ae7e2063832c5ef531a0f"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/cube_fog.fsh",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/cube_fog.fsh",
+      "status": "adapted",
+      "source_sha256": "b1913685193f390ee8967999b560de10f16f72bd7aca4c88c4ade42f3dca06bd",
+      "target_sha256": "c41f0e0b43fa2b8f1c3fd38330de8d2045ec11277767bcf0d29de2538675e68a"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/cube_fog.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/cube_fog.json",
+      "status": "adapted",
+      "source_sha256": "d333c2af5d0f029e370ab49ebe1ba6e70d6b31a96432b2ad07327730fd2ef74d",
+      "target_sha256": "253f40916dc626a266c3101b000e96934c69553f94bc09760b56791b0c8d84ff"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/cube_fog_clone.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/cube_fog_clone.json",
+      "status": "adapted",
+      "source_sha256": "1a6f71ccf41eb01a52f5e8fd7013c8275625c79fd21ce1960413e74efa06b318",
+      "target_sha256": "253f40916dc626a266c3101b000e96934c69553f94bc09760b56791b0c8d84ff"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/fog.fsh",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/fog.fsh",
+      "status": "imported",
+      "source_sha256": "b9a31a47a94cdae6a85e180ba84b301f9c819e8114888ce22e832af8f35dc462",
+      "target_sha256": "b9a31a47a94cdae6a85e180ba84b301f9c819e8114888ce22e832af8f35dc462"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/fog.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/fog.json",
+      "status": "imported",
+      "source_sha256": "1e10c6655da792b89be52e076c64f9f46cce4ec8f9d484a2c62f7cbb3f25d71e",
+      "target_sha256": "1e10c6655da792b89be52e076c64f9f46cce4ec8f9d484a2c62f7cbb3f25d71e"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/height_fog.fsh",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/height_fog.fsh",
+      "status": "adapted",
+      "source_sha256": "6fe1b4a965837c1df615223dbbf07f5dfc504496cde9248fdd39b0c4fcbae749",
+      "target_sha256": "98ca7fabcf5d04b99518bcdcbea68bd2e5f2c544e838e2dcac791904ce0a9a3a"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/height_fog.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/height_fog.json",
+      "status": "imported",
+      "source_sha256": "88ca299a8ac72d39268f99bca0bd57bcee41375b7e1a8b2942771ff71ea32310",
+      "target_sha256": "88ca299a8ac72d39268f99bca0bd57bcee41375b7e1a8b2942771ff71ea32310"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/skybox.fsh",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/skybox.fsh",
+      "status": "imported",
+      "source_sha256": "76f3dad686278c04c786c182c4c04e8cfe11bba89f135c8a73d1f68cfbe63504",
+      "target_sha256": "76f3dad686278c04c786c182c4c04e8cfe11bba89f135c8a73d1f68cfbe63504"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/skybox.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/skybox.json",
+      "status": "imported",
+      "source_sha256": "5ca81113470b8ed1da32b186cea429a1658ffc2b6fa0e54cdbdbabc0f887f214",
+      "target_sha256": "5ca81113470b8ed1da32b186cea429a1658ffc2b6fa0e54cdbdbabc0f887f214"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/space_test.fsh",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/space_test.fsh",
+      "status": "imported",
+      "source_sha256": "3e49ce0bf2710e518867e9db2b39734b7e0aeae607c6d02c398982af21821b79",
+      "target_sha256": "3e49ce0bf2710e518867e9db2b39734b7e0aeae607c6d02c398982af21821b79"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/space_test.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/space_test.json",
+      "status": "imported",
+      "source_sha256": "134086b24370eb42af9cbf44679c32df00950db420c22e2b847a8bff699e3627",
+      "target_sha256": "134086b24370eb42af9cbf44679c32df00950db420c22e2b847a8bff699e3627"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/wall_fog.fsh",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/wall_fog.fsh",
+      "status": "adapted",
+      "source_sha256": "fd5a575301dc1e4e4550cb86b703b2122258e102c06efce8faf0ce9d2e0817c5",
+      "target_sha256": "c3ced19bb5cfc3b3ecfbe02f0b57100c27020a18c2dea380137a67fd085288da"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/pinwheel/shaders/program/wall_fog.json",
+      "target": "resourcepacks/fog/assets/veil/mystrix/shaders/program/wall_fog.json",
+      "status": "imported",
+      "source_sha256": "6deb29e2ac8da8fb0fc8b296ef081c45bb8314bc2fe9f2048dcb0f7ec4dddd9d",
+      "target_sha256": "6deb29e2ac8da8fb0fc8b296ef081c45bb8314bc2fe9f2048dcb0f7ec4dddd9d"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/textures/special/cubemaps_skybox.png",
+      "target": "resourcepacks/fog/assets/veil/textures/special/cubemaps_skybox.png",
+      "status": "imported",
+      "source_sha256": "76ddaf9bd348752be38980bd7a877f30acd6116166b97789ca0e595271a36b57",
+      "target_sha256": "76ddaf9bd348752be38980bd7a877f30acd6116166b97789ca0e595271a36b57"
+    },
+    {
+      "source": "resourcepacks/fog/assets/veil/textures/special/cubemaps_skybox.png.mcmeta",
+      "target": "resourcepacks/fog/assets/veil/textures/special/cubemaps_skybox.png.mcmeta",
+      "status": "imported",
+      "source_sha256": "62b67f3b373139e7886fd3c61a620d38a0c33b47a67d4cf53b25a4a4970704ad",
+      "target_sha256": "62b67f3b373139e7886fd3c61a620d38a0c33b47a67d4cf53b25a4a4970704ad"
+    },
+    {
+      "source": "resourcepacks/fog/pack.mcmeta",
+      "target": "resourcepacks/fog/pack.mcmeta",
+      "status": "adapted",
+      "source_sha256": "27a1f41cb636451781a4c5773d8a03d7f60ecc12e5023861334d21693333a86b",
+      "target_sha256": "8213d43ce54af813f71a1dd1330ddfd56f07ec153d65c26d5afeb6692d2e008a"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/emitters/basic_smoke.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/emitters/basic_smoke.json",
+      "status": "imported",
+      "source_sha256": "95aa43aa425e84fcb4c626643c6aca83f450386c3022c196b5314351c788af89",
+      "target_sha256": "95aa43aa425e84fcb4c626643c6aca83f450386c3022c196b5314351c788af89"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/emitters/cannon.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/emitters/cannon.json",
+      "status": "imported",
+      "source_sha256": "7a8b41ea2dd8cc37a00cff0a33555b2ada70c49a11c13e7ee04d285b6f2053e1",
+      "target_sha256": "7a8b41ea2dd8cc37a00cff0a33555b2ada70c49a11c13e7ee04d285b6f2053e1"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/emitters/double_smoke_rings.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/emitters/double_smoke_rings.json",
+      "status": "imported",
+      "source_sha256": "b93120994ad31cc2933cd16ac29a02d9f7aa701548cde6b9015ced94fb35ff8b",
+      "target_sha256": "b93120994ad31cc2933cd16ac29a02d9f7aa701548cde6b9015ced94fb35ff8b"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/emitters/enderman_teleport.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/emitters/enderman_teleport.json",
+      "status": "imported",
+      "source_sha256": "1777f717bec7e8833e05f07ae052bb4654d17712e1b96d23ae4b1bbc70945090",
+      "target_sha256": "1777f717bec7e8833e05f07ae052bb4654d17712e1b96d23ae4b1bbc70945090"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/emitters/rockets.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/emitters/rockets.json",
+      "status": "imported",
+      "source_sha256": "e581373064045bb2d09329c80afcfa0ce98e6a1f5bc262f6278198d4e983ffc2",
+      "target_sha256": "e581373064045bb2d09329c80afcfa0ce98e6a1f5bc262f6278198d4e983ffc2"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/emitters/smoke_big.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/emitters/smoke_big.json",
+      "status": "imported",
+      "source_sha256": "382bd141d66231100372b58dd6dbd784e81274db06d93de7ccd959fe027e4f60",
+      "target_sha256": "382bd141d66231100372b58dd6dbd784e81274db06d93de7ccd959fe027e4f60"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/emitters/swiftshot_shrapnel.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/emitters/swiftshot_shrapnel.json",
+      "status": "imported",
+      "source_sha256": "bb0f82889cbc1a3c2ab39b467b206da2658e88ea64d857e267ff444f6ec9e674",
+      "target_sha256": "bb0f82889cbc1a3c2ab39b467b206da2658e88ea64d857e267ff444f6ec9e674"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/emitters/wind.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/emitters/wind.json",
+      "status": "imported",
+      "source_sha256": "965c52b8dc0f3455440bee57da581ba78704d9677742deb9c08c0852960452ba",
+      "target_sha256": "965c52b8dc0f3455440bee57da581ba78704d9677742deb9c08c0852960452ba"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/basic_smoke.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/basic_smoke.json",
+      "status": "imported",
+      "source_sha256": "59cf56c7803fe756f827cc4fe9137be23a22a2002b081330dc21321b3b8a637c",
+      "target_sha256": "59cf56c7803fe756f827cc4fe9137be23a22a2002b081330dc21321b3b8a637c"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/cannon.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/cannon.json",
+      "status": "imported",
+      "source_sha256": "eff08e4800f096b71692441d92c613f5b1b2cfaa19f8ef7fed39a1a732d993eb",
+      "target_sha256": "eff08e4800f096b71692441d92c613f5b1b2cfaa19f8ef7fed39a1a732d993eb"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/rocket.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/rocket.json",
+      "status": "imported",
+      "source_sha256": "2d0b3848efbc3cf41793cffbd5a98f54332e21c53f5a058035cc8474e5017e44",
+      "target_sha256": "2d0b3848efbc3cf41793cffbd5a98f54332e21c53f5a058035cc8474e5017e44"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/smoke_big.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/smoke_big.json",
+      "status": "adapted",
+      "source_sha256": "a4ef23a4ff79808bb51342bbdacc2c152ef968f2135318b0329803de2ad59cc4",
+      "target_sha256": "9b9b6770cb55ba4b3acc73b4dad97aec06864f600a1da8f4edb174d96544c7a6"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/smoke_bigger.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/smoke_bigger.json",
+      "status": "adapted",
+      "source_sha256": "818502ecda5ba80f46d9c8b680a7499c7f2a6448ef8f359862a6c6b99cf7ead0",
+      "target_sha256": "ee6d192be9980268e26c20fb7a94e489959701024b54841358ccb29cbf4b625b"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/swiftshot.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/swiftshot.json",
+      "status": "imported",
+      "source_sha256": "e5f3230c6a2ff6985fba83f964d9b2094c8c01aa856dfc09a2fc3606a269681d",
+      "target_sha256": "e5f3230c6a2ff6985fba83f964d9b2094c8c01aa856dfc09a2fc3606a269681d"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/swiftshot_shrapnel.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/swiftshot_shrapnel.json",
+      "status": "imported",
+      "source_sha256": "77e1e4591dd89a488aa752e0985ae561bab39f28dde0a4273aa3686646f629db",
+      "target_sha256": "77e1e4591dd89a488aa752e0985ae561bab39f28dde0a4273aa3686646f629db"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/test_particle.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/particle/test_particle.json",
+      "status": "imported",
+      "source_sha256": "3fe33fa0712b105ba6d91d3cedf82b2e78c48add89d54b91674199f9ecac7529",
+      "target_sha256": "3fe33fa0712b105ba6d91d3cedf82b2e78c48add89d54b91674199f9ecac7529"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/basic_smoke.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/basic_smoke.json",
+      "status": "imported",
+      "source_sha256": "6f41e02c44879e8ea62e0a8275f564c8fd34a219178cbcc1456dfd3075d38ca9",
+      "target_sha256": "6f41e02c44879e8ea62e0a8275f564c8fd34a219178cbcc1456dfd3075d38ca9"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/cannon.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/cannon.json",
+      "status": "imported",
+      "source_sha256": "d19142ee800701bd66466dbdb4d5647d6a64370919cad81bc54e2033d8286710",
+      "target_sha256": "d19142ee800701bd66466dbdb4d5647d6a64370919cad81bc54e2033d8286710"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/large_ring.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/large_ring.json",
+      "status": "imported",
+      "source_sha256": "1557c58c9f0e8853fd450d277c8c1aa58f4181b23f3d85998500e86797f7a875",
+      "target_sha256": "1557c58c9f0e8853fd450d277c8c1aa58f4181b23f3d85998500e86797f7a875"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/rocket.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/rocket.json",
+      "status": "imported",
+      "source_sha256": "1041f40137abe20322b545bff8187412714cf9f51b6731e6fb0e148ea64129f7",
+      "target_sha256": "1041f40137abe20322b545bff8187412714cf9f51b6731e6fb0e148ea64129f7"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/small_ring.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/small_ring.json",
+      "status": "imported",
+      "source_sha256": "869d8d2f754a55376b0b1c22b6d1f89779cfee87cb53b7c11f154a379c4ea4d6",
+      "target_sha256": "869d8d2f754a55376b0b1c22b6d1f89779cfee87cb53b7c11f154a379c4ea4d6"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/swiftshot_shape.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/swiftshot_shape.json",
+      "status": "imported",
+      "source_sha256": "377cd88ce970fd510166985963183fdfc6dde91ba0ac21cedcd08337a0ca7ea8",
+      "target_sha256": "377cd88ce970fd510166985963183fdfc6dde91ba0ac21cedcd08337a0ca7ea8"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/swiftshot_shrapnel.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/swiftshot_shrapnel.json",
+      "status": "imported",
+      "source_sha256": "ebf3afc626092ffbbdd38c8a10f9645f4c2ef70d58461d60cb3ef43a8f6da57a",
+      "target_sha256": "ebf3afc626092ffbbdd38c8a10f9645f4c2ef70d58461d60cb3ef43a8f6da57a"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/test_shape.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/emitter/shape/test_shape.json",
+      "status": "imported",
+      "source_sha256": "0f52e86fc19e9444081a14822ba08ae8ee1f7bc6d58075c76f1049f4e09b8d67",
+      "target_sha256": "0f52e86fc19e9444081a14822ba08ae8ee1f7bc6d58075c76f1049f4e09b8d67"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/block.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/block.json",
+      "status": "adapted",
+      "source_sha256": "2ad5d96e6796815dda280f5ec37296006292b438feeb11ddc0b089b007017c00",
+      "target_sha256": "8e7b7cf47898b22a46d07a749bbd3aa08f04c286d36ad742e1c4582a5d6c517e"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/block_vel.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/block_vel.json",
+      "status": "adapted",
+      "source_sha256": "5130285c52044bc4fa8e5e2c7a3dc1815a827eb652a7ce6473e7e66ef90c2780",
+      "target_sha256": "ac7a23d926feb71adae064fbe2ee71a684ca17bd7340bfb31442eb610b6970cc"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/cannon_velocity.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/cannon_velocity.json",
+      "status": "adapted",
+      "source_sha256": "0308b7d9ae1c1e191765452994c621786d289c268837c611bb65aee574b0bf19",
+      "target_sha256": "b2a622d1b36dc9204fb51c10d4e8ce5f8078c71491b5645ff9ecafd2cb0975e8"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/ember_light.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/ember_light.json",
+      "status": "adapted",
+      "source_sha256": "3c53ee37b572b793d8734a44d3ec472f85eb56251cd9f05f57aeced75d8cd4db",
+      "target_sha256": "b155c724f6fb22e9a18ad42076c016e3433d0bb9f7082e440345d041743b137a"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/enderman_light.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/enderman_light.json",
+      "status": "adapted",
+      "source_sha256": "c13facb7768abd446e504012e22de226e89f23a586914e3db019050b3b83c41b",
+      "target_sha256": "f4257c72087de8b75468774df964d8ce1b44beaf90661a3b8f96464c1c9eb293"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/firefly_light.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/firefly_light.json",
+      "status": "adapted",
+      "source_sha256": "64e960420832b755dd129c817d87b62055c4c3959356af198c5a0df792ad4f5f",
+      "target_sha256": "a6087016d74e74c1a01f44fc937a4657749d84515adb3e7d00e813cbb8e4d7a7"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/rocket.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/rocket.json",
+      "status": "adapted",
+      "source_sha256": "9a660420f446ce5da634e21a0ba3c401db7360def0ba94ee37a282246eb7975f",
+      "target_sha256": "c489ce4592aa1b076e70a8aa7eb5acdeb11e15f2e3c8b9b83fb3e6215dc02780"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/rocket_light.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/rocket_light.json",
+      "status": "adapted",
+      "source_sha256": "3644d81d004002e5ec08b19c3698899cfa0de47a0e825ef1577bc6e3c1b97e28",
+      "target_sha256": "5ea24b0cff11a4a009055c13e3edee927bb3ddd455bfdeff75a0179d23c1e207"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/smoke_big_init.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/smoke_big_init.json",
+      "status": "adapted",
+      "source_sha256": "eaf31019bf611971d5548e15978aea5083725e704217c485c8795d0022c2c1fa",
+      "target_sha256": "d647c38f1315c0ec79402b2a9c361e3cdf7f73941578d892b97da76f82d812e1"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/smoke_random_init_rotation.json",
+      "target": "resourcepacks/test_particles/migration_reference/smoke_random_init_rotation.json",
+      "status": "adapted-to-particle-settings",
+      "source_sha256": "f84592ae207d24980fa2ee1c0a90b4cb93b06f096b593a71dddb75f5fe6430eb",
+      "target_sha256": "a0d2621e09f84b27027f9df1cc210827dffe2551555a7944bd37b9d26b1ad615"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/smoke_small_init.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/smoke_small_init.json",
+      "status": "adapted",
+      "source_sha256": "52766579f102042b1a6eaff40f59e7c30c0a75761cfbfd392bd8894bbb5a5e69",
+      "target_sha256": "2db0c4128cc6d521e02b971182971eb74b2a4f4d8ce4ebbf0f065ee960a2c4e2"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/smoke_vel.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/smoke_vel.json",
+      "status": "adapted",
+      "source_sha256": "7f272e469d8cf8597cc8758bb72572c2ea3ffa9d0ecafdf7410dd3f06630b3a0",
+      "target_sha256": "c6977848bd8f7f0799ed84b007635d7bd66d029c7cabef6fe1da5ac161e29104"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/init/swiftshot_velocity.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/init/swiftshot_velocity.json",
+      "status": "adapted",
+      "source_sha256": "360961f3607fba9b8dcfada6a96464a1fc3a181c4b2ca5d64f878e53ba5a80b4",
+      "target_sha256": "3aa617b8cedfc72b071e73ee7049b631abb631b1763e8be9aa0a0dd52b1024c8"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/basic_smoke.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/basic_smoke.json",
+      "status": "adapted",
+      "source_sha256": "2a8af31ed6552d4773e4bd6b8d5f83b48e8648a1d775911cd07d00ff0e6d7423",
+      "target_sha256": "2084891d0cd650752b13378a555c0f1b6a6b8cc06d7a2a1f8e5de1ccafcf64c7"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/cannon_data.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/cannon_data.json",
+      "status": "adapted",
+      "source_sha256": "5b7288a9073cbf6061b46a5e4bb99886ed349e67b960edf22050f8fc5bf6baf8",
+      "target_sha256": "1cf47cd8f333b57f13f837d6046b145112ef567c18a5e5129e084d9163fa9eaf"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/rocket.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/rocket.json",
+      "status": "adapted",
+      "source_sha256": "32df118005f76f8b23b5ea1009d3dea9fce4991844b52c67e5cadfec130520f3",
+      "target_sha256": "384676c80f182a36f3abee75811018d8f9035584a1314795802862a946bb2e40"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/smoke_big.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/smoke_big.json",
+      "status": "adapted",
+      "source_sha256": "704f333ce68c936af59c84928cd81b24f96c62b0516380d3880fa3d7ff0261e4",
+      "target_sha256": "d17623f675b790a5f16bf90602218f7c5280885c5ad3413635f94e1670f39901"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/smoke_big_static.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/smoke_big_static.json",
+      "status": "adapted",
+      "source_sha256": "cb8ed5d94ee10b9bc5ff2665f9250c9408dd0005658c0360602f7880a415eee5",
+      "target_sha256": "834f7dc21cf635f1689068ef6f62345fa06d184eee0d7b36df10b186b0e6571f"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/swiftshot_data.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/swiftshot_data.json",
+      "status": "adapted",
+      "source_sha256": "53d5896dab3593844c8ace19b24f3bd9cecc0897fab8652f34edd5965792c573",
+      "target_sha256": "0e1d8508eb2016bc7f01501f0ff2cb3b6a277e0209ff77a63b9b35a8f8c487c0"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/swiftshot_shrapnel_data.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/swiftshot_shrapnel_data.json",
+      "status": "adapted",
+      "source_sha256": "e40239a60c80953139e71ea7e4b43bc205e218dfea62effd091d11d84952e5ac",
+      "target_sha256": "9c61194ed539cec76e0c151e67d417c0203bdc25d9846f7d68dfda7a080bc89b"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/test_data.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/particle_data/test_data.json",
+      "status": "adapted",
+      "source_sha256": "da1fc17628ca80a54d5b905d910f71a9b392467d5fc7e64928c285c94f09a6ca",
+      "target_sha256": "cf75f25855351479b139c76f48e55547e1765c088fb97fdf8796a25179fa37d8"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/render/color/firefly_color.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/render/color/firefly_color.json",
+      "status": "adapted",
+      "source_sha256": "a2f20ad8210ee7630c3dbeb22e8134b295a5cafd526da2ddda32fb4216746102",
+      "target_sha256": "c339b325de87f7adfdb1a7ce3af4fcbd7b1bd86a1b35c2190ec3ec722cdd9d5a"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/render/color/rocket.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/render/color/rocket.json",
+      "status": "adapted",
+      "source_sha256": "43c08b86695542040a847db2a38e6aee09db74061ca778777a1e77f3a3c9c999",
+      "target_sha256": "e63a11d09b9a07a19c30130b75cdb2d3e67a6c6117de53227df1602f249d77de"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/render/color/rocket_smoke_color_over_lifetime.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/render/color/rocket_smoke_color_over_lifetime.json",
+      "status": "adapted",
+      "source_sha256": "ef0b676ae03851b54540084f35fdc7cc2434a06f0481825c7058c3e2a1ee398e",
+      "target_sha256": "99a330c2e12caf68eb41ba9d07ca48bd0b0accdab313070f7a280ec5a20cd642"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/render/color/smoke_color_over_lifetime.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/render/color/smoke_color_over_lifetime.json",
+      "status": "adapted",
+      "source_sha256": "307c857611617331472ff1080b3ceb4de8eada75ab29307ccddd97ec714722bb",
+      "target_sha256": "eb3d655088e8da9cad14b1eae5cd71db29af251bd0a6ef5cc805c5026217ce17"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/render/color/swiftshot_color.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/render/color/swiftshot_color.json",
+      "status": "adapted",
+      "source_sha256": "2cb7161c472fc0c0ad025af24abfa7f50ffac30f7d66d5870baa200f35366cc8",
+      "target_sha256": "1ce4ed606c011c94dd2e3903eaeecb825b9adff95022cf1442e163631738120e"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/render/trail/rocket.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/render/trail/rocket.json",
+      "status": "adapted",
+      "source_sha256": "5064dcfd34aa2ddedfdca1fe2bd9cfb890455b0f2b4eedac15bc05cd18b85e8d",
+      "target_sha256": "49fc603151ded7c210dce6fd3b16fd89304b941195817999923264680cb3180a"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/render/trail/rocket_add.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/render/trail/rocket_add.json",
+      "status": "adapted",
+      "source_sha256": "f1a37108ef6b68cf7868a66480f887b16f6d900ae0d516a0f905047c96597106",
+      "target_sha256": "2983c37d4e042f00f1097433932837f1d5152ddae1f5b001780321b239d7498b"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/render/trail/rocket_hot.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/render/trail/rocket_hot.json",
+      "status": "adapted",
+      "source_sha256": "7c6c56d16cc35185f09f2ce0eb1506cee19d42b068f2e2f3a2ab47487036bd57",
+      "target_sha256": "568cd9e6d319f87eda0c501963f951363f394a441ec7c68cd1ebd477caa1cb0f"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/render/trail/swiftshot_trail.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/render/trail/swiftshot_trail.json",
+      "status": "adapted",
+      "source_sha256": "bf270d39e78f605b2a8fdc8ca5a1d57654d4f49e255eeb7ab02fb08d2f19f020",
+      "target_sha256": "b89a359c69e241f42dc79b8b001fcf04c9dfda557eda3a9bfb14e9189ee6d734"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/render/trail/test_trail.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/render/trail/test_trail.json",
+      "status": "adapted",
+      "source_sha256": "2ce9f21e6bbba7807992354f8d9242b9adcc67126baad62a51918a7d7d383c7f",
+      "target_sha256": "5db3f4f429952a0003a9fb29f81a64eddc3e26d63a4474e83455df87dee75fdd"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/basic_smoke_tick_sub.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/basic_smoke_tick_sub.json",
+      "status": "adapted",
+      "source_sha256": "66e9e4bc9b74e161ae29e2de1ab58c1f2b0d285c5e836f415cb35f7110bef2b6",
+      "target_sha256": "39b4f3e35cfbfa4aa6b798e79ba6887ac019fb3fb09f6b7ed9072e787a26e07a"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/collision/rocket_explode.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/collision/rocket_explode.json",
+      "status": "adapted",
+      "source_sha256": "aff4958ed826049fe0887bff977b9c3ef44bb427dce21f9f41cfbb74e0d94dbe",
+      "target_sha256": "e5154f6f8c95d83d705ebc411096299cbc8be01d229ec430b01026d8ed680f85"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/collision/spark_bounce.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/collision/spark_bounce.json",
+      "status": "adapted",
+      "source_sha256": "f6e038567f912ca4cb1fcc4731143e8b7e0b1e0917722656b9cb30c8ba0c0cfb",
+      "target_sha256": "40310f1424d31fcad30e387f27fe23b91f32a8d486e05c05bf955537b137a614"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/drag/rocket_drag.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/drag/rocket_drag.json",
+      "status": "adapted",
+      "source_sha256": "1f1558c7438f7b9bba68f6236a1dcfb4386aa6b80540008c27fdaf7647e4c5bf",
+      "target_sha256": "05fb224d929808e0f21a8d400156f1e55ec950ba0aa26b97204d37aaaeeba0d7"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/drag/shrapnel_drag.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/drag/shrapnel_drag.json",
+      "status": "adapted",
+      "source_sha256": "280a421abf9074bdb94fb6a47827f77384823bc004281ad7ec5a5b9dbe634785",
+      "target_sha256": "70f4f4a3211e0548791b6b824d48969a0aa1af86046897e7731f150582ec8cc4"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/drag/smoke_big.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/drag/smoke_big.json",
+      "status": "adapted",
+      "source_sha256": "dec4ac59bb03eb6f26eac267de97ad637e68e57a7cbd8f54dafa55b0c15cf959",
+      "target_sha256": "7dbded910a56ef6c0c3c3f07c8264357896f4f56a8f492483c1019696ba231f4"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/drag/test_drag.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/drag/test_drag.json",
+      "status": "adapted",
+      "source_sha256": "280a421abf9074bdb94fb6a47827f77384823bc004281ad7ec5a5b9dbe634785",
+      "target_sha256": "70f4f4a3211e0548791b6b824d48969a0aa1af86046897e7731f150582ec8cc4"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/gravity/rocket.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/gravity/rocket.json",
+      "status": "adapted",
+      "source_sha256": "9051426c41bb5ad50f220c304f34a5c77919a208a6e947d317026a2d8284382c",
+      "target_sha256": "352a034af47d03857d9c63e3728be064be5ec677fa03824a270f19d2b1ccb595"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/gravity/shrapnel_gravity.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/gravity/shrapnel_gravity.json",
+      "status": "adapted",
+      "source_sha256": "7b677c132bdc2e2958d58afd142936984ffc239c96c1ae6ed5d50e073c15dcd8",
+      "target_sha256": "74f7a2940b099e062b6c32f95a97098320a8b866161c58e9ed8c4df7d52a4dd9"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/gravity/test_gravity.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/gravity/test_gravity.json",
+      "status": "adapted",
+      "source_sha256": "7b677c132bdc2e2958d58afd142936984ffc239c96c1ae6ed5d50e073c15dcd8",
+      "target_sha256": "74f7a2940b099e062b6c32f95a97098320a8b866161c58e9ed8c4df7d52a4dd9"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/point_attractor/rocket_point_attractor.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/point_attractor/rocket_point_attractor.json",
+      "status": "adapted",
+      "source_sha256": "b828071cbee07ada34d8f2025cfe1fe86673c32d05a5263a4008c629152396a9",
+      "target_sha256": "cd8788dc7f8d6d522db160bfba55bebde53f8bca86f3bd6766b103d9124e9ec2"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/point_attractor/swiftshot.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/point_attractor/swiftshot.json",
+      "status": "adapted",
+      "source_sha256": "b36f7318d3e4cd6985be6a94801345076c3553551992e831ae4b3ef6c7e0cb44",
+      "target_sha256": "097b516fb3a3a6bf81b790f967f654b24ba74e6147394b2e2273a2a2b46c0bbc"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/point_force/basic_smoke_point.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/point_force/basic_smoke_point.json",
+      "status": "adapted",
+      "source_sha256": "2531abf3d24c7e1f8ac290ae7a93b5da16155997268a1fb2f03be5b2cf2c9509",
+      "target_sha256": "13c0cb11476a019597bb8de96818567d773d6f03753f0656a66574fc9c331918"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/point_force/smoke_point.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/point_force/smoke_point.json",
+      "status": "adapted",
+      "source_sha256": "53cd3d23cad40b6edbf5ac12b7fdf949326252dafe9a7d768f9d4f1ef742e3e2",
+      "target_sha256": "eea6283e71f7cb803e1c033006b0cfdffab3536336892fbfa35e696f8c4b90aa"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/point_force/test_point.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/point_force/test_point.json",
+      "status": "adapted",
+      "source_sha256": "34a99d2ddd7579efa621f39e1780b41a18c1959990755ea148eead0db4518e40",
+      "target_sha256": "954ee7b8cdc5c01d425311a99a7bb0f456a735a5a48bb32bf87ad4574dd02f9c"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/vector_field/rocket_field.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/vector_field/rocket_field.json",
+      "status": "adapted",
+      "source_sha256": "45cf79e8eaf6ffea361c5aeb4c2653c39cb4d1920653b83e9f07afdd193656a8",
+      "target_sha256": "43aa187e3f5ba5a84516fd9b685cee93213b2005ac0a04ce1064a0e3c5644517"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/vector_field/test_vector_field.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/vector_field/test_vector_field.json",
+      "status": "adapted",
+      "source_sha256": "c85990e5997a3408a7e8922310517310cfa3d07ee68479ac89e10315315d899c",
+      "target_sha256": "bf4522962244dffa3f825ca3d91fd9ad19875789f674f2e55a42eec1dc6b9649"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/vortex/rocket_vortex.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/vortex/rocket_vortex.json",
+      "status": "adapted",
+      "source_sha256": "74b70d003d7fcd01b937c72de559564f4d56d58318081b94219bc55e524546e5",
+      "target_sha256": "46e4148561f9bf4fb1d4b8c0bb1b3c6369abf3c09ef3a6844e308da9a7d42f9d"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/vortex/swiftshot_vortex.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/vortex/swiftshot_vortex.json",
+      "status": "adapted",
+      "source_sha256": "31c155f0f2fea44006aebf9005ede7c57ce509325f207c86c3a9b10a880e8df8",
+      "target_sha256": "ea987526222279b76031454deb3d206b5d22a72417efc820190e531302ae1e0f"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/vortex/test_vortex.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/vortex/test_vortex.json",
+      "status": "adapted",
+      "source_sha256": "c784d990ddd1c579a1430a54f43960e68f71266560583a7ccc8b7886a918b1dd",
+      "target_sha256": "ae5ddb13a9012f0ea2014c460d05d50b620290b92fb0c40899c4e2679a77ae80"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/quasar/modules/update/force/wind/test_wind.json",
+      "target": "resourcepacks/test_particles/assets/veil/quasar/modules/module/update/force/wind/test_wind.json",
+      "status": "adapted",
+      "source_sha256": "5947fe73cff6795f4fbbbc8d721590d30589e5c649299458f99f9bc3b718baea",
+      "target_sha256": "77f10564f70748298d4bb82bce115e144b18452c0c8eb9631c66f55e53bc1497"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/textures/particle/smoke.png",
+      "target": "resourcepacks/test_particles/assets/veil/textures/particle/smoke.png",
+      "status": "imported",
+      "source_sha256": "c4a3a4f6d4bca5fdc274abcb0915429e16510d335b555bcd8ddc1240ff0a3676",
+      "target_sha256": "c4a3a4f6d4bca5fdc274abcb0915429e16510d335b555bcd8ddc1240ff0a3676"
+    },
+    {
+      "source": "resourcepacks/test_particles/assets/veil/textures/particle/smoke.png.mcmeta",
+      "target": "resourcepacks/test_particles/assets/veil/textures/particle/smoke.png.mcmeta",
+      "status": "imported",
+      "source_sha256": "a4f5e3c3235dd128ee6d2ce397217e8c77037dbcf641aaa5bef65824e3b4b168",
+      "target_sha256": "a4f5e3c3235dd128ee6d2ce397217e8c77037dbcf641aaa5bef65824e3b4b168"
+    },
+    {
+      "source": "resourcepacks/test_particles/pack.mcmeta",
+      "target": "resourcepacks/test_particles/pack.mcmeta",
+      "status": "adapted",
+      "source_sha256": "1df535fbf87db371523201b30fb7deef4ebc1e341ee21865ed64299af2957bbb",
+      "target_sha256": "681d324ca757244875adde17e061a335a0b439fcd7dc2bb6719e25843c99a4e2"
+    },
+    {
+      "source": "resourcepacks/test_shaders/assets/veil/pinwheel/framebuffers/test.json",
+      "target": "resourcepacks/test_shaders/assets/veil/mystrix/framebuffers/test.json",
+      "status": "imported",
+      "source_sha256": "a36d5c5bf3128de124f5df4f8e8717727dcc2aa8662a660daef1a46987b67760",
+      "target_sha256": "a36d5c5bf3128de124f5df4f8e8717727dcc2aa8662a660daef1a46987b67760"
+    },
+    {
+      "source": "resourcepacks/test_shaders/assets/veil/pinwheel/post/first_person.json",
+      "target": "resourcepacks/test_shaders/assets/veil/mystrix/post/first_person.json",
+      "status": "imported",
+      "source_sha256": "8e4c4ad6603d4f060c63d869978cdc89ccb7d4f8e3a371392b1a3cf823b7c609",
+      "target_sha256": "8e4c4ad6603d4f060c63d869978cdc89ccb7d4f8e3a371392b1a3cf823b7c609"
+    },
+    {
+      "source": "resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/minecraft/shaders/core/rendertype_cutout.txt",
+      "target": "resourcepacks/test_shaders/migration_reference/shader_modifiers/minecraft/shaders/core/rendertype_cutout.txt",
+      "status": "imported",
+      "source_sha256": "35c64bea6e5d0234f46ee0572e88ddb6c50e524e0db9c7f79fee6df9fa5ffd12",
+      "target_sha256": "35c64bea6e5d0234f46ee0572e88ddb6c50e524e0db9c7f79fee6df9fa5ffd12"
+    },
+    {
+      "source": "resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/minecraft/shaders/core/rendertype_solid.vsh.txt",
+      "target": "resourcepacks/test_shaders/migration_reference/shader_modifiers/minecraft/shaders/core/rendertype_solid.vsh.txt",
+      "status": "imported",
+      "source_sha256": "19958b02f505bd401b38895c99aad939edb05d37e570789c27d56110b78f21f6",
+      "target_sha256": "19958b02f505bd401b38895c99aad939edb05d37e570789c27d56110b78f21f6"
+    },
+    {
+      "source": "resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/sodium/shaders/blocks/block_layer_opaque.vsh.txt",
+      "target": "resourcepacks/test_shaders/migration_reference/shader_modifiers/sodium/shaders/blocks/block_layer_opaque.vsh.txt",
+      "status": "imported",
+      "source_sha256": "ec3d077d1b1e3e8f83dd5b999912bcb95f258bbbabb8def4306a3b4b57f02170",
+      "target_sha256": "ec3d077d1b1e3e8f83dd5b999912bcb95f258bbbabb8def4306a3b4b57f02170"
+    },
+    {
+      "source": "resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/veil/pinwheel/shaders/include/deferred_utils.glsl.txt",
+      "target": "resourcepacks/test_shaders/migration_reference/shader_modifiers/veil/mystrix/shaders/include/deferred_utils.glsl.txt",
+      "status": "imported",
+      "source_sha256": "95221fe28250f12103bf9f6cbd2849e8fbbb6c172ef59f24d7cee44dbaf5eb89",
+      "target_sha256": "95221fe28250f12103bf9f6cbd2849e8fbbb6c172ef59f24d7cee44dbaf5eb89"
+    },
+    {
+      "source": "resourcepacks/test_shaders/assets/veil/pinwheel/shader_modifiers/veil/pinwheel/shaders/program/blit_screen.vsh.txt",
+      "target": "resourcepacks/test_shaders/migration_reference/shader_modifiers/veil/mystrix/shaders/program/blit_screen.vsh.txt",
+      "status": "imported",
+      "source_sha256": "5f21e28371d97d7cced3b6b4637282f70a0dc9a6055bd812d3d303c06e13539c",
+      "target_sha256": "5f21e28371d97d7cced3b6b4637282f70a0dc9a6055bd812d3d303c06e13539c"
+    },
+    {
+      "source": "resourcepacks/test_shaders/assets/veil/pinwheel/shaders/program/test.fsh",
+      "target": "resourcepacks/test_shaders/assets/veil/mystrix/shaders/program/test.fsh",
+      "status": "imported",
+      "source_sha256": "174baf2ba29574d2871e4cb2fda5bfa4ff37e5d5737bc1d73dfd1ed613da43e8",
+      "target_sha256": "174baf2ba29574d2871e4cb2fda5bfa4ff37e5d5737bc1d73dfd1ed613da43e8"
+    },
+    {
+      "source": "resourcepacks/test_shaders/assets/veil/pinwheel/shaders/program/test.json",
+      "target": "resourcepacks/test_shaders/assets/veil/mystrix/shaders/program/test.json",
+      "status": "imported",
+      "source_sha256": "ed156217d82bc79846ad7d7a5ce53fad16a5ebd63ec1c9cb3c629cd23d26d2a4",
+      "target_sha256": "ed156217d82bc79846ad7d7a5ce53fad16a5ebd63ec1c9cb3c629cd23d26d2a4"
+    },
+    {
+      "source": "resourcepacks/test_shaders/assets/veil/pinwheel/shaders/program/test.vsh",
+      "target": "resourcepacks/test_shaders/assets/veil/mystrix/shaders/program/test.vsh",
+      "status": "imported",
+      "source_sha256": "82786859a1c57a55934c4f1f4c0bb2486b1559b6c3ba9039f50ab569125daf88",
+      "target_sha256": "82786859a1c57a55934c4f1f4c0bb2486b1559b6c3ba9039f50ab569125daf88"
+    },
+    {
+      "source": "resourcepacks/test_shaders/pack.mcmeta",
+      "target": "resourcepacks/test_shaders/pack.mcmeta",
+      "status": "adapted",
+      "source_sha256": "9060c61e396f1445fa29f98ed75b169032aa6a9b2f9c247e56d451d7ed91919e",
+      "target_sha256": "e40c592b78e9e57a30185c2cf253bdf03cbd3c48872a6532bc535f1ec42d2387"
+    }
+  ],
+  "summary": {
+    "source_files": 210,
+    "decisions": {
+      "retained-current": 75,
+      "imported": 66,
+      "adapted": 68,
+      "adapted-to-particle-settings": 1
+    },
+    "pack_files": {
+      "black_hole": 5,
+      "fog": 25,
+      "test_particles": 81,
+      "test_shaders": 20
+    }
+  },
+  "notes": [
+    "Canonical runtime directories are mystrix; pinwheel remains only as a legacy alias and in historical source paths.",
+    "Current overlapping resources take precedence over old source content.",
+    "Original shader modifier samples and deprecated rotation data are preserved outside assets as migration references.",
+    "Derived fixes add swiftshot emitter, missing shrapnel velocity, JSON shader injections and black-hole pipeline."
+  ],
+  "target_hash_normalization": "For .json, .mcmeta, .glsl, .fsh, .vsh, .txt and .obj: CRLF is normalized to LF; binaries remain exact. Source hashes always describe the original ZIP bytes."
+}

@@ -11,6 +11,8 @@ on:
       - '**/settings.gradle'
       - '**/build.gradle'
       - '.github/workflows/build.yml'
+      - 'tools/verify-assets.py'
+      - 'docs/audit/asset-migration.json'
   pull_request:
     branches:
       - 'main'
@@ -35,3 +37,5 @@ jobs:
         run: chmod +x ./gradlew
       - name: Execute Gradle build
         run: ./gradlew build
+      - name: Verify resource migration in both release jars
+        run: python tools/verify-assets.py

@@ -1,0 +1,11 @@
+{
+  "face_velocity": true,
+  "velocity_stretch_factor": 0.0,
+  "should_collide": true,
+  "modules": [
+    "veil:init/swiftshot_shrapnel_velocity",
+    "veil:update/force/drag/shrapnel_drag",
+    "veil:update/force/gravity/shrapnel_gravity",
+    "veil:render/color/swiftshot_color"
+  ]
+}

@@ -46,6 +46,8 @@ public class QuasarParticle {
     private int age;
     private AABB boundingBox;
     private boolean stoppedByCollision;
+    private final org.joml.Vector3d collisionVelocity = new org.joml.Vector3d();
+    private int blockedCollisionAxes;
 
     private final Supplier<MolangRuntime> environment;
     private final RenderData renderData;
@@ -125,17 +127,22 @@ public class QuasarParticle {
             this.stoppedByCollision = true;
         }
 
+        this.collisionVelocity.set(this.velocity);
+        this.blockedCollisionAxes = 0;
         if (d0 != dx) {
+            this.blockedCollisionAxes |= 1;
             this.velocity.x = 0;
             this.stoppedByCollision = true;
         }
 
         if (d1 != dy) {
+            this.blockedCollisionAxes |= 2;
             this.velocity.y = 0;
             this.stoppedByCollision = true;
         }
 
         if (d2 != dz) {
+            this.blockedCollisionAxes |= 4;
             this.velocity.z = 0;
             this.stoppedByCollision = true;
         }
@@ -146,6 +153,16 @@ public class QuasarParticle {
                 collisionParticle.collide(this);
             }
         }
+    }
+
+    /**
+     * Resumes movement after a block collision with bounded restitution.
+     * Entity overlaps have no resolved normal and keep the existing stop behavior.
+     */
+    public void bounce(float restitution) {
+        if (this.blockedCollisionAxes == 0) return;
+        foundry.veil.impl.quasar.BouncePhysics.reflect(this.velocity, this.collisionVelocity, this.blockedCollisionAxes, restitution);
+        this.stoppedByCollision = this.velocity.lengthSquared() < 1.0E-10;
     }
 
     private void updateBoundingBox() {

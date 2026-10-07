@@ -1,0 +1,17 @@
+{
+  "render_style": "CUBE",
+  "face_velocity": true,
+  "velocity_stretch_factor": 2.0,
+  "should_collide": false,
+  "modules": [
+    "veil:init/swiftshot_velocity",
+    "veil:init/enderman_light",
+    "veil:update/force/point_force/test_point",
+    "veil:update/force/vortex/swiftshot_vortex",
+    "veil:update/force/drag/test_drag",
+    "veil:update/force/gravity/test_gravity",
+    "veil:update/force/vector_field/test_vector_field",
+    "veil:render/color/swiftshot_color",
+    "veil:render/trail/swiftshot_trail"
+  ]
+}

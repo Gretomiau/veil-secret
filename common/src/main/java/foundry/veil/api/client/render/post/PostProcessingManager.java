@@ -67,7 +67,7 @@ public class PostProcessingManager extends CodecReloadListener<CompositePostPipe
      * Creates a new instance of the post-processing manager.
      */
     public PostProcessingManager() {
-        super(CompositePostPipeline.CODEC, FileToIdConverter.json("pinwheel/post"));
+        super(CompositePostPipeline.CODEC, FileToIdConverter.json("mystrix/post"));
         this.context = new PostPipelineContext();
         this.activePipelines = new LinkedList<>();
         this.activePipelinesView = Collections.unmodifiableList(this.activePipelines);

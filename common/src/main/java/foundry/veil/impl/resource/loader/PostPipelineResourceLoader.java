@@ -18,7 +18,7 @@ public class PostPipelineResourceLoader implements VeilResourceLoader {
     @Override
     public boolean canLoad(PackType packType, ResourceLocation location, @Nullable Path filePath, @Nullable Path modResourcePath) {
         String path = location.getPath();
-        return path.startsWith("pinwheel/post") && path.endsWith(".json");
+        return path.startsWith("mystrix/post") && path.endsWith(".json");
     }
 
     @Override

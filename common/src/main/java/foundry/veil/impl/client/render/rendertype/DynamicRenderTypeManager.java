@@ -38,7 +38,7 @@ import java.util.stream.Collectors;
 @ApiStatus.Internal
 public class DynamicRenderTypeManager extends SimplePreparableReloadListener<Map<ResourceLocation, byte[]>> {
 
-    private static final FileToIdConverter CONVERTER = FileToIdConverter.json("pinwheel/rendertypes");
+    private static final FileToIdConverter CONVERTER = FileToIdConverter.json("mystrix/rendertypes");
 
     private final Map<ResourceLocation, RenderTypeCache> renderTypes = new Object2ObjectArrayMap<>();
 

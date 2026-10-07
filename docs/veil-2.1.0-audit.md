@@ -21,7 +21,7 @@ be treated as proof of features in every upstream 2.1.0 release.
 4. Inspected source replacements, registry/loader wiring, shader resource codecs,
    camera transforms, editor registration and selected old bytecode with `javap`.
 5. Rewrote selected shader capabilities against current resources and APIs.
-   No old classfiles, nested jars, fonts, mixins or renderer implementations were copied.
+   No old classfiles, nested jars, mixins or renderer implementations were copied. Missing font binaries and reference assets are now included; runtime examples are adapted to current APIs.
 
 The complete baseline inventory is [audit/veil-2.1.0-baseline.json](audit/veil-2.1.0-baseline.json).
 It records exact removed/added member descriptors, removed classes, identical,
@@ -48,13 +48,13 @@ that an exhaustive in-game equivalence test was performed.
 | --- | --- | --- | --- |
 | Height and wall fog experiments in `resourcepacks/fog` | Core linear fog remains; finite volume effects are absent. The old height shader reads uninitialized `Intersection.hit` and divides by a parallel-plane dot product. | High / medium | Rewrite height fog and a reusable finite-segment helper. Wall effects can use the box effect or a rotated coordinate system in a custom shader. |
 | Box/cube fog experiments | Six-plane trial-and-error code does not consistently clip both entry and exit. The include variant references undefined `PLANE` / `intersectPlane`; it colors faces rather than behaving as reusable fog. | High / medium | Rewrite with a three-axis slab test, scene-depth limit, parallel handling, reversed corners and empty-volume handling. |
-| Legacy `noise.glsl` | No equivalent reusable procedural-noise include in current Pinwheel includes. Old `magicEnergyEffect` relies on undeclared global `time`; octave count is unbounded and interpolation is only linear. | High / low–medium | New namespaced include with smooth value noise, normalized fBm, explicit time and eight-octave limit. Opt-in; not part of fog's per-pixel cost. |
+| Legacy `noise.glsl` | No equivalent reusable procedural-noise include in current Mystrix includes. Old `magicEnergyEffect` relies on undeclared global `time`; octave count is unbounded and interpolation is only linear. | High / low–medium | New namespaced include with smooth value noise, normalized fBm, explicit time and eight-octave limit. Opt-in; not part of fog's per-pixel cost. |
 | Legacy common math and ray/sphere intersections | Current `space_helper` already handles depth reconstruction, FOV, aspect and transformations. Old `getWorldDepth` ignores UV/FOV/aspect; sphere helper has awkward inside/outside results. | Medium / medium | Use current space helpers. Do not restore redundant reconstruction or old sphere API; a tested general geometry include can be a later feature. |
 | Legacy luma | Current `color_utilities` has gamma, HSV, luminance and ACES. Old luma uses Rec.601-style coefficients; current luminance is approximate. | Low / low | Do not add synonymous functions or silently change existing color output. Explicit color-space utilities are a separate design task. |
-| Black-hole pack | Four files exist under `venuslibs`; fragment source is under `framebuffers`, not `shaders/program`. The pack is not registered by old `VeilBuiltinPacks.registerPacks`. | Potentially high / high | Exclude incomplete prototype. Requires a valid program/pipeline, texture inputs and visual validation. |
-| Skybox / space demos and cubemap texture | Demo assets are absent; cubemap/array textures, debug shaders and perspective rendering remain. A demo is not a new renderer subsystem. | Medium / medium | Exclude hard-coded demo scene/texture assets; keep current texture and perspective APIs. |
-| Particle demo pack | 79 particle-pack resource files are absent; Quasar itself remains. Data changed from separate init/update/render module registries to a unified `modules` representation. | High for examples / medium | Do not copy old JSON unmodified. A migrated, codec-tested showcase pack is pending; forces, trails, collisions, subemitters and lights are retained in current classes. |
-| Shader modifier demo pack / lexer and parser | Old `.txt` modifier language and parser classes are absent. `ShaderModificationManager` now has deprecated no-op methods; current code uses `ShaderInjectionManager`, loader/adapters and JSON injections. | High migration need / high | Document migration; do not restore a second shader transformation engine or ship dead `.txt` samples. |
+| Black-hole pack | Four files exist under `venuslibs`; fragment source is under `framebuffers`, not `shaders/program`. The pack is not registered by old `VeilBuiltinPacks.registerPacks`. | Potentially high / high | Rebuilt as an optional artistic prototype with a valid program/pipeline, explicit time and bounded ray steps. Full visual/performance validation remains pending. |
+| Skybox / space demos and cubemap texture | Demo assets are absent; cubemap/array textures, debug shaders and perspective rendering remain. A demo is not a new renderer subsystem. | Medium / medium | Include the optional skybox/space demo and cubemap without changing current texture/perspective APIs. Scene quality validation remains pending. |
+| Particle demo pack | 79 particle-pack resource files are absent; Quasar itself remains. Data changed from separate init/update/render module registries to a unified `modules` representation. | High for examples / medium | Do not copy old JSON unmodified. Migrate all examples to unified module data; repair missing subemitter/velocity references and add bounded bounce. All nine emitters pass resource/codec loading on both clients. |
+| Shader modifier demo pack / lexer and parser | Old `.txt` modifier language and parser classes are absent. `ShaderModificationManager` now has deprecated no-op methods; current code uses `ShaderInjectionManager`, loader/adapters and JSON injections. | High migration need / high | Ship five current JSON injection examples. Preserve original `.txt` samples outside active assets as migration references; do not restore the removed transformation engine. |
 | Mutable framebuffer attachment | Public old class moved to `impl/client/render/framebuffer`. Builder and mutable texture operations remain. | Low / medium | Keep ownership boundaries; do not expose the internal class or duplicate texture lifetime logic. |
 | `MutableUniformAccess`, `getOrCreateUniform`, sampler methods | Block setters are now on `UniformAccess`; current access uses `getUniform` / `getUniformSafe`, texture targets and sampler IDs via `setTexture`. | High migration need / medium | Use current APIs. Do not restore obsolete interfaces or sampler aliases. |
 | Dynamic pipeline registration / cloning | Old `PostProcessingManager.registerPipeline` and `clonePipeline` are absent; resource-backed pipelines and explicit execution remain. | Medium / medium–high | Real API gap, deferred: requires clear ownership, reload replacement and GPU-resource disposal contracts, rather than restoring old signatures alone. |
@@ -62,7 +62,7 @@ that an exhaustive in-game equivalence test was performed.
 | Lighting, ambient occlusion controls | Point/area/directional lighting and indirect rendering remain; spotlights, voxel occlusion and light in-scattering are newer. Old ambient-occlusion enable/disable/isEnabled controls are absent. | Medium / high | Do not revive renderer-wide AO toggles without current compositing and Sodium tests. Existing per-light occlusion controls are available. |
 | Dynamic depth buffer and vertical normal wrapper | `DynamicBufferType.DEPTH` and old wrappers/mixins are absent. Current framebuffer depth sampling and dynamic-buffer compiler remain. | Medium / high | Use `DiffuseDepthSampler` for these effects. Do not reinstate old buffer ordinals or CPU vertex wrappers. Exact old AO/normal behavior requires scene tests. |
 | ImGui runtime, state stack, font manager | Old embedded ImGui runtime/font APIs are absent. Current editor uses optional **ImGuiMC 2.x**, with its context/fonts/language APIs. | High migration need / high | Keep ImGuiMC integration. Reintroducing embedded contexts/input hooks can conflict with the new renderer and native libraries. |
-| JetBrains Mono styles / language helpers | Four old fonts and metadata are absent; old `VeilLanguageDefinitions` source is commented out and emits no class. Resource language selection uses `TextEditorLanguage` instead. | Low / medium | No font/binary copy. Use the dependency's language/font facilities; do not resurrect the commented legacy bindings. |
+| JetBrains Mono styles / language helpers | Four old fonts and metadata are absent; old `VeilLanguageDefinitions` source is commented out and emits no class. Resource language selection uses `TextEditorLanguage` instead. | Low / medium | Include all four font styles with ImGuiMC metadata and the upstream OFL license; retain current language/font integration without resurrecting legacy bindings. |
 | Shader, texture, framebuffer, resource, post, particle and light inspectors | Current `VeilImGuiCompat` registers these inspectors when ImGuiMC integration loads. | Retained / low | No duplicate tooling. Shader/resource editing remains available with the optional dependency installed. |
 | Pipeline statistics viewer | Viewer/profiler classes remain, but inspector registration is explicitly commented out. Plot calls changed for the newer binding; profiler still synchronously reads `GL_QUERY_RESULT`. | High / high | Real tooling regression, deferred. Fix nesting, plot style balance and query collection first; enabling it blindly can stall the GPU. |
 | Necromancer skeletal animation | Bone, skin, skeleton, renderers and keyframes remain; newer additive/looped animation and interpolation modes exist. Old mirrored-index convenience and one Skin builder constructor are absent. | Low–medium / medium | No old skinned shader or builder copy. Current rendering resources changed; verify exact convenience needs before adding aliases. |
@@ -70,6 +70,12 @@ that an exhaustive in-game equivalence test was performed.
 | Other utility removals | `Color.RGB_CODEC_FLOATS`, bridge dither/line-smoothing helpers and several record-style equality methods are absent or changed. Current codec/vector/matrix and effect APIs are broader. | Low / medium | Listed with exact descriptors in the appendix. No blanket binary-compatibility aliases or changes to existing equality/render state. |
 
 ## Delivered behavior
+
+Follow-up asset/root migration: 2026-10-07. All 210 old resource files are
+accounted for; newer overlapping content is retained. The four packs are optional
+and registered on both loaders. `mystrix/` is canonical with `pinwheel/` read
+aliases that preserve pack priorities and editor physical paths.
+
 
 - `#include veil:fog_volume`: finite height/box path lengths, transmittance and
   alpha-preserving fog compositing.
@@ -80,8 +86,11 @@ that an exhaustive in-game equivalence test was performed.
 - [Usage and coordinate contracts](volume-effects.md), shader compilation and
   opt-in GPU numerical tests, and resource/test-aware CI on PRs targeting `main`.
 
-No Java production API, mixin, dependency version, loader metadata, screen shake,
-voxel state handling or existing shader was modified. Test libraries are test-only.
+The expanded adaptation also adds per-pack resource-path aliases, optional pack
+registration and bounded particle bounce. Existing shader contents retain their
+newer implementation while their directory moves to `mystrix/`. Test libraries
+are test-only. See [the complete asset migration](mystrix-resources.md) and its
+210-entry hash manifest for every source file and destination.
 The project version stays unreleased at `4.5.0+mystrix.1`; assign a new version when releasing.
 
 ## Validation and practical limits
@@ -90,7 +99,8 @@ The baseline build passed before edits. The adapted branch is checked with commo
 tests and both loader builds. Shader tests expand these effects' imports and use
 the real camera layout plus Veil's GLSL parser/writer. Shaderc validates GLSL 330
 for OpenGL-target SPIR-V, substituting `std140` for OpenGL's legal `shared` camera
-layout only in the test. This is not a full resource-manager reload test.
+layout only in the test. Additional tests exercise Minecraft pack merging, stack priority, filters and
+editor paths. Both clients also load all four packs through real reload listeners.
 
 The opt-in GPU test executes the **shipped includes**, rather than a Java rewrite,
 via transform feedback in a hidden OpenGL 3.3 context. It checks parallel rays,
@@ -101,14 +111,15 @@ and OpenGL `shared` layout. Local validation uses an NVIDIA GeForce GTX 1050.
 
 Full Minecraft scene validation remains pending: camera bob/shake and perspective
 views, resize/reload, sky depth, transparent geometry, shader-pack/Sodium paths,
-NeoForge runtime, and AMD/Intel drivers. Transparent surfaces that do not write
+optional ImGuiMC editing and AMD/Intel drivers. Both loader startup/resource
+reload paths have been exercised; exhaustive scene execution remains pending. Transparent surfaces that do not write
 depth cannot bound a depth-based post effect. Fog is homogeneous absorption, not
 multiple scattering or a replacement for Veil's light in-scattering.
 Enable each additional effect only when needed; each is a fullscreen pass.
 
 Final local validation: **`gradlew.bat build` passed using JDK 21.0.7**, with
-`VEIL_VERIFY_OPENGL=1`: eight common tests, zero failures/errors/skips. Both
-Fabric and NeoForge release jars contain all eight new resources, use Java class
+`VEIL_VERIFY_OPENGL=1`: 17 common tests, zero failures/errors/skips. Both
+Fabric and NeoForge release jars contain all manifest destinations and four packs, use Java class
 major version 65, and contain neither shaderc nor the test classes. Git diff
 whitespace validation passed. Remote CI status is reported on the PR separately.
 
@@ -120,10 +131,10 @@ deprecations. They were not introduced or suppressed by this change.
 
 1. Runtime scene/driver matrix for the new effects before release.
 2. Repair and re-enable GPU statistics with asynchronous query handling.
-3. Migrate a small Quasar showcase through current codecs and editor workflows.
+3. Validate the migrated Quasar showcase in scenes and optional editor workflows.
 4. Define a cross-loader per-layer event with paired cleanup guarantees.
 5. Define dynamic pipeline registration/cloning ownership and reload semantics.
-6. Rebuild black-hole/sky/geometry prototypes as separate opt-in, tested features.
+6. Profile and visually validate the optional black-hole/sky demos; design reusable geometry helpers independently.
 
 The old ZIP does not contain evidence of a production PBR/GI/SSR/TAA renderer to
 recover. Such features would require new design and profiling beyond this port.

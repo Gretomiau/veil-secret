@@ -1,0 +1,6 @@
+{
+  "module": "veil:initial_velocity",
+  "direction": [0.0, 1.0, 0.0],
+  "take_parent_rotation": true,
+  "strength": 0.2
+}

@@ -81,8 +81,8 @@ public class ShaderManager implements PreparableReloadListener, Closeable {
             .registerTypeAdapter(ProgramDefinition.class, new ProgramDefinition.Deserializer())
             .create();
 
-    public static final FileToIdConverter INCLUDE_LISTER = new FileToIdConverter("pinwheel/shaders/include", ".glsl");
-    public static final ShaderSourceSet PROGRAM_SET = new ShaderSourceSet("pinwheel/shaders/program");
+    public static final FileToIdConverter INCLUDE_LISTER = new FileToIdConverter("mystrix/shaders/include", ".glsl");
+    public static final ShaderSourceSet PROGRAM_SET = new ShaderSourceSet("mystrix/shaders/program");
 
     private static final Map<Integer, String> TYPES = Map.of(
             GL_VERTEX_SHADER, "vertex",

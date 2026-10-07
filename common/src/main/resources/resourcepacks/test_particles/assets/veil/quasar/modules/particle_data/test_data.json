@@ -1,0 +1,10 @@
+{
+  "render_style": "CUBE",
+  "face_velocity": true,
+  "should_collide": false,
+  "modules": [
+    "veil:init/firefly_light",
+    "veil:update/force/vector_field/test_vector_field",
+    "veil:render/color/firefly_color"
+  ]
+}

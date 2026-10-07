@@ -1,0 +1,5 @@
+{
+  "target": "minecraft:shaders/core/rendertype_cutout",
+  "priority": 1000,
+  "replace": "veil:test"
+}

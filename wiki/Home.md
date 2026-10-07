@@ -1,7 +1,7 @@
 # Overview
 
-All Veil resources should be located in the `assets/modid/pinwheel` folder. Specific assets are in subfolders of the
-main pinwheel folder.
+All Veil resources should be located in the `assets/modid/mystrix` folder. Specific assets are in subfolders of the
+main mystrix folder.
 
 There are two exceptions: [Quasar](Quasar) particles, which are located in the `assets/modid/quasar` folder, and [Flare](Flare) effects, which are located in the `assets/modid/flare` folder.
 
