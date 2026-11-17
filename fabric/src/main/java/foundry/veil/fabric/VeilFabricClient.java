@@ -47,13 +47,9 @@ public class VeilFabricClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         VeilClient.init();
-        net.fabricmc.loader.api.FabricLoader.getInstance().getModContainer(Veil.MODID).ifPresent(container -> {
-            for (String id : foundry.veil.impl.VeilBuiltinPacks.IDS) {
-                ResourceManagerHelper.registerBuiltinResourcePack(Veil.veilPath(id), container,
-                        Component.literal(foundry.veil.impl.VeilBuiltinPacks.title(id)),
-                        net.fabricmc.fabric.api.resource.ResourcePackActivationType.DEFAULT_ENABLED);
-            }
-        });
+        // Example packs are developer reference assets, not part of the client's
+        // resource-pack repository. Previously selected pack IDs are unavailable
+        // and therefore cannot enable the examples on existing installations.
         ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> client.execute(() -> {
             VeilRenderSystem.renderer().getLightRenderer().free();
             VeilClientServerFlags.onDisconnect();

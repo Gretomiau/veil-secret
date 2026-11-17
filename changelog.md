@@ -1,6 +1,6 @@
 ## Unreleased (Mystrix)
 
-- Enable all four bundled Mystrix example packs by default on Fabric; players can still disable them in the resource-pack screen.
+- Stop registering the four bundled Mystrix example packs on Fabric (`test_shaders`, `test_particles`, `fog`, `black_hole`). They no longer load automatically or through previously saved selections; core library resources remain available.
 - Move canonical rendering resource directories to `mystrix/`, with per-pack `pinwheel/` aliases preserving priorities, stacks, metadata, filters and editor file paths.
 - Account for all 210 source asset/pack files; import missing assets, preserve newer overlapping shaders and bundle adapted optional particle/shader/fog/black-hole packs for both loaders.
 - Migrate Quasar data and shader injections, repair missing sample references, and add bounded collision restitution through `veil:bounce`.
